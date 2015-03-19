@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- **************************************************************************************************************************** -->
+<!--HEAD starts -->
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Jaiki: Eves 24</title>
+  <!--LINKS starts -->
+    <!-- FAVICON -->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- FONT -->
+      <link href='http://fonts.googleapis.com/css?family=Signika:700,300,400,600' rel='stylesheet' type='text/css'>
+    <!-- styles -->
+      <link rel="stylesheet" type="text/css" href="css/jaiki01.css"/>  
+    <!--hamburger menu script -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+      <script>
+       // DOM ready
+       $(function() {
+         
+          // Create the dropdown base
+          $("<select />").appendTo("nav");
+          
+          // Create default option "Go to..."
+          $("<option />", {
+             "selected": "selected",
+             "value"   : "",
+             "text"    : "Go to..."
+          }).appendTo("nav select");
+          
+          // Populate dropdown with menu items
+          $("nav a").each(function() {
+           var el = $(this);
+           $("<option />", {
+               "value"   : el.attr("href"),
+               "text"    : el.text()
+           }).appendTo("nav select");
+          });
+          
+         // To make dropdown actually work
+         // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+          $("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+          });
+       
+       });</script>
+    <!--go to top -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+      <script>
+          $(document).ready(function () {
+
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 100) {
+                  $('.scrollup').fadeIn();
+              } else {
+                  $('.scrollup').fadeOut();
+              }
+          });
+
+          $('.scrollup').click(function () {
+              $("html, body").animate({
+                  scrollTop: 0
+              }, 600);
+              return false;
+          });
+        });
+      </script>
+    <!--sticker title -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+      
+      <script>
+      $(document).ready(function() {
+      var s = $("#sticker");
+      var img = $(".j-top");
+      var pos = s.position();                    
+      $(window).scroll(function() {
+          var windowpos = $(window).scrollTop();
+          s.html("<h1>Eves 24</h1><h1sub>Visual Identity</h1sub>" );
+          if (windowpos >= pos.top + img.height()) {
+              s.addClass("stick");
+          } else {
+              s.removeClass("stick"); 
+          }
+        });
+      });
+      </script>
+    <!--go down -->
+      <script>
+          $(document).ready(function () {
+            var img = $(".j-top");
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 200) {
+                  $('.bounce').fadeOut();
+              } else {
+                  $('.bounce').fadeIn();
+              }
+          });
+
+          $('.bounce').click(function () {
+              $("html, body").animate({
+                  scrollTop: 0 + img.height()
+              }, 600);
+              return false;
+          });
+        });
+      </script>
+  </head>
+<!-- **************************************************************************************************************************** -->
+<!--BODY starts-->
+  <body>
+  <div class="page-wrapper"><!--page background-->
+  <center>
+  <!--fixbar starts-->
+    <div id="fixbar">
+      <div id="fixhead">
+          <leftbox>
+              <div class="logo"><a href="index.html"></a></div>
+          </leftbox>
+          <rightbox>
+          <!--main menu menu-->
+              <div class="mm-about"><a href="about.html"></a>About</div>
+              <div class="mm-notes"><a href="notes.html"></a>Notes</div>
+              <div class="mm-projects"><a href="projects.html" class="active"></a>Projects</div>
+              <div class="mm-contact"><a href="contact.html"></a>Contact</div>  
+          <!--main menu ends-->  
+          </rightbox>
+      </div>
+    </div> 
+    <!--fixbar ends-->
+  <!--go to top button-->
+    <article>
+        <a href="#" class="scrollup">Scroll</a>
+    </article>
+  <!--CENTRAL PART -->
+  <!--contents -->
+    <div class="j-top"><img src="images/projects/eves24/eves24_top.jpg">
+      <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
+    </div>
+    <div class="j-wrapper">
+        <div class="j-title">
+            <span>   
+                <h6>Client</h6>
+                <h4>Akhuratha Lifestyle Services pvt. Ltd.<br>Mumbai, India</h4>
+                <h6>Year</h6>
+                <h4>2010 - 2011</h4>
+                <div id="sticker"><h1>Eves 24</h1><h1sub>Visual Identity</h1sub></div>
+            </span>                    
+        </div>
+        <div class="j-post">
+            <img src="images/projects/eves24/eves2401.jpg" alt="image01">
+            <img src="images/projects/eves24/eves2402.jpg" alt="image02">
+            <img src="images/projects/eves24/eves2403.jpg" alt="image03">
+            <img src="images/projects/eves24/eves2404.jpg" alt="image04">
+            <img src="images/projects/eves24/eves2405.jpg" alt="image05">
+            <img src="images/projects/eves24/eves2406.jpg" alt="image06">
+            <img src="images/projects/eves24/eves2407.jpg" alt="image07">
+        </div>
+        <div class="clearcolumn"></div>
+    </div>
+    <!--contents ends -->
+<!-- ****************************************************************************************** -->
+<!--foot starts -->
+  <div class="foot">
+    <div class="foot-wrapper">
+      <!--Bread Crumbs starts -->
+              <ul id="crumbs">
+                  <li><a href="index.html" class="first-child">Jaiki Home</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="#" class="active">Eves 24</a></li>
+              </ul>
+      <!--All project list starts -->
+            
+      <!--All project list ends -->
+      <!--Social starts -->
+            <div id="footmenu2">
+                <div class="be120"><a href='https://www.behance.net/jaikishan' target="_blank"></a></div>
+                <div class="fb"><a href='http://facebook.com/jaiki123/' target="_blank"></a></div>
+                <div class="tw"><a href='http://twitter.com/jaikishan_patel/' target="_blank"></a></div>
+                <div class="in"><a href="http://linkedin.com/in/jaiki123/" target="_blank"></a></div>
+                <div class="blog"><a href='http://thisisjaiki.blogspot.com/' target="_blank"></a></div>
+            </div>
+      <!--Social ends -->
+      <!--Last foot menu starts -->
+            <div id="footmenu">
+                <span>Designed and developed by Jaikishan Patel &nbsp; | &nbsp; Copyright © 2015 . All Rights Reserved.</span>
+                <ul>
+                   <li><a href='disclaimer.html'>Disclaimer and privacy policy</a></li><c2>&nbsp; | &nbsp;</c2>
+                   <li><a href='contact.html'>Feedbacks and Suggestion</a></li><c2>&nbsp; | &nbsp;</c2>
+                   <li><a href='contact.html'>Contact</a></li>
+                </ul>
+            </div>
+      <!--Last foot menu ends -->
+    </div>
+  </div>
+  <!--foot ends-->
+</center>
+</div><!--page wrapper ends-->
+</body>
+<!-- ****************************************************************************************** -->
+</html>

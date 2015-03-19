@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- **************************************************************************************************************************** -->
+<!--HEAD starts -->
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Jaiki: Mumbai Rail Map</title>
+  <!--LINKS starts -->
+    <!-- FAVICON -->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- FONT -->
+      <link href='http://fonts.googleapis.com/css?family=Signika:700,300,400,600' rel='stylesheet' type='text/css'>
+    <!-- styles -->
+      <link rel="stylesheet" type="text/css" href="css/jaiki01.css"/>  
+    <!--hamburger menu script -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+      <script>
+       // DOM ready
+       $(function() {
+         
+          // Create the dropdown base
+          $("<select />").appendTo("nav");
+          
+          // Create default option "Go to..."
+          $("<option />", {
+             "selected": "selected",
+             "value"   : "",
+             "text"    : "Go to..."
+          }).appendTo("nav select");
+          
+          // Populate dropdown with menu items
+          $("nav a").each(function() {
+           var el = $(this);
+           $("<option />", {
+               "value"   : el.attr("href"),
+               "text"    : el.text()
+           }).appendTo("nav select");
+          });
+          
+         // To make dropdown actually work
+         // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+          $("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+          });
+       
+       });</script>
+    <!--go to top -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+      <script>
+          $(document).ready(function () {
+
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 100) {
+                  $('.scrollup').fadeIn();
+              } else {
+                  $('.scrollup').fadeOut();
+              }
+          });
+
+          $('.scrollup').click(function () {
+              $("html, body").animate({
+                  scrollTop: 0
+              }, 600);
+              return false;
+          });
+        });
+      </script>
+    <!--sticker title -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+      
+      <script>
+      $(document).ready(function() {
+      var s = $("#sticker");
+      var img = $(".j-top");
+      var pos = s.position();                    
+      $(window).scroll(function() {
+          var windowpos = $(window).scrollTop();
+          s.html("<h1>Mumbai Rail Map</h1><h1sub>Information Design</h1sub>" );
+          if (windowpos >= pos.top + img.height()) {
+              s.addClass("stick");
+          } else {
+              s.removeClass("stick"); 
+          }
+        });
+      });
+      </script>
+
+      <!--go down -->
+      <script>
+          $(document).ready(function () {
+            var img = $(".j-top");
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 200) {
+                  $('.bounce').fadeOut();
+              } else {
+                  $('.bounce').fadeIn();
+              }
+          });
+
+          $('.bounce').click(function () {
+              $("html, body").animate({
+                  scrollTop: 0 + img.height()
+              }, 600);
+              return false;
+          });
+        });
+      </script>
+  </head>
+<!-- **************************************************************************************************************************** -->
+<!--BODY starts-->
+  <body>
+  <div class="page-wrapper" style="background-color:#f2f2f2"><!--page background-->
+  <center>
+  <!--fixbar starts-->
+    <div id="fixbar" style="background-color:#f2f2f2">
+      <div id="fixhead">
+          <leftbox>
+              <div class="logo"><a href="index.html"></a></div>
+          </leftbox>
+          <rightbox>
+          <!--main menu menu-->
+              <div class="mm-about"><a href="about.html"></a></div>
+              <div class="mm-notes"><a href="notes.html"></a></div>
+              <div class="mm-projects"><a href="projects.html" class="active"></a></div>
+              <div class="mm-contact"><a href="contact.html"></a></div>  
+          <!--main menu ends-->    
+          </rightbox>
+      </div>
+    </div> 
+    <!--fixbar ends-->
+  <!--go to top button-->
+    <article>
+        <a href="#" class="scrollup">Scroll</a>
+    </article>
+  <!--CENTRAL PART -->
+  <!--contents -->
+    <div class="j-top"><img src="images/projects/mrm/mrm_top.jpg">
+      <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
+    </div>
+    <div class="j-wrapper">
+        <div class="j-title">
+            <span>   
+                <h6>Initiated at</h6>
+                <h4>Industrial Design Centre<br>Indian Institute of Technology Bombay, Mumbai, India</h4>
+                <h6>Supported by</h6>
+                <h4>MHRD<br>Govt. of India</h4>
+                <h6>Year</h6>
+                <h4>2013 - 2015</h4>
+                <div id="sticker" style="background-color:#f2f2f2"><h1>Mumbai Rail Map</h1><h1sub>Information Design</h1sub></div>
+            </span>                    
+        </div>
+        <div class="j-post">
+            <span>
+              <h3>Version 6 of the Mumbai Rail Map</h3>
+              <h5>Available in Hindi, Marathi, Gujarati, Urdu & English language</h5>
+              <div id="link"><ul><li><a href="http://www.mrmapp.in/"> Download the print version </li></ul></a></div>
+            </span>
+
+            <img src="images/projects/mrm/mrm01.jpg" alt="image01">
+            <img src="images/projects/mrm/mrm02.jpg" alt="image02">
+          </div>
+        <div class="devider"></div>
+
+        <div class="j-title">
+            <span>   
+                <h4>The Story</h4><h6>December 1st 2013</h6><br><br>
+                <h2>Design of the Mumbai Suburban Rail Map</h2>
+                <br><h0>Design <br>for People: </h0><br>
+            </span>                    
+        </div>
+        <div class="j-post">
+            <span>
+              <p1>Maps are excellent in clarifying the mental model* of novice commuters who are anxious about their travel.
+              Once the mental model is clarified the use of a map reduces, unless a new information- need arises.** Therefore maps are products of infrequent use. Whenever there is a need it should be resolved by the map. If the map is not usable then people might prefer to ask someone. So design of the map must be user friendly and self-evident. Unless everybody (especially children) is taught to read maps at a national level, the anxiety towards map reading and accessing information will persist.</p1><br><br>
+              <p3>*A mental model is an explanation of someone’s thought process about how something works in the real world. (Source: Wikipedia) **A frequent traveller on the Central Line told us that one weekend he had to travel on Harbour Line to attend a function. We had given him a portable MRM Ver.4. He referred to the MRM because he was not aware of that particular station on the Harbour Line. So the statement, “frequent travellers will not need to refer to a map” is not true. Information should be handy whenever need arises.</p3>
+
+              <br><br><h3>Visual Maps</h3>
+              <p1>Maps are visual representation of information of real or imagined spaces. A map can show the relationship of a particular area with another according to its physical spatial location, direction, distance, size, time, numeric data or other. Maps can be accurate
+              or distorted, exposing political, economic or any other agenda.</p1> 
+              <br><br><c1>Inform Form, Information Design: in theory an informed practice 1 2012 Published by Mwm creative pg 30</c1>
+        </div>
+        <div class="devider"></div>
+        <div class="j-title">
+            <span>   
+              <h1>Need for public information system in Mumbai</h1><br>
+            </span> 
+            <img src="images/projects/mrm/mrm03.jpg" alt="image03">                   
+        </div>
+        <div class="j-post">
+              
+              <p1>Mumbai suburban rail is one of the busiest rapid transit systems in the world — operating more than 2000 train services and carrying more than 7 million passengers daily. Rail map plays a critical role in providing the travel related information to help commuters navigate and guide them towards informed decision making prior to the journey. </p1>
+
+              <br><br>
+              <p1>There was no well designed, user-friendly map for the people of Mumbai as well as tourists visiting Mumbai. It was assumed that people don’t require a map to navigate and people manage by asking other people. Nobody had an overview 17 of how is the rail network laid out. A complete overview was necessary to clarify the mental model of the rail commuters. Therefore we thought of designing a map.</p1>
+            </span>
+
+            <img src="images/projects/mrm/mrm04.jpg" alt="image04">
+            <span>
+              <br><br>
+              <h0>Most people argued with us saying, Indians rely on asking around for information, instead of referring to a map. But did we ever give them a map?</h0><br>
+              <p1>Everyone in the city seems to be very confident about the information needed to travel around. As they say that we can ask any one at any point of time whenever needed. In a way its a positive side when we consider the social interaction in a large city like Mumbai. People are considered to be very helpful when it comes to guiding someone on the journey. But the argument arises that the information which is most useful in a scenario like railway stations in Mumbai. Why is it invisible at first place. Moreover Mumbai is generally over loaded with happenings. The crowd is increasing so fast everyday and the need for information along with that. Whenever we travel, why we tend to reconfirm about travel information by asking multiple people the same question. At times we are also mislead by believing some of them. Only if we would have had the minimum information visible on the locations, it can be observed whether they are useful or not. It is public right to be informed about their travel. We have never been given information on the spot and neither anyone bothered that it was actually required. Still we believe that people are there to help every time, we do not require any information which is accessible and available.
+              Life is so complex. 
+              <br><br>
+              <p3>‘‘Some complexity is desirable. When things are too simple, they are also viewed as dull and uneventful. Psychologists have demonstrated that people prefer a middle level of complexity: too simple and we are bored, too complex and we are confused. More- over, the ideal level of complexity is a moving target, because the more expert we become at any subject, the more complexity we prefer. This holds true whether the subject is music or art, detective stories or historical novels, hobbies or movies.‘‘
+              <br><br>
+              ‘‘When complexity is unavoidable, when it mirrors the complexity of the world or of the tasks that are being done, then it is excusable, understandable, and learn-able. But when things are complicated, when the complexity is the result of poor design with completely arbitrary steps, with no apparent reason, then the result is perplexing, confusing, and frustrating. Poor design leads to the emotional distress we have come to associate with modern technology. Good design can provide a desirable, pleasurable sense of empowerment.’’
+              <br><c1>Donald A. Norman (Living with Complexity)</c1></p3>
+
+              <br><br>
+              There are travellers in Mumbai who are so used to local journey as if they are just a part of it. Yet when they been asked for
+              or need to go to a new place in a different train route which is not their frequent route, they become just like a novice traveller in the city. Even they need to ask. And it might be as scary as it is for a first time traveller in Mumbai. The complexity becomes much higher when the new comer can not communicate in the local language with people.</p1>
+
+
+              <br><br>
+
+            </span>
+            
+            <img src="images/projects/mrm/mrm04.jpg" alt="image04">
+            <img src="images/projects/mrm/mrm05.jpg" alt="image05">
+            <img src="images/projects/mrm/mrm06.jpg" alt="image06">
+
+            <span><br><hr><br><h2>Testing revealed various issues:</h2></span>
+            <img src="images/projects/mrm/mrm07.jpg" alt="image07">
+            <span>
+              <p1>When we completed the Version 5 of the Mumbai Rail map (MRM). It was tested at Dadar and CST Railways stations with commuters with permission from central Railways and support of Railway board Delhi and IIT Bombay.
+              <br><br>
+              <p1>+ People were not able to perceive fast and slow lines, because they were of the similar colour values.
+              <br>+ People ignored the legend as they thought it was a part of the Map.
+              <br>+ People were confused between the Mono and Metro Rail.
+              <br>+ People demanded a Mobile Rail map application along with the map.
+              <br>+ 60% users understood alphabetically ordered index without external help.
+              <br>+ 70% of users could find station code and route colour
+              <br>+ 66% of users were able to find stations using the box number.
+              <br>+ Most of the people said that time between stations as an useful feature.</p1>
+              <br><br>
+              <h3>We arrived at a portable design solution.</h3>
+              <p1>+ It covers all the lines on the network including Mono and Metro lines.
+              <br>+ It is designed to address the needs of the colour blind population.
+              <br>+ It tells you the time between stations (Most commuters appreciated this feature)
+              <br>+ Use of alphabetically ordered index makes it easier for the user to search a station quickly.
+              <br>+ Commuters found it difficult to use the alpha-numeric grid used worldwide, so we introduced the box grid.
+              <br>+ Improved visual differentiation between fast and slow train lines.</p1>
+              </p1>
+            </span>
+            <img src="images/projects/mrm/mrm08.jpg" alt="image08">
+            <img src="images/projects/mrm/mrm09.jpg" alt="image09">
+        </div>
+        <div class="clearcolumn"></div>
+    </div>
+    <!--contents ends -->
+<!-- ****************************************************************************************** -->
+<!--foot starts -->
+  <div class="foot">
+    <div class="foot-wrapper">
+      <!--Bread Crumbs starts -->
+              <ul id="crumbs">
+                  <li><a href="index.html" class="first-child">Jaiki Home</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="#" class="active">Mumbai Rail Map</a></li>
+              </ul>
+      <!--All project list starts -->
+              <div id="footproject">
+                  <ul class="j-album"><span>All Projects</span>
+
+                    <li class='active'>
+                      <a href='p_mrm.html'><img src="images/home/p_mrm_thumb.jpg" alt="Mumbai Rail Map"><span>Mumbai Rail Map<br/><p1album>Information Design</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_olive.html'><img src="images/home/p_olive_thumb.jpg" alt="Olive"><span>Olive telecommunications<br><p1album>Visual Brand Language</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_bonifate.html'><img src="images/home/p_bonifate_thumb.jpg" alt="Bonifate"><span>Bonifate INC.<br/><p1album>Visual Brand Language</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_ggg.html'><img src="images/home/p_ggg_thumb.jpg" alt="Go Goa Gone"><span>Go Goa Gone<br/><p1album>Film Publicity design</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_bmb.html'><img src="images/home/p_bmb_thumb.jpg" alt="Bhaag Milkha Bhaag"><span>Bhaag Milkha Bhaag<br/><p1album>Film Publicity design</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_karauli.html'><img src="images/home/p_karauli_thumb.jpg" alt="Karauli"><span>Karauli Diagnostics<br/><p1album>Observations</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_clive.html'><img src="images/home/p_clive_thumb.jpg" alt="Culture Live"><span>Culture Live<br/><p1album>Visual Brand Language</span></a></li>
+                    
+                    <li>
+                      <a href='p_spring.html'><img src="images/home/p_spring_thumb.jpg" alt="Spring"><span>Spring Infradev<br/><p1album>Visual Brand Language</span></a></li>
+                    
+                    <li>
+                      <a href='p_themagic.html'><img src="images/home/p_themagic_thumb.jpg" alt="The Magic"><span>The Magic<br/><p1album>Fiction Short Film</span></a></li>
+                    
+                    <li>
+                      <a href='p_cezar.html'><img src="images/home/p_cezar_thumb.jpg" alt="Cezar"><span>Cezer . a Shoe with a soul<br/><p1album>Visual Brand Language</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_eves24.html'><img src="images/home/p_eves24_thumb.jpg" alt="Eves 24"><span>Eves 24 Jewells<br/><p1album>Visual Brand Language</span></a></li>
+                    
+                    <li>
+                      <a href='p_wlocus.html'><img src="images/home/p_wlocus_thumb.jpg" alt="White Locus"><span>White Locus<br/><p1album>Visual Brand Language</span></a></li>
+                    
+                    <li>
+                      <a href='p_etikoppaka.html'><img src="images/home/p_etikoppaka_thumb.jpg" alt="Etikoppaka"><span>Etikoppaka Toys<br/><p1album>Traditional Knowledge Documentation</span></a></li>
+                    
+                    <li>
+                      <a href='p_bmj.html'><img src="images/home/p_bmj_thumb.jpg" alt="BMJ"><span>BMJ Awards<br/><p1album>Event Branding</span></a></li>
+                    
+                    <li>
+                      <a href='p_semmedu.html'><img src="images/home/p_semmedu_thumb.jpg" alt="Semmedu"><span>Semmedu<br/><p1album>Observations</span></a></li>
+
+                  </ul>
+              </div>
+              <!--All project list ends -->
+      <!--Social starts -->
+              <div id="footmenu2">
+                  <span>Stay Connected<br>with Social Media</span>
+                  <div class="fb"><a href='http://facebook.com/jaiki123/' target="_blank"></a></div>
+                  <div class="tw"><a href='http://twitter.com/jaikishan_patel/' target="_blank"></a></div>
+                  <div class="in"><a href="http://linkedin.com/in/jaiki123/" target="_blank"></a></div>
+                  <div class="blog"><a href='http://thisisjaiki.blogspot.com/' target="_blank"></a></div>
+                  <div class="be120"><a href='https://www.behance.net/jaikishan' target="_blank"></a></div>
+              </div>
+              <!--Social ends -->
+        <!--Last foot menu starts -->
+              <div id="footmenu">
+                  <span>Website Designed and developed by Jaikishan Patel . © 2015 . All Rights Reserved.
+                    <br>Typeface used for the website content - Display Type: Expletus Sans by Jasper de Waard, Body Type: Ek Mukta by Ek Type 
+                  </span>
+
+                  <ul>
+                     <li><a href='disclaimer.html'>Disclaimer and privacy policy</a></li><span>.</span>
+                     <li><a href='contact.html'>Feedbacks and Suggestion</a></li><span>.</span>
+                     <li><a href='contact.html'>Contact</a></li>
+                  </ul>
+              </div>
+              <!--Last foot menu ends -->
+    </div>
+  </div>
+  <!--foot ends-->
+</center>
+</div><!--page wrapper ends-->
+</body>
+<!-- ****************************************************************************************** -->
+</html>
