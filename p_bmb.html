@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- **************************************************************************************************************************** -->
+<!--HEAD starts -->
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Jaiki: Bhaag Milkha Bhaag</title>
+  <!--LINKS starts -->
+    <!-- FAVICON -->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- FONT -->
+      <link href='http://fonts.googleapis.com/css?family=Signika:700,300,400,600' rel='stylesheet' type='text/css'>
+    <!-- styles -->
+      <link rel="stylesheet" type="text/css" href="css/jaiki01.css"/>  
+    <!--hamburger menu script -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+      <script>
+       // DOM ready
+       $(function() {
+         
+          // Create the dropdown base
+          $("<select />").appendTo("nav");
+          
+          // Create default option "Go to..."
+          $("<option />", {
+             "selected": "selected",
+             "value"   : "",
+             "text"    : "Go to..."
+          }).appendTo("nav select");
+          
+          // Populate dropdown with menu items
+          $("nav a").each(function() {
+           var el = $(this);
+           $("<option />", {
+               "value"   : el.attr("href"),
+               "text"    : el.text()
+           }).appendTo("nav select");
+          });
+          
+         // To make dropdown actually work
+         // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+          $("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+          });
+       
+       });</script>
+    <!--go to top -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+      <script>
+          $(document).ready(function () {
+
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 100) {
+                  $('.scrollup').fadeIn();
+              } else {
+                  $('.scrollup').fadeOut();
+              }
+          });
+
+          $('.scrollup').click(function () {
+              $("html, body").animate({
+                  scrollTop: 0
+              }, 600);
+              return false;
+          });
+        });
+      </script>
+    <!--sticker title -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+      
+      <script>
+      $(document).ready(function() {
+      var s = $("#sticker");
+      var img = $(".j-top");
+      var pos = s.position();                    
+      $(window).scroll(function() {
+          var windowpos = $(window).scrollTop();
+          s.html("<h1>Bhaag Milkha Bhaag</h1><h1sub>Film Publicity Design</h1sub>" );
+          if (windowpos >= pos.top + img.height()) {
+              s.addClass("stick");
+          } else {
+              s.removeClass("stick"); 
+          }
+        });
+      });
+      </script>
+
+      <!--go down -->
+      <script>
+          $(document).ready(function () {
+            var img = $(".j-top");
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 200) {
+                  $('.bounce').fadeOut();
+              } else {
+                  $('.bounce').fadeIn();
+              }
+          });
+
+          $('.bounce').click(function () {
+              $("html, body").animate({
+                  scrollTop: 0 + img.height()
+              }, 600);
+              return false;
+          });
+        });
+      </script>
+  </head>
+<!-- **************************************************************************************************************************** -->
+<!--BODY starts-->
+  <body>
+  <div class="page-wrapper" style="background-color:#111">
+  <center>
+  <!--fixbar starts-->
+    <div id="fixbar"  style="background-color:#111">
+      <div id="fixhead">
+          <leftbox>
+              <div class="logo"><a href="index.html"></a></div>
+          </leftbox>
+          <rightbox>
+          <!--main menu menu-->
+              <div class="mm-about"><a href="about.html"></a></div>
+              <div class="mm-notes"><a href="notes.html"></a></div>
+              <div class="mm-projects"><a href="projects.html" class="active"></a></div>
+              <div class="mm-contact"><a href="contact.html"></a></div>  
+          <!--main menu ends-->   
+          </rightbox>
+      </div>
+    </div> 
+    <!--fixbar ends-->
+  <!--go to top button-->
+    <article>
+        <a href="#" class="scrollup">Scroll</a>
+    </article>
+  <!--CENTRAL PART -->
+  <!--contents -->
+    <div class="j-top"><img src="images/projects/bmb/bmb_top.jpg">
+      <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
+    </div>
+    <div class="j-wrapper">
+        <div class="j-title">
+            <span>   
+                <h6>Client</h6>
+                <h4>Marching Ants Advertising<br>Mumbai, India</h4>
+                <h6>Year</h6>
+                <h4>2010 - 2011</h4>
+                <div id="sticker" style="background-color:#111"><h1>Bhaag Milkha Bhaag</h1><h1sub>Film Publicity Design</h1sub></div>
+            </span>                    
+        </div>
+        <div class="j-post">
+            <img src="images/projects/bmb/bmb01.jpg" alt="image01">
+            <img src="images/projects/bmb/bmb02.jpg" alt="image02">
+            <img src="images/projects/bmb/bmb03.jpg" alt="image03">
+            <div class="devider"></div>
+            <img src="images/projects/bmb/bmb04.jpg" alt="image04">
+            <img src="images/projects/bmb/bmb05.jpg" alt="image05">
+            <img src="images/projects/bmb/bmb06.jpg" alt="image06">
+        </div>
+        <div class="clearcolumn"></div>
+    </div>
+    <!--contents ends -->
+<!-- ****************************************************************************************** -->
+<!--foot starts -->
+  <div class="foot">
+    <div class="foot-wrapper">
+      <!--Bread Crumbs starts -->
+              <ul id="crumbs">
+                  <li><a href="index.html" class="first-child">Jaiki Home</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="#" class="active">Bhaag Milkha Bhaag</a></li>
+              </ul>
+      <!--All project list starts -->
+              <div id="footproject">
+                  <ul class="j-album"><span>All Projects</span>
+
+                    <li class='active'>
+                      <a href='p_mrm.html'><img src="images/home/p_mrm_thumb.jpg" alt="Mumbai Rail Map"><span>Mumbai Rail Map<br/><p1album>Information Design</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_olive.html'><img src="images/home/p_olive_thumb.jpg" alt="Olive"><span>Olive telecommunications<br><p1album>Visual Brand Language</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_bonifate.html'><img src="images/home/p_bonifate_thumb.jpg" alt="Bonifate"><span>Bonifate INC.<br/><p1album>Visual Brand Language</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_ggg.html'><img src="images/home/p_ggg_thumb.jpg" alt="Go Goa Gone"><span>Go Goa Gone<br/><p1album>Film Publicity design</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_bmb.html'><img src="images/home/p_bmb_thumb.jpg" alt="Bhaag Milkha Bhaag"><span>Bhaag Milkha Bhaag<br/><p1album>Film Publicity design</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_karauli.html'><img src="images/home/p_karauli_thumb.jpg" alt="Karauli"><span>Karauli Diagnostics<br/><p1album>Observations</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_clive.html'><img src="images/home/p_clive_thumb.jpg" alt="Culture Live"><span>Culture Live<br/><p1album>Visual Brand Language</span></a></li>
+                    
+                    <li>
+                      <a href='p_spring.html'><img src="images/home/p_spring_thumb.jpg" alt="Spring"><span>Spring Infradev<br/><p1album>Visual Brand Language</span></a></li>
+                    
+                    <li>
+                      <a href='p_themagic.html'><img src="images/home/p_themagic_thumb.jpg" alt="The Magic"><span>The Magic<br/><p1album>Fiction Short Film</span></a></li>
+                    
+                    <li>
+                      <a href='p_cezar.html'><img src="images/home/p_cezar_thumb.jpg" alt="Cezar"><span>Cezer . a Shoe with a soul<br/><p1album>Visual Brand Language</p1album></span></a></li>
+                    
+                    <li>
+                      <a href='p_eves24.html'><img src="images/home/p_eves24_thumb.jpg" alt="Eves 24"><span>Eves 24 Jewells<br/><p1album>Visual Brand Language</span></a></li>
+                    
+                    <li>
+                      <a href='p_wlocus.html'><img src="images/home/p_wlocus_thumb.jpg" alt="White Locus"><span>White Locus<br/><p1album>Visual Brand Language</span></a></li>
+                    
+                    <li>
+                      <a href='p_etikoppaka.html'><img src="images/home/p_etikoppaka_thumb.jpg" alt="Etikoppaka"><span>Etikoppaka Toys<br/><p1album>Traditional Knowledge Documentation</span></a></li>
+                    
+                    <li>
+                      <a href='p_bmj.html'><img src="images/home/p_bmj_thumb.jpg" alt="BMJ"><span>BMJ Awards<br/><p1album>Event Branding</span></a></li>
+                    
+                    <li>
+                      <a href='p_semmedu.html'><img src="images/home/p_semmedu_thumb.jpg" alt="Semmedu"><span>Semmedu<br/><p1album>Observations</span></a></li>
+
+                  </ul>
+              </div>
+              <!--All project list ends -->
+      <!--Social starts -->
+              <div id="footmenu2">
+                  <span>Stay Connected<br>with Social Media</span>
+                  <div class="fb"><a href='http://facebook.com/jaiki123/' target="_blank"></a></div>
+                  <div class="tw"><a href='http://twitter.com/jaikishan_patel/' target="_blank"></a></div>
+                  <div class="in"><a href="http://linkedin.com/in/jaiki123/" target="_blank"></a></div>
+                  <div class="blog"><a href='http://thisisjaiki.blogspot.com/' target="_blank"></a></div>
+                  <div class="be120"><a href='https://www.behance.net/jaikishan' target="_blank"></a></div>
+              </div>
+              <!--Social ends -->
+        <!--Last foot menu starts -->
+              <div id="footmenu">
+                  <span>Website Designed and developed by Jaikishan Patel . © 2015 . All Rights Reserved.
+                    <br>Typeface used for the website content - Display Type: Expletus Sans by Jasper de Waard, Body Type: Ek Mukta by Ek Type 
+                  </span>
+
+                  <ul>
+                     <li><a href='disclaimer.html'>Disclaimer and privacy policy</a></li><span>.</span>
+                     <li><a href='contact.html'>Feedbacks and Suggestion</a></li><span>.</span>
+                     <li><a href='contact.html'>Contact</a></li>
+                  </ul>
+              </div>
+              <!--Last foot menu ends -->
+    </div>
+  </div>
+  <!--foot ends-->
+</center>
+</div><!--page wrapper ends-->
+</body>
+<!-- ****************************************************************************************** -->
+</html>

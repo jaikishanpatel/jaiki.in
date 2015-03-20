@@ -1,164 +1,188 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <!-- **************************************************************************************************************************** -->
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Jaiki Home</title>
+<!--HEAD starts -->
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Jaiki: Home</title>
+  <!--LINKS starts -->
     <!-- FAVICON -->
-     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <!--LINKS -->
-    <link rel="stylesheet" type="text/css" href="css/jaiki01.css"/>  
-    <link rel="stylesheet" type="text/css" href="css/homeslider.css"/>
-    <!--LINKS ends -->
-</head>
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- FONT -->
+      <link href='http://fonts.googleapis.com/css?family=Signika:700,300,400,600' rel='stylesheet' type='text/css'>
+      
+    <!-- styles -->
+      <link rel="stylesheet" type="text/css" href="css/jaiki01.css"/>  
+    <!--hamburger menu script -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+      <script>
+       // DOM ready
+       $(function() {
+         
+          // Create the dropdown base
+          $("<select />").appendTo("nav");
+          
+          // Create default option "Go to..."
+          $("<option />", {
+             "selected": "selected",
+             "value"   : "",
+             "text"    : "Go to..."
+          }).appendTo("nav select");
+          
+          // Populate dropdown with menu items
+          $("nav a").each(function() {
+           var el = $(this);
+           $("<option />", {
+               "value"   : el.attr("href"),
+               "text"    : el.text()
+           }).appendTo("nav select");
+          });
+          
+         // To make dropdown actually work
+         // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+          $("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+          });
+       
+       });</script>
+    <!--go to top -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+      <script>
+          $(document).ready(function () {
+
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 100) {
+                  $('.scrollup').fadeIn();
+              } else {
+                  $('.scrollup').fadeOut();
+              }
+          });
+
+          $('.scrollup').click(function () {
+              $("html, body").animate({
+                  scrollTop: 0
+              }, 600);
+              return false;
+          });
+        });
+      </script>
+      <!--go down -->
+      <script>
+          $(document).ready(function () {
+            var img = $(".j-black");
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 100) {
+                  $('.bounce').fadeOut();
+              } else {
+                  $('.bounce').fadeIn();
+              }
+          });
+
+          $('.bounce').click(function () {
+              $("html, body").animate({
+                  scrollTop: 100 + img.height()
+              }, 600);
+              return false;
+          });
+        });
+      </script>
+  <!--LINKS ends -->
+  </head>
 <!-- **************************************************************************************************************************** -->
 <!--BODY starts-->
-<body>
-<center>
-
-    <!--social navigation-->
-    <div id="socialnavigationbar">
-      <div id="box960">
-          <div class="be120"><a href='https://www.behance.net/jaikishan' target="_blank"></a></div>
-          <div class="fb"><a href='http://facebook.com/jaiki123/' target="_blank"></a></div>
-          <div class="tw"><a href='http://twitter.com/jaikishan_patel/' target="_blank"></a></div>
-          <div class="in"><a href="http://linkedin.com/in/jaiki123/" target="_blank"></a></div>
-          <div class="blog"><a href='http://thisisjaiki.blogspot.com/' target="_blank"></a></div>
-     </div>
-    </div><!--social navigation ends-->
-    <!--TOP NAVIGATION BAR-->
-    <div class="topnavigationbar"> 
-          <!--logo-->
-          <div id="topnavigationbarleft"><div><a id="logo" href="index.html"></a></div></div><!--logo ends-->
-          <!--mm1-->
-          <div id="topnavigationbarright">
-              <div id="mm1">
+  <body>
+  <div class="page-wrapper"><!--page background--> 
+  <center>
+  <!--fixbar starts-->
+    <div id="fixbar" style="background-color:#f2f2f2;opacity:1">
+      <div id="fixhead">
+          <leftbox>
+              <div class="logo"><a href="index.html" class="active"></a></div>
+          </leftbox>
+          <rightbox>
+          <!--main menu menu-->
+              <div class="mm-about"><a href="about.html"></a></div>
+              <div class="mm-notes"><a href="notes.html"></a></div>
+              <div class="mm-projects"><a href="projects.html"></a></div>
+              <div class="mm-contact"><a href="contact.html"></a></div>  
+          <!--main menu ends-->   
+          </rightbox>
+      </div>
+    </div> 
+    <!--fixbar ends-->
+  <!--go to top button-->
+    <article>
+        <a href="#" class="scrollup">Scroll</a>
+    </article>
+  <!--contents -->
+        <div class="j-black">
+            <div class="j-top960"><span>Love to Observe, Experience & Design. Focused in Communication Design, believing if there is honest communication, Life can be understood very easily.</span>
+            </div>
+            <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
+        </div>
+        <div class="j-wrapper">
+      <!--PROPJECT ALBUMS starts -->
+            <div id="crumbs">
+                  <li><a href="index.html" class="first-child">Home</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="#" class="active">Mumbai Rail Map</a></li>
+            </div>
+            <ul class="jf-album"><span>Ongoing Design Project</span>
+                <li><a href='p_mrm.html'><img src="images/home/p_mrm.jpg" alt="featured project"><span>Mumbai Rail Map<br><p1album>Information Design</p1album></span></a></li>
+            </ul>
+            
+            <ul class="jh-album"><span>Other Projects</span>
+                <li><a href='p_olive.html'><img src="images/home/p_olive.jpg" alt="image01"><span>Olive telecommunications<br><p1album>Visual Brand Language</p1album></span></a></li>
+                <li><a href='p_ggg.html'><img src="images/home/p_ggg.jpg" alt="image01"><span>Go Goa Gone<br/><p1album>Film Publicity design</p1album></span></a></li>
+                <li  class="last-child"><a href='p_bmb.html'><img src="images/home/p_bmb.jpg" alt="image01"><span>Bhaag Milkha Bhaag<br/><p1album>Film Publicity design</p1album></span></a></li>
+            </ul>
+            <!--Additional links starts -->
+              <div id= "link">
                   <ul>
-                      <li><a href='about.html'><span>Jaikishan Patel</span></a></li>
-                      <li class='last'><a href='contact.html'><span>Contact</span></a></li>
+                      <li><a href="projects.html">View All Projects</a></li>
+                  </ul>
+              </div> 
+      <!--PROJECT ALBUMS ends -->
+      <div class="clearcolumn"></div>
+      
+      </div>
+      <!--contents ends --> 
+  <!-- ****************************************************************************************** -->
+  <!--foot starts -->
+    <div class="foot">
+      <div class="foot-wrapper">
+        
+        <!--Social starts -->
+              <div id="footmenu2">
+                  <span>Stay Connected<br>with Social Media</span>
+                  <div class="fb"><a href='http://facebook.com/jaiki123/' target="_blank"></a></div>
+                  <div class="tw"><a href='http://twitter.com/jaikishan_patel/' target="_blank"></a></div>
+                  <div class="in"><a href="http://linkedin.com/in/jaiki123/" target="_blank"></a></div>
+                  <div class="blog"><a href='http://thisisjaiki.blogspot.com/' target="_blank"></a></div>
+                  <div class="be120"><a href='https://www.behance.net/jaikishan' target="_blank"></a></div>
+              </div>
+              <!--Social ends -->
+        <!--Last foot menu starts -->
+              <div id="footmenu">
+                  <span>Website Designed and developed by Jaikishan Patel . © 2015 . All Rights Reserved.
+                    <br>Typeface used for the website content - Display Type: Expletus Sans by Jasper de Waard, Body Type: Ek Mukta by Ek Type 
+                  </span>
+
+                  <ul>
+                     <li><a href='disclaimer.html'>Disclaimer and privacy policy</a></li><span>.</span>
+                     <li><a href='contact.html'>Feedbacks and Suggestion</a></li><span>.</span>
+                     <li><a href='contact.html'>Contact</a></li>
                   </ul>
               </div>
-          </div><!--mm1 ends-->
-    </div><!--TOP NAVIGATION BAR ends -->
-
-<!--CENTRAL PART -->
-
-  <!--contents -->
-  <div class="contentbar">
-    <!--slider -->
-    <div id="ei-slider" class="ei-slider">
-      <ul class="ei-slider-large">
-            <li>
-                <img src="images/slider_large/3.jpg" alt="image01"/>
-                <div class="ei-title">
-                    <h2>to Discover</h2>
-                    <h3>from the third point of view</h3>
-                </div>
-            </li>
-            <li>
-                <img src="images/slider_large/ggg.jpg" alt="image02" />
-                <div class="ei-title">
-                    <h2>Creative</h2>
-                    <h3>Duet</h3>
-                </div>
-            </li>
-            <li>
-                <img src="images/slider_large/bmb.jpg" alt="image03" />
-                <div class="ei-title">
-                    <h2>to Express</h2>
-                    <h3>the drama inside</h3>
-                </div>
-            </li>
-            <li>
-                <img src="images/slider_large/bonifate.jpg" alt="image04"/>
-                <div class="ei-title">
-                    <h2>to Find</h2>
-                    <h3>the depth of the nature</h3>
-                </div>
-            </li>
-            <li>
-                <img src="images/slider_large/mrm.jpg" alt="image05"/>
-                <div class="ei-title">
-                    <h2>to Think</h2>
-                    <h3>at each and every boundry</h3>
-                </div>
-            </li>
-            <li>
-                <img src="images/slider_large/5.jpg" alt="image06"/>
-                <div class="ei-title">
-                    <h2>To Behave</h2>
-                    <h3>Type in the mind</h3>
-                </div>
-            </li>
-            <li>
-              <img src="images/slider_large/semmedu.jpg" alt="image07"/>
-                <div class="ei-title">
-                    <h2>Crazy</h2>
-                    <h3>Friend</h3>
-                </div>
-            </li>
-            
-        </ul>
-        <!-- sliderthumbs -->
-        <ul class="ei-slider-thumbs">
-            <li class="ei-slider-element">Current</li>
-            <li><a href="index.html">Slide 1</a><img src="images/slider_large/3_thumb.jpg" alt="thumb01" /></li>
-            <li><a href="#">Slide 2</a><img src="images/slider_large/ggg_thumb.jpg" alt="thumb02" /></li>
-            <li><a href="#">Slide 3</a><img src="images/slider_large/bmb_thumb.jpg" alt="thumb03" /></li>
-            <li><a href="#">Slide 4</a><img src="images/slider_large/bonifate_thumb.jpg" alt="thumb04" /></li>
-            <li><a href="#">Slide 5</a><img src="images/slider_large/mrm_thumb.jpg" alt="thumb05" /></li>
-            <li><a href="#">Slide 6</a><img src="images/slider_large/5_thumb.jpg" alt="thumb06" /></li>
-            <li><a href="#">Slide 7</a><img src="images/slider_large/semmedu_thumb.jpg" alt="thumb07" /></li>
-        </ul>
-        <!-- sliderthumbs ends -->
-    </div>
-    <!-- slider ends -->
-            
-     
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-      <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
-      <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-      <script type="text/javascript">
-          $(function() {
-              $('#ei-slider').eislideshow({
-                  animation			: 'center',
-                  autoplay			: true,
-                  slideshow_interval	: 3000,
-                  titlesFactor		: 0
-              });
-          });
-      </script>
-  </div>
-  <div style="height:70px"></div>
-  <div class="imagebox2"><img src="images/coming.jpg"></div>
-  
-
-  <div class="clearcolumn"></div>
-
-  
- 
-
-    
-<!--CENTRAL PART ends ---------------------------------------------------------------------->
-
-  <!--footer starts -->
-  <div id="footer">
-      <div id="footerbar">
-          <spaceleft>  
-              <div id="footmenu">
-                <text>Designed and developed by Jaikishan Patel &nbsp; | &nbsp; Copyright © 2014 . All Rights Reserved.</text>
-                <ul>
-                  <li><a href='disclaimer.html'>Disclaimer and privacy policy</a></li><c2>&nbsp; | &nbsp;</c2>
-                  <li><a href='contact.html'>Feedback and Suggestion</a></li><c2>&nbsp; | &nbsp;</c2>
-                  <li><a href='contact.html'>Contact</a></li>
-                </ul>
-              </div>
-          </spaceleft> 
+              <!--Last foot menu ends -->
       </div>
-  </div><!--footer ends-->
-
-</center>
-</body>
+    </div>
+    <!--foot ends-->
+  </center>
+  </div><!--page wrapper ends-->
+  </body>
 <!-- **************************************************************************************************************************** -->
 </html>
+
+
+
