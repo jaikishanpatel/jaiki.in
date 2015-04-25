@@ -4,7 +4,7 @@
 	@import url('http://fonts.googleapis.com/css?family=Signika:700,300,400,600');
 	@import url('http://fonts.googleapis.com/css?family=Ek+Mukta:200,300,400,500,600,700,800');
 
-	body,div,dl,dt,dd,ul,ol,li,h1,h1mm,h1sub,h2,h3,h4,h5,h6,p1,p1mm,p2,p3,c1,c2{ margin:0;padding:0;}
+	body,div,dl,dt,dd,ul,ol,li,h1,h1mm,h1sub,h2,h3,h4,h5,h6,h7,h8,p1,p1mm,p2,p3,c1,c2{ margin:0;padding:0;}
 	ol,ul {list-style:none;}
 	html,body { margin:0;padding:0; font-family: 'Ek Mukta', sans-serif; background-color: #111;}
 	hr{ color:#666; opacity:.2; margin:15px 0px 10px 0px; border-style: solid; border-width: 1px; width: 100%}
@@ -17,6 +17,7 @@
 	.devider{clear: both;border-bottom: rgba(200,200,200,0.5) 5px solid; width:auto; height: 50px; margin: 20px 0 40px 0; }
 /* wrapper */
 	.page-wrapper{background-color: #fff;}
+	.page-wrapper-black{background-color: #111;}
 
 	.j-black{width:100%;padding: 60px 0 60px 0; height:auto;position:relative;float:center;overflow: hidden;
 			background: -webkit-linear-gradient(#eee,#f7f7f7,#fbfbfb,#fff,#fff); /* For Safari 5.1 to 6.0 */
@@ -67,7 +68,7 @@
 	}
 
 /* M M FIXBAR style set */
-	#fixbar{position:fixed; width:100%;height:auto; z-index:9999; background-color: #fff; opacity: .95; }
+	#fixbar{position:fixed; width:100%;height:auto; z-index:9999; background-color: #111; opacity: .95; }
 	#fixbar:hover{opacity: .95;}
 	#fixhead{max-width:960px; height:60px;border-bottom: #fafafa 0px solid;}
 	#fixhead leftbox{ width:auto; float:left;}
@@ -128,7 +129,11 @@
 
 	h4 {font-weight:500; color:#666; font-size: 9pt; line-height:1.4;}
 	h5 {font-weight:100; color:#666; font-size: 12pt; line-height:1.4;}
-	h6 {font-weight:100; color:#666; font-size: 7pt; line-height:1.4;margin-top: 0.8em;}
+	h6 {font-weight:00; color:#666; font-size: 7pt; line-height:1.4;margin-top: 0.8em;}
+	/* title for logos */
+	h7 {font-weight:500; color:#666; font-size: 9pt; line-height:1.6;}
+	h8 {font-weight:300; color:#999; font-size: 7pt; line-height:1.6;}
+
 
 	p1 {font-weight:100; color:#666; font-size: 14pt; line-height:1.4;}
 	p2 {font-weight:400; color:#666; font-size: 14pt; line-height:1.4;}
@@ -138,15 +143,20 @@
 
 
 /* FOOT style set */
-	.foot{width:100%; float: left;height:auto; background-color:#fff;position: absolute; z-index:5000;}
+	.foot{width:100%; float: left;height:auto; background-color:#fff;position: absolute; z-index:5000; padding-bottom: 30px;}
 	.foot-wrapper{width:100%; max-width:960px;height:auto;z-index:5000;}
 	c2 { float:left; color:#CCC; text-align:left;font-size:12px;}
 
 	#footproject{clear: both; float:left; width:100%; margin:20px 0 60px 0; text-align: left; }
-	#footmenu2	{clear: both; float:left; width:100%;border-top:rgba(200,200,200,0.1) 1px solid; padding:20px 0 20px 0; text-align: left; }
+	#footmenu2	{clear: both; float:left; width:100%;border-top:rgba(200,200,200,0.1) 1px solid; padding:30px 0 20px 0; text-align: left; }
 		#footmenu2 span 	{float:left;color:#666; opacity:.5;text-decoration:none;font-size: 10px; line-height:1.4;padding:.5em 2em 0 .2em;}
 		
-		.be120, .be, .fb, .tw, .in, .blog{margin: 0px 5px 0px 0px;  float:left;}
+		.typemagic, .be120, .be, .fb, .tw, .in, .blog{margin: 0px 5px 0px 0px;  float:left;}
+
+		.magictype a 		{outline: none; text-indent: -5000px; display:block; width:150px; height:72px; background:url(../images/magictype.png) 0 0 no-repeat;  }
+		.magictype a:hover 	{background-position: 0 -72px;}
+		.magictype a:active {background-position: 0 -144px;}
+
 		.be120 a 		{outline: none; text-indent: -5000px; display:block; width:100px; height:36px; background:url(../images/be.png) 0 0 no-repeat;}
 		.be120 a:hover 	{background-position: 0 -36px;}
 		.be120 a:active {background-position: 0 -72px;}
@@ -166,7 +176,7 @@
 		.blog a:hover 	{background-position: 0 -36px;}
 		.blog a:active 	{background-position: 0 -72px;}
 	
-	#footmenu {clear: both; float: left; width:100%;border-top:rgba(200,200,200,0.1) 1px solid;  padding:30px 0 50px 0;line-height:1.8;  text-align: left; }
+	#footmenu {clear: both; float: left; width:100%;border-top:rgba(200,200,200,0.1) 0px solid;  padding:20px 0 20px 0;line-height:1.8;  text-align: left; }
 		#footmenu span:before{content:"";}
 		#footmenu span 	{float:left;color:#666; opacity:.5;text-decoration:none;font-size: 10px;padding:0 .2em 0 .2em;}
 		#footmenu ul 	{width:100%;list-style:none; float:left;}
@@ -289,7 +299,7 @@
 
 /* bread crumb */
 	ul, li 			{list-style-type:none;font-size: 10px;}
-	#crumbs 		{width:100%;float:left;margin: 20px 0 20px 0; padding-bottom: 20px; border-bottom: #f2f2f2 2px solid;  height:auto;}
+	#crumbs 		{width:100%;float:left;margin: 20px 0 20px 0; padding-bottom: 0px; border-bottom: #f2f2f2 0px solid;  height:auto;}
 	#crumbs li 		{float:left; color:#666;}
 	#crumbs li a 	{display:block;padding:10px 40px 10px 2px;background:url(../images/breadcrumb_spacer.png) no-repeat right center;}
 	#crumbs li a:link, #crumbs li a:visited {text-decoration:none;color:#666;}
