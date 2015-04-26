@@ -4,14 +4,15 @@
 <!--HEAD starts -->
   <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Contact</title>
+      <title>MagicType: Home</title>
   <!--LINKS starts -->
     <!-- FAVICON -->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+      <link rel="shortcut icon" type="image/x-icon" href="magictype.ico" />
     <!-- FONT -->
       <link href='http://fonts.googleapis.com/css?family=Signika:700,300,400,600' rel='stylesheet' type='text/css'>
+      
     <!-- styles -->
-      <link rel="stylesheet" type="text/css" href="css/jaiki01.css"/>  
+      <link rel="stylesheet" type="text/css" href="css/magictype01.css"/>  
     <!--hamburger menu script -->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
       <script>
@@ -65,26 +66,44 @@
           });
         });
       </script>
+      <!--go down -->
+      <script>
+          $(document).ready(function () {
+            var img = $(".j-black");
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 100) {
+                  $('.bounce').fadeOut();
+              } else {
+                  $('.bounce').fadeIn();
+              }
+          });
+
+          $('.bounce').click(function () {
+              $("html, body").animate({
+                  scrollTop: 100 + img.height()
+              }, 600);
+              return false;
+          });
+        });
+      </script>
   <!--LINKS ends -->
   </head>
 <!-- **************************************************************************************************************************** -->
 <!--BODY starts-->
   <body>
-  <div class="page-wrapper">
+  <div class="page-wrapper"><!--page background--> 
   <center>
   <!--fixbar starts-->
-    <div id="fixbar" style="opacity:1">
+    <div id="fixbar" style="background-color:#111;opacity:1">
       <div id="fixhead">
           <leftbox>
-              <div class="logo"><a href="index.html"></a></div>
+              <div class="logo"><a href="index.html" class="active"></a></div>
           </leftbox>
           <rightbox>
-            <!--main menu menu-->
-              <div class="mm-about"><a href="about.html"></a>About</div>
-              <div class="mm-notes"><a href="notes.html"></a>Notes</div>
-              <div class="mm-projects"><a href="projects.html"></a>Projects</div>
-              <div class="mm-contact"><a href="contact.html" class="active"></a>Contact</div>  
-          <!--main menu ends-->  
+          <!--main menu menu-->
+              
+              
+          <!--main menu ends-->   
           </rightbox>
       </div>
     </div> 
@@ -94,36 +113,30 @@
         <a href="#" class="scrollup">Scroll</a>
     </article>
   <!--contents -->
-  <div class="j-black">
-    <div class="j-top960"><img src="images/contact.jpg"></div>
-    <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
-  </div>
+        <div class="j-black">
+            <div class="j-top960"><span>MagicType is a platform to explore, discuss, share and criticise the fine aesthetics of letterforms.</span>
+            </div>
+            <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
+        </div>
         <div class="j-wrapper">
-              <span>
-                <h2>Jaikishan Patel</h2>
-                <br>
-                <p1>Industrial Design Centre,<br> Indian Institute of technology Bombay<br>
-                 Powai, Mumbai - 400076, INDIA</p1>
-              </span>
-          </div>  
-          <div class="j-wrapper">
-              <span>
-                <h6>e-mail:</h6>
-                <p2>jaikishan@iitb.ac.in</p2> 
-              </span>
-          </div>     
-
-    <div class="clearcolumn"></div><br><br><br><br>
-    <!--contents ends -->
+      <!--PROPJECT ALBUMS starts -->
+            
+            
+            <!--Additional links starts -->
+              <div id= "link">
+                  <ul>
+                      <li><h1>Coming this Monsoon</h1><br><h5>Please Check Back Soon</h5></li>
+                  </ul>
+              </div> 
+      <!--PROJECT ALBUMS ends -->
+      <div class="clearcolumn"></div>
+      
+      </div>
+      <!--contents ends --> 
   <!-- ****************************************************************************************** -->
   <!--foot starts -->
     <div class="foot">
       <div class="foot-wrapper">
-        <!--Bread Crumbs starts -->
-              <ul id="crumbs">
-                  <li><a href="index.html" class="first-child">Jaiki Home</a></li>
-                  <li><a href="#" class="active">Contact</a></li>
-              </ul>
         
         <!--Social starts -->
               <div id="footmenu2">
@@ -133,24 +146,31 @@
                   <div class="in"><a href="http://linkedin.com/in/jaiki123/" target="_blank"></a></div>
                   <div class="blog"><a href='http://thisisjaiki.blogspot.com/' target="_blank"></a></div>
                   <div class="be120"><a href='https://www.behance.net/jaikishan' target="_blank"></a></div>
-              </div>
+                </div>
+
+              
               <!--Social ends -->
-              <div id="footmenu">
-                  <h7>Type Medium Explorations<h7><br>
-                  <h8>Website<h8>
-                  <div class="magictype"><a href='magictype.html'></a></div>
-              </div>
         <!--Last foot menu starts -->
               <div id="footmenu">
                   <span>Website Designed and developed by Jaikishan Patel . © 2015 . All Rights Reserved.
                     <br>Typeface used for the website content - Display Type: Expletus Sans by Jasper de Waard, Body Type: Ek Mukta by Ek Type 
                   </span>
-
                   <ul>
-                     <li><a href='disclaimer.html'>Disclaimer and privacy policy</a></li><span>.</span>
-                     <li><a href='contact.html'>Feedbacks and Suggestion</a></li><span>.</span>
-                     <li><a href='contact.html'>Contact</a></li>
+                     
+                     <li><a href="mailto:jaiksworld@gmail.com">Feedbacks and Suggestion: jaiksworld@gmail.com</a></li><span>.</span>
+                     <li><a href="mailto:jaikishan.ac.in">For Queries: jaikishan@iitb.ac.in</a></li>
                   </ul>
+              </div>
+              <div id="footmenu">
+                  <span></span>
+                  
+                  <div class="jaiki"><a href='http://jaiki.in/' target="_blank"></a></div>
+                  
+              </div>
+              <div id="footmenu">
+                  <span>
+                  </span>
+                  
               </div>
               <!--Last foot menu ends -->
       </div>
@@ -159,5 +179,8 @@
   </center>
   </div><!--page wrapper ends-->
   </body>
-<!-- ****************************************************************************************** -->
+<!-- **************************************************************************************************************************** -->
 </html>
+
+
+
