@@ -1,0 +1,176 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Jaiki:: Projects: Moving Images</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FAVICON for all pages -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- styles for all pages -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" type="text/css" href="css/jaiki01.css"/>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--go to top -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script>
+              $(document).ready(function () {
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 100) {
+                      $('.scrollup').fadeIn();
+                  } else {
+                      $('.scrollup').fadeOut();
+                  }
+              });
+              $('.scrollup').click(function () {
+                  $("html, body").animate({
+                      scrollTop: 0
+                  }, 600);
+                  return false;
+              });
+            });
+        </script>
+    <!--go down -->
+        <script>
+              $(document).ready(function () {
+                var img = $(".j-black");
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 100) {
+                      $('.bounce').fadeOut();
+                  } else {
+                      $('.bounce').fadeIn();
+                  }
+              });
+              $('.bounce').click(function () {
+                  $("html, body").animate({
+                      scrollTop: 100 + img.height()
+                  }, 600);
+                  return false;
+              });
+            });
+        </script>   
+    </head>
+
+<!-- ********************************************************************************** -->
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  <div class="page-wrapper">
+  <center>
+  <!--fixbar starts-->
+    <div id="fixbar" style="opacity:1">
+      <div id="fixhead">
+          <leftbox>
+              <div class="logo"><a href="index.html"></a></div>
+          </leftbox>
+          <rightbox>
+          <!--main menu menu-->
+              <div class="mm-about"><a href="about.html">About</a></div>
+              <div class="mm-notes"><a href="notes.html">Notes</a></div>
+              <div class="mm-projects"><a href="projects.html" class="active">Projects</a></div>
+              <div class="mm-contact"><a href="contact.html">Contact</a></div>  
+          <!--main menu ends-->   
+          </rightbox>
+      </div>
+    </div> 
+    <!--fixbar ends-->
+  <!--go to top button starts-->
+    <article>
+        <a href="#" class="scrollup">Scroll</a>
+    </article>
+  <!--contents starts -->
+    <div class="j-top2">
+        <!--bar starts-->
+        <div id="bar"></div><!--bar ends-->
+        <div class="j-top960"><span><br>Design Projects & Case Studies<br></span>
+          <ul>
+              <div class="filter">
+                <ul>
+                  <li><a href="projects.html">All projects</a></li>
+                  <li><a href="projects_graphic.html">Graphic Design</a></li>
+                  <li><a href="projects_identity.html">Identity Design</a></li>
+                  <li><a href="projects_branding.html">Visual Brand Language</a></li>
+                  <li><a href="projects_publicity.html">Publicity Design</a></li>
+                  <li><a href="projects_films.html" class="active">Moving Images</a></li>
+                </ul>
+              </div>
+          </ul>
+        </div>
+    </div>
+
+    <div class="j-wrapper">
+        <!--PROJECT ALBUMS starts -->
+        <ul class="j-album">
+
+              <!--the magic -->
+                  <li><a href='p_themagic.html'><img src="images/home/p_themagic_thumb.jpg" alt="The Magic">
+                    <span>The Magic<br/><h2 class="tag">Fiction Short Film</h2></span></a></li>
+              
+              </ul><!--PROJECT ALBUMS ends -->  
+        <div class="clearcolumn"></div>
+    </div><!--contents ends -->
+  <!-- ****************************************************************************************** -->
+  <!--foot starts -->
+    <div class="foot">
+      <div class="foot-wrapper">
+
+        <!--Bread Crumbs starts -->
+              <ul id="crumbs">
+                  <li><a href="index.html" class="first-child">Jaiki Home</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="#" class="active">Moving Images</a></li>
+              </ul><!--Bread Crumbs ends -->
+
+        <!--Devider Black -->
+              <div class="devider_black"></div>
+
+        <!--Social starts -->
+              <div id="footmenu2">
+                  <span>Stay Connected with Social Media<br></span>
+                  <ul class="fb"><li><a href='http://facebook.com/jaiki123/' target="_blank"></a></li></ul>
+                  <ul class="tw"><li><a href='http://twitter.com/jaikishan_patel/' target="_blank"></a></li></ul>
+                  <ul class="in"><li><a href="http://linkedin.com/in/jaiki123/" target="_blank"></a></li></ul>
+                  <ul class="blog"><li><a href='http://thisisjaiki.blogspot.com/' target="_blank"></a></li></ul>
+                  <ul class="be120"><li><a href='https://www.behance.net/jaikishan' target="_blank"></a></li></ul>
+              </div><!--Social ends -->
+        
+        <!--Last foot menu starts -->
+              <div id="footmenu">
+                  <span>Website Designed and developed by Jaikishan Patel . © 2015 . All Rights Reserved.
+                    <br>Typeface used for the website content - Display Type: Expletus Sans by Jasper de Waard, Body Type: Ek Mukta by Ek Type 
+                  </span>
+                  <ul>
+                     <li><a href='disclaimer.html'>Disclaimer and privacy policy</a></li><span>.</span>
+                     <li><a href='contact.html'>Feedbacks and Suggestion</a></li><span>.</span>
+                     <li><a href='contact.html'>Contact</a></li>
+                  </ul>
+              </div><!--Last foot menu ends -->
+      </div><!--foot wrapper ends -->
+    </div><!--foot ends-->
+  </div><!--page wrapper ends-->
+
+<!-- ********************************************************************************** -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+        </body>
+    </center>
+</html>
