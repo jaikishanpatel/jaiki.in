@@ -36,7 +36,7 @@
     <!--go down -->
         <script>
               $(document).ready(function () {
-                var img = $(".j-black");
+                var img = $(".page-wrapper-gray");
               $(window).scroll(function () {
                   if ($(this).scrollTop() > 100) {
                       $('.bounce').fadeOut();
@@ -46,7 +46,7 @@
               });
               $('.bounce').click(function () {
                   $("html, body").animate({
-                      scrollTop: 100 + img.height()
+                      scrollTop: 140 + img.height()
                   }, 600);
                   return false;
               });
@@ -94,22 +94,15 @@
     </article>
   <!--CENTRAL PART -->
   <!--contents -->
-    <div class="j-top"><img src="images/projects/bonifate_top.jpg" alt="image_top"/>
+  <div class="page-wrapper-gray"><!--page background gray--> 
+    <div class="j-top960"><img src="images/projects/bonifate_top.jpg" alt="image_top"/></div>
       <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
-    </div>
+    
     <div class="j-wrapper">
         <div class="j-title-top">
-            <span>
-                <h6>Category</h6>
-                <h5>
-                  <li><a href="projects_branding.html">Identity Design</a></li>
-                  <li><a href="projects_branding.html">Visual Brand Language</a></li>
-                  <li><a href="projects_graphic.html">Print</a></li>
-                </h5>
-            </span>
             <span> 
                 <h6>Client</h6>
-                <h5>Bonifate technologies<br>Mumbai, India</h5>
+                <h5>Bonifate technologies Mumbai, India</h5>
             </span>                    
         </div>
         <div class="j-post">
@@ -117,13 +110,17 @@
             <h1>Bonifate INC</h1>
           </span>
         </div>
-        <div class="devider"></div><!-- ///////////////////////////////////////////////// -->
-        <div class="j-title">
+          
+      <div class="clearcolumn"></div>
+      </div><!--j-wrapper ends --> 
+  </div><!--page wrapper gray ends-->
+    <div class="j-wrapper">
+        <div class="j-post960">
             <span>
-                
-            </span>                    
-        </div>
-        <div class="j-post"
+              <h2>Believe . Achieve</h2>
+              <h5>Bonifate<br><br></h5>
+              <p class="medium"></p> 
+            </span>
             <img src="images/projects/bonifate01.jpg" alt="image01"/>
             <img src="images/projects/bonifate02.jpg" alt="image01"/>             
             <img src="images/projects/bonifate03.jpg" alt="image01"/>
@@ -132,6 +129,7 @@
             <img src="images/projects/bonifate06.jpg" alt="image01"/>              
             <img src="images/projects/bonifate07.jpg" alt="image01"/>
             <img src="images/projects/bonifate08.jpg" alt="image01"/>
+                    <div class="devider"></div><!-- ///////////////////////////////////////////////// -->
             <img src="images/projects/bonifate09.jpg" alt="image01"/>              
             <img src="images/projects/bonifate10.jpg" alt="image01"/>
         </div>
@@ -142,6 +140,14 @@
 <!--foot starts -->
   <div class="foot">
     <div class="foot-wrapper">
+    <!--category-->
+              <div class="category"><span>Categories</span>
+                <ul>
+                  <li><a href="projects_identity.html">Identity Design</a></li>
+                  <li><a href="projects_branding.html">Visual Brand Language</a></li>
+                  <li><a href="projects_graphic.html">Print</a></li>
+                </ul>
+              </div>
       <!--Bread Crumbs starts -->
               <ul id="crumbs">
                   <li><a href="index.html" class="first-child">Jaiki Home</a></li>
@@ -154,6 +160,9 @@
       <!--All project list starts -->
           <div id="footproject">
               <ul class="j-album"><span>All Projects</span>
+                  <!--mindon -->
+                      <li><a href='p_mindon.html'><img src="images/home/p_mindon_thumb.jpg" alt="Mind On">
+                        <span>Mind On<br/><h2 class="tag">Identity Design . Visual Brand Language</h2></span></a></li>
                   <!--mumbai rail map -->
                       <li class='active'><a href='p_mrm.html'><img src="images/home/p_mrm_thumb.jpg" alt="Mumbai Rail Map">
                         <span>Mumbai Rail Map<br/><h2 class="tag">Information Design</h2></span></a></li>

@@ -36,7 +36,7 @@
     <!--go down -->
         <script>
               $(document).ready(function () {
-                var img = $(".j-black");
+                var img = $(".page-wrapper-black");
               $(window).scroll(function () {
                   if ($(this).scrollTop() > 100) {
                       $('.bounce').fadeOut();
@@ -46,7 +46,7 @@
               });
               $('.bounce').click(function () {
                   $("html, body").animate({
-                      scrollTop: 100 + img.height()
+                      scrollTop: -50 + img.height()
                   }, 600);
                   return false;
               });
@@ -77,57 +77,44 @@
           <!--main menu ends-->  
           </rightbox>
       </div>
-    </div> 
-    <!--fixbar ends-->
+    </div><!--fixbar ends-->
   <!--go to top button-->
     <article>
         <a href="#" class="scrollup">Scroll</a>
     </article>
   <!--CENTRAL PART -->
   <!--contents -->
-    <div class="j-top2" style="background-color:#000">
-        
+    <div class="page-wrapper-black">
+
         <div class="j-top960" style="padding:200px 0 200px 0">
-          <div class="videoWrapper">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/sqGYFK6wfz4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-              
-          </div>
+          <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/sqGYFK6wfz4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
         </div>
-    </div>
+        <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
+
 
     <div class="j-wrapper">
         <div class="j-title-top">
-            <span>
-                <h6>Category</h6>
-                <h5>
-                  <li><a href="projects_branding.html">Moving Images</a></li>
-                </h5>
-            </span>
             <span> 
-                <h6>Client</h6>
-                <h5>Industrial Design Centre<br>Indian Institute of Technology Bombay, Mumbai, India</h5>
-            </span>
-            <span> 
-                <h6>Year</h6>
-                <h5>2014</h5>
-            </span>                   
+            </span>   
         </div>
         <div class="j-post"> 
             <span>
-                <h1>The Magic</h1>
-                <h6>Cast:</h6>
-                <p>Mridul Basumotari . Prem Lokesh . Pranit Kerkar . Kavita Brahama . Kangkan Sharma, Anupriya Kashyap . Maariful Haque . Kaustubh Limaye & Akhil Kumar</p>
-                <h6>Edited & Directed by:</h6>
-                <p>Jaikishan Patel</p><br>
             </span>
         </div>
-
-        <div class="devider"></div>
-
+      <div class="clearcolumn"></div>
+      </div><!--j-wrapper ends --> 
+  </div><!--page wrapper black ends-->
+    <div class="j-wrapper">
         <div class="j-post960">
             <span> 
-                <p class="medium">a young boy - having no motivation,<br>
+                <h1>The Magic</h1>
+                <h4>Fiction Short Film . 2014 . Running time: 14 minuts</h4><br>
+                <p class="xlarge">a young boy - having no motivation,<br>
                 just got a moment of confidence which seems like <br>'The Magic' never happened before!</p><br>
+                <h6>Edited & Directed by:</h6>
+                <p>Jaikishan Patel</p>
+                <h6>Cast:</h6>
+                <p>Mridul Basumotari . Prem Lokesh . Pranit Kerkar . <br>Kavita Brahama . Kangkan Sharma, Anupriya Kashyap . Maariful Haque . <br>Kaustubh Limaye & Akhil Kumar</p><br><br>
             </span>
             <img src="images/projects/themagic_poster.jpg" alt="poster"/>
             <span> 
@@ -136,14 +123,12 @@
         </div>
 
         <div class="devider"></div>
-
-        <div class="j-title">
+        <div class="j-post960">
             <span>   
                 <h6>The Magic</h6>
                 <h2>Stills from the film</h2>
             </span>
-        </div> 
-        <div class="j-post">
+            
             <img src="images/projects/themagic02.jpg" alt="image02"/>
             <img src="images/projects/themagic03.jpg" alt="image03"/>
             <img src="images/projects/themagic04.jpg" alt="image04"/>
@@ -158,6 +143,12 @@
 <!--foot starts -->
   <div class="foot">
     <div class="foot-wrapper">
+    <!--category-->
+              <div class="category"><span>Categories</span>
+                <ul>
+                  <li><a href="projects_films.html">Moving Images</a></li>
+                </ul>
+              </div>
       <!--Bread Crumbs starts -->
               <ul id="crumbs">
                   <li><a href="index.html" class="first-child">Jaiki Home</a></li>
@@ -170,6 +161,9 @@
       <!--All project list starts -->
           <div id="footproject">
               <ul class="j-album"><span>All Projects</span>
+                  <!--mindon -->
+                      <li><a href='p_mindon.html'><img src="images/home/p_mindon_thumb.jpg" alt="Mind On">
+                        <span>Mind On<br/><h2 class="tag">Identity Design . Visual Brand Language</h2></span></a></li>
                   <!--mumbai rail map -->
                       <li class='active'><a href='p_mrm.html'><img src="images/home/p_mrm_thumb.jpg" alt="Mumbai Rail Map">
                         <span>Mumbai Rail Map<br/><h2 class="tag">Information Design</h2></span></a></li>

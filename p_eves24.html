@@ -36,7 +36,7 @@
     <!--go down -->
         <script>
               $(document).ready(function () {
-                var img = $(".j-black");
+                var img = $(".page-wrapper-gray");
               $(window).scroll(function () {
                   if ($(this).scrollTop() > 100) {
                       $('.bounce').fadeOut();
@@ -46,7 +46,7 @@
               });
               $('.bounce').click(function () {
                   $("html, body").animate({
-                      scrollTop: 100 + img.height()
+                      scrollTop: 140 + img.height()
                   }, 600);
                   return false;
               });
@@ -94,20 +94,12 @@
     </article>
   <!--CENTRAL PART -->
   <!--contents -->
-    <div class="j-top"><img src="images/projects/eves24_top.jpg" alt="image_top"/>
+  <div class="page-wrapper-gray"><!--page background gray--> 
+      <div class="j-top960"><img src="images/projects/eves24_top.jpg" alt="image_top"/></div>
       <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
-    </div>
+    
     <div class="j-wrapper">
         <div class="j-title-top">
-            <span>   
-                <h6>Category</h6>
-                <h5>
-                  <li><a href="projects_branding.html">Identity Design</a></li>
-                  <li><a href="projects_branding.html">Visual Brand Language</a></li>
-                  <li><a href="projects_graphic.html">Print</a></li>
-                </h5>
-            </span>
-            <span> 
                 <h6>Client</h6>
                 <h5>Akhuratha Lifestyle Services pvt. Ltd. Mumbai, India</h5>
             </span>                    
@@ -115,10 +107,22 @@
         <div class="j-post">
             <span>
               <h1>Eves 24</h1>
-              <p>Eve is an aspirational Indian lady who is fashion conscious and wants to look good and beautiful either to be desirable or out of need.</p>
-              <p class="pull">The Novel Startup </p>
-              <p>Jewellery has always been bought in one way i.e. to purchase it from a jeweller in one transaction. For the very first time now you have a choice to buy jewellery on Equated Monthly Instalments (EMI) through EVES24, an online startup. Not only this, you could become a member of our ‘Jewel Charter’ service, an affluent club and have the privilege to explore a great collection of jewellery by paying on usage basis.</p>
+              <h4>New Jewellery. Every Affair</h4>
+              
+              
             </span>
+        </div>
+    <div class="clearcolumn"></div>
+    </div><!--j-wrapper ends --> 
+  </div><!--page wrapper gray ends-->
+
+    <div class="j-wrapper">
+        <div class="j-post960">
+            <span>
+              <p class="xlarge head">The Novel Startup </p>
+              <p>Eve is an aspirational Indian lady who is fashion conscious and wants to look good and beautiful either to be desirable or out of need. Jewellery has always been bought in one way i.e. to purchase it from a jeweller in one transaction. For the very first time now you have a choice to buy jewellery on Equated Monthly Instalments (EMI) through EVES24, an online startup. Not only this, you could become a member of our ‘Jewel Charter’ service, an affluent club and have the privilege to explore a great collection of jewellery by paying on usage basis.</p>
+            </span>
+          
         </div>
         
         <div class="devider"></div><!-- ///////////////////////////////////////////////// -->
@@ -156,6 +160,14 @@
 <!--foot starts -->
   <div class="foot">
     <div class="foot-wrapper">
+    <!--category-->
+              <div class="category"><span>Categories</span>
+                <ul>
+                    <li><a href="projects_identity.html">Identity Design</a></li>
+                    <li><a href="projects_branding.html">Visual Brand Language</a></li>
+                    <li><a href="projects_graphic.html">Print</a></li>
+                </ul>
+              </div>
       <!--Bread Crumbs starts -->
               <ul id="crumbs">
                   <li><a href="index.html" class="first-child">Jaiki Home</a></li>
@@ -168,6 +180,9 @@
       <!--All project list starts -->
           <div id="footproject">
               <ul class="j-album"><span>All Projects</span>
+                  <!--mindon -->
+                      <li><a href='p_mindon.html'><img src="images/home/p_mindon_thumb.jpg" alt="Mind On">
+                        <span>Mind On<br/><h2 class="tag">Identity Design . Visual Brand Language</h2></span></a></li>
                   <!--mumbai rail map -->
                       <li class='active'><a href='p_mrm.html'><img src="images/home/p_mrm_thumb.jpg" alt="Mumbai Rail Map">
                         <span>Mumbai Rail Map<br/><h2 class="tag">Information Design</h2></span></a></li>

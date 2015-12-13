@@ -36,7 +36,7 @@
     <!--go down -->
         <script>
               $(document).ready(function () {
-                var img = $(".j-black");
+                var img = $(".page-wrapper-gray");
               $(window).scroll(function () {
                   if ($(this).scrollTop() > 100) {
                       $('.bounce').fadeOut();
@@ -46,7 +46,7 @@
               });
               $('.bounce').click(function () {
                   $("html, body").animate({
-                      scrollTop: 100 + img.height()
+                      scrollTop: 140 + img.height()
                   }, 600);
                   return false;
               });
@@ -94,51 +94,49 @@
     </article>
   <!--CENTRAL PART -->
   <!--contents -->
-    <div class="j-top"><img src="images/projects/mrmapp_top.jpg" alt="image_top"/>
+  <div class="page-wrapper-gray"><!--page background gray--> 
+    <div class="j-top960"><img src="images/projects/mrmapp_top.jpg" alt="image_top"/></div>
       <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
-    </div>
+    
     <div class="j-wrapper">
-    <!-- TitleTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT -->
         <div class="j-title-top">
-            <span>
-                <h6>Category</h6>
-                <h5>
-                  <li><a href="projects_graphic.html">Information Design</a></li>
-                  <li><a href="projects_graphic.html">User Interface Design</a></li>
-                  <li><a href="projects_graphic.html">Visual Language</a></li>
-                </h5>
-            </span>
-            <span> 
-                <h6>Initiated at</h6>
-                <h5>Industrial Design Centre<br>IIT Bombay, Mumbai</h5>
-            </span>
             <span> 
                 <h6>Supported by</h6>
-                <h5>MHRD . Govt. of India</h5>
-            </span>
-            <span> 
-                <h6>Year</h6>
-                <h5>2013 - 2015</h5>
+                <h5>Ministry of human resource and development, Govt. of India</h5>
             </span>
             <span> 
                 <h6>Explore more at</h6>
-                <h5><a href="http://www.mrmapp.in/" target="_blank">mrmapp.in</a></h5>
-            </span>
+                <h5><a href="http://www.mrmapp.in/" target="_blank">www.mrmapp.in</a></h5>
+            </span>                    
         </div>
-    <!-- PostPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP -->
         <div class="j-post">
           <span>
               <h1>MrmApp</h1>
-              <h2>Design of a travel application for the Mumbai sub-urban rail network (Local, Metro and Mono rail)</h2>
+              <h4>Design of a travel application for the Mumbai sub-urban rail network <br>(Local, Metro and Mono rail)</h4>
 
               <div class="post-link2">
-                  <ul><span></span>
+                  <ul><span>Download the latest application <br>for Android and iOS</span>
                     <li><a href="https://play.google.com/store/apps/details?id=com.glassboxsoftware.mrmapp" target="_blank" class="first-child"><img src="images/playstore.png" alt="mrmapp_android"></a></li>
                     <li><a href="https://itunes.apple.com/us/app/mrm-mumbai-rail-map/id961424719?mt=8" target="_blank"><img src="images/appstore.png" alt="mrmapp_ios"></a></li>
                   </ul>
               </div>
-              <p>After getting user feedback on the Mumbai Rail Map Project through the online media and testing done with the commuters at central railway stations – Mumbai CST & Dadar Central, it is observed that at every moment a large number of regular and new commuters requires help for information. Having a detailed version of railway map can serve the need only when it is installed at the right places. To reach out to a large number of fast moving crowds with well-equipped mobile devices, a mobile application could be more efficient and easily accessible as opposed to the traditional printed map. MrmApp is a step to further assist the commuters with a smoother travelling experience by providing all the required information available at a tap. Download the latest version of <a href="http://www.mrmapp.in/" target="_blank">MrmApp</a> for iOS and Android.</p>
           </span>
+        </div>
+    <div class="clearcolumn"></div>
+    </div><!--j-wrapper ends --> 
+  </div><!--page wrapper gray ends-->
+
+    <div class="j-wrapper">
+        <div class="j-post960">
+            <span>
+              <h2># LoveMumbai</h2>
+              <p class= "large head">Sharing information, thoughts and experiences <br>about Mumbai sub-urban railway</p>
+            </span>
+        <img src="images/projects/mrmapp_top1.jpg" alt="mrmapp_preface1"/>
+            <span>
+              <p class="medium">After getting user feedback on the Mumbai Rail Map Project through the online media and testing done with the commuters at central railway stations – Mumbai CST & Dadar Central, it is observed that at every moment a large number of regular and new commuters requires help for information. Having a detailed version of railway map can serve the need only when it is installed at the right places. To reach out to a large number of fast moving crowds with well-equipped mobile devices, a mobile application could be more efficient and easily accessible as opposed to the traditional printed map. MrmApp is a step to further assist the commuters with a smoother travelling experience by providing all the required information available at a tap. </p>
+            </span>
+          
         </div>
         
         <div class="devider"></div><!-- ///////////////////////////////////////////////// -->
@@ -279,6 +277,14 @@
 <!--foot starts -->
   <div class="foot">
     <div class="foot-wrapper">
+    <!--category-->
+              <div class="category"><span>Categories</span>
+                <ul>
+                    <li><a href="projects_graphic.html" class="first-child">Information Design</a></li>
+                    <li><a href="projects_graphic.html">User Interface Design</a></li>
+                    <li><a href="projects_graphic.html">Visual Language</a></li>
+                </ul>
+              </div>
       <!--Bread Crumbs starts -->
               <ul id="crumbs">
                   <li><a href="index.html" class="first-child">Home</a></li>
@@ -291,6 +297,9 @@
       <!--All project list starts -->
           <div id="footproject">
               <ul class="j-album"><span>All Projects</span>
+                  <!--mindon -->
+                      <li><a href='p_mindon.html'><img src="images/home/p_mindon_thumb.jpg" alt="Mind On">
+                        <span>Mind On<br/><h2 class="tag">Identity Design . Visual Brand Language</h2></span></a></li>
                   <!--mumbai rail map -->
                       <li class='active'><a href='p_mrm.html'><img src="images/home/p_mrm_thumb.jpg" alt="Mumbai Rail Map">
                         <span>Mumbai Rail Map<br/><h2 class="tag">Information Design</h2></span></a></li>

@@ -36,7 +36,7 @@
     <!--go down -->
         <script>
               $(document).ready(function () {
-                var img = $(".j-black");
+                var img = $(".page-wrapper-gray");
               $(window).scroll(function () {
                   if ($(this).scrollTop() > 100) {
                       $('.bounce').fadeOut();
@@ -46,7 +46,7 @@
               });
               $('.bounce').click(function () {
                   $("html, body").animate({
-                      scrollTop: 100 + img.height()
+                      scrollTop: 140 + img.height()
                   }, 600);
                   return false;
               });
@@ -95,51 +95,38 @@
     </article>
   <!--CENTRAL PART -->
   <!--contents -->
-    <div class="j-top"><img src="images/projects/mrm_top.jpg" alt="image_top"/>
+
+  <div class="page-wrapper-gray"><!--page background gray--> 
+      <div class="j-top960"><img src="images/projects/mrm_top.jpg" alt="image_top"/></div>
       <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
-    </div>
-    <div class="j-wrapper">
-    <!-- TitleTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT -->
-        <div class="j-title-top">
-            <span>
-                <h6>Category</h6>
-                <h5>
-                  <li><a href="projects_graphic.html">Information Design</a></li>
-                  <li><a href="projects_graphic.html">Print</a></li>
-                  <li><a href="projects_graphic.html">Visual Language</a></li>
-                </h5>
-            </span>
-            <span> 
-                <h6>Initiated at</h6>
-                <h5>Industrial Design Centre<br>IIT Bombay, Mumbai</h5>
-            </span>
+      <div class="j-wrapper">
+          <div class="j-title-top">
             <span> 
                 <h6>Supported by</h6>
-                <h5>MHRD . Govt. of India</h5>
-            </span>
-            <span> 
-                <h6>Year</h6>
-                <h5>2013 - 2015</h5>
+                <h5>Ministry of human resource and development, Govt. of India</h5>
             </span>
             <span> 
                 <h6>Explore more at</h6>
-                <h5><a href="http://www.mrmapp.in/" target="_blank">mrmapp.in</a></h5>
+                <h5><a href="http://www.mrmapp.in/" target="_blank">www.mrmapp.in</a></h5>
             </span>                    
         </div>
-    <!-- PostPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP -->
         <div class="j-post">
           <span>
               <h1>Mumbai Rail Map</h1>
-              <h2>Design of the Mumbai Suburban Rail Map<br></h2>
-              <h5>मुंबई रेल नक्शा .  ممبئی ریل کا نقشہ . मुंबई रेल नकाशा . મુંબઈ રેલ નક્શો<br><br></h5>
-              <p>Since the first Mumbai Rail Map launch in December 2013, the project has grown due to the perseverance of a motivated team, and the encouragement and feedback from the people of Mumbai.
-              After completing the Version 5 of the Mumbai Rail map, it was tested at Dadar and CST Railways stations with commuters with permission from central Railways and support of Railway board Delhi and IIT Bombay. The current version 6 of the print map included many of the Insights from the user feedback. <br><br> The latest version 6 of the MRM are available in <a href="download/v6_mrm_hindi.jpg" target="_blank">Hindi</a>, <a href="download/v6_mrm_marathi.jpg" target="_blank">Marathi</a>, Gujarati, Urdu & <a href="download/v6_mrm_english.jpg" target="_blank">English</a> languages</p>
+              <h4>The latest version 6 of the MRM are available for download <br>in <a href="download/v6_mrm_hindi.jpg" target="_blank">Hindi</a>, <a href="download/v6_mrm_marathi.jpg" target="_blank">Marathi</a>, Gujarati, Urdu & <a href="download/v6_mrm_english.jpg" target="_blank">English</a> languages</h4>
           </span>
         </div>
-        
-        <div class="devider"></div><!-- ///////////////////////////////////////////////// -->
-    <!-- PostPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP -->
+      <div class="clearcolumn"></div>
+      </div><!--j-wrapper ends --> 
+  </div><!--page wrapper gray ends-->
+
+    <div class="j-wrapper">
         <div class="j-post960">
+            <span>
+              <h2>Design of the Mumbai Suburban Rail Map</h2>
+              <h5>मुंबई रेल नक्शा .  ممبئی ریل کا نقشہ . मुंबई रेल नकाशा . મુંબઈ રેલ નક્શો<br><br></h5>
+              <p class="medium">Since the first Mumbai Rail Map launch in December 2013, the project has grown due to the perseverance of a motivated team, and the encouragement and feedback from the people of Mumbai. After completing the Version 5 of the Mumbai Rail map, it was tested at Dadar and CST Railways stations with commuters. The current version 6 of the print map included many of the Insights from the user feedback. <br><br> The latest version 6 of the MRM are available in <a href="download/v6_mrm_hindi.jpg" target="_blank">Hindi</a>, <a href="download/v6_mrm_marathi.jpg" target="_blank">Marathi</a>, Gujarati, Urdu & <a href="download/v6_mrm_english.jpg" target="_blank">English</a> languages</p>
+          </span>
             <img src="images/projects/mrm01.jpg" alt="image01"/>
         </div>
           
@@ -363,6 +350,14 @@
 <!--foot starts -->
   <div class="foot">
     <div class="foot-wrapper">
+    <!--category-->
+              <div class="category"><span>Categories</span>
+                <ul>
+                    <li><a href="projects_graphic.html" class="first-child">Information Design</a></li>
+                    <li><a href="projects_graphic.html">Print</a></li>
+                    <li><a href="projects_graphic.html">Visual Language</a></li>
+                </ul>
+              </div>
       <!--Bread Crumbs starts -->
               <ul id="crumbs">
                   <li><a href="index.html" class="first-child">Jaiki Home</a></li>
@@ -374,6 +369,9 @@
       <!--All project list starts -->
           <div id="footproject">
               <ul class="j-album"><span>All Projects</span>
+                  <!--mindon -->
+                      <li><a href='p_mindon.html'><img src="images/home/p_mindon_thumb.jpg" alt="Mind On">
+                        <span>Mind On<br/><h2 class="tag">Identity Design . Visual Brand Language</h2></span></a></li>
                   <!--mumbai rail map -->
                       <li class='active'><a href='p_mrm.html'><img src="images/home/p_mrm_thumb.jpg" alt="Mumbai Rail Map">
                         <span>Mumbai Rail Map<br/><h2 class="tag">Information Design</h2></span></a></li>
