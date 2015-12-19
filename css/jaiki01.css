@@ -2,6 +2,7 @@
 /* CSS Document */
 	@import url('http://fonts.googleapis.com/css?family=Expletus+Sans:600,700,400,500');
 	@import url('http://fonts.googleapis.com/css?family=Ek+Mukta:200,300,400,500,600,700,800');
+	@import url('http://fonts.googleapis.com/css?family=Alice');
 
 	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{ margin:0;padding:0;}
 	ol, {list-style:none;}
@@ -128,9 +129,11 @@
 
 /* wrapper */
 	.page-wrapper{background-color: #fafafa; }
-	.page-wrapper-gray{background-color: #f2f2f2; padding-bottom: 80px;margin-bottom: 60px;}
+	.page-wrapper-gray{background-color: #f2f2f2; padding-bottom: 80px;margin-bottom: 0px;}
 	.page-wrapper-black{background-color: #000;}
-	.page-wrapper-blue{background-color: #f2f2f2;}
+	.page-wrapper-blue{background-color: #4db5d8;}
+	.page-wrapper-grayf2f2f2{background-color: #f2f2f2;}
+	.page-wrapper-grayfafafa{background-color: #fafafa;}
 	/* background for 2nd menu header */
 	.j-top2{width:100%; padding: 0px 0px 40px 0px; margin-bottom:0px; height:auto; position:relative; float:center; overflow:hidden;background-color: #f2f2f2;}
 
@@ -139,8 +142,8 @@
 
 	.j-top960{width:100%; max-width: 960px; position:relative;overflow: hidden; text-align: left;}
 		.j-top960 img 	{float:left; width:100%; position:relative; overflow: hidden;}
-		.j-top960 span 	{float:left; width:100%; height: auto; position:relative; font-family: 'Expletus Sans', Lucida Sans Unicode, sans-serif; letter-spacing: -.02em;  
-						font-weight:800; color: #ccc; font-size: 24pt; line-height:1.4; text-align: left; padding: 0 10px 0px 0;margin-bottom: .5em;}
+		.j-top960 span 	{float:left; width:100%; height: auto; position:relative; font-family: 'Alice', Lucida Sans Unicode, sans-serif; letter-spacing: -.02em;  
+						color: #ccc; font-size: 24pt; line-height:1.4; text-align: left; padding: 0 10px 0px 0;margin-bottom: .5em;}
 	
 	.j-wrapper{clear:both; width:960px;text-align: left;}
 		.j-title-top 		{width:220px;position:relative; float: left; margin: 20px 40px 00px 00px; text-align: left; clear:both;}
@@ -187,19 +190,22 @@
 
 	  .j-post960 		{width:100%;}
 	  .j-post960 span 	{width:100%; position:relative;}
+
+	  .j-post700 		{width:95%; padding: 0 2.5% 0 2.5%;}
+		.j-post700 span {width:100%; }
 	}
 
-/* content */
+/* content column wrap*/
 	.clearcolumn { clear: both;}
 
 /* all projects links list style set */
 		.link 				{float:left; width:100%;text-align: left; padding: 60px 0px 20px 0px;}
 		.link ul 			{float:left; display:block; list-style:none; margin: 0px 20px 20px 0;}
 		.link ul img		{float:left; display:inline;}
-		.link ul span		{float:left; display:block; font-size: 18pt; min-width: 180px; font-weight: 100; color: #111; padding-bottom: 10px; margin: 20px 0px 10px 0; }
+		.link ul span		{ font-family: 'Alice', Lucida Sans Unicode, sans-serif;float:left; display:block; font-size: 18pt; min-width: 180px; font-weight: 100; color: #111; padding-bottom: 10px; margin: 20px 0px 10px 0; }
 
 		.link ul li 		{display:block; padding: 0px 20px 0px 0px; }
-		.link ul li a 		{display:inline; text-decoration:none; position: relative; font-size: 14pt; font-weight:100; line-height: 1.6; color:#777; padding: 5px 5px 5px 0px;}
+		.link ul li a 		{display:inline; text-decoration:none; position: relative; font-size: 14pt; font-weight:100; line-height: 1.6; color:#666; padding: 5px 5px 5px 0px;}
 		.link ul li a:hover {text-decoration:none; color:#111;}
 		@media screen and (max-width: 960px) 
 		{
@@ -223,7 +229,7 @@
 		.j-album li a:hover 		{opacity:.95; box-shadow:0px 0px 0px 0px #e2e2e2;}
 		.j-album li a img 			{max-width:100%; display: block; overflow:hidden;}
 		/* thumb hover overlay text */
-		.j-album li a span 			{float:left; opacity:1; position: relative; width: 80%; height: auto; padding: 15px 20px 15px 20px;color: #111; font-weight:300; font-size: 16px;}
+		.j-album li a span 			{float:left; opacity:1; position: relative; width: 80%; height: auto; padding: 15px 20px 15px 20px;color: #111; font-weight:300; font-size: 18px;}
 		.j-album li a:hover span 	{color: #666;}
 			@media screen and (max-width: 960px) 
 			{
@@ -308,12 +314,12 @@
 /* HOME POST projects album */
 	.homepost					{float:left; width:100%; padding: 10px 0 60px 0;}
 	.homepost ul				{list-style: none;}
-	.homepost li 				{float:left; list-style: none; position: relative; padding: 0px;}
-	.homepost li span 			{float:left; width:100%; max-width: 600px; padding: 10px 40px 20px 0;font-weight:100; color: #333; font-size: 14pt; line-height: 1.4;}
+	.homepost li 				{float:left; list-style: none; position: relative;}
+	.homepost li span 			{float:left; width:100%; max-width: 600px; padding: 10px 40px 10px 0;font-weight:100; color: #666; font-size: 14pt; line-height: 1.4;}
 	/* overlay*/
 	.homepost li a 				{opacity:1; width:100%; max-width: 960px; position:relative; overflow:hidden;}
 	.homepost li a:hover 		{opacity:.90;}
-	.homepost li a img 			{max-width:100%; display:block; overflow:hidden;}	
+	.homepost li a img 			{max-width:100%; display:block; overflow:hidden; margin-bottom: 15px;}	
 		@media screen and (max-width: 960px) 
 		{
 		  .homepost					{width:100%; margin: 20px 0 0px 0;}
@@ -339,15 +345,15 @@
 			  .post-thumb li a span 	{width:100%;}
 			}
 	/* HOME POST foot text links style set */
-		.post-link 					{float:left; width:100%; margin: 20px 0px 10px 0px;}
+		.post-link 					{float:left; width:100%; padding: 20px 0px 0px 0px; margin: 10px 0px 0px 0px; border-top: #ccc 1px solid;}
 		.post-link ul 				{float:left; list-style:none; width: auto;}
 		.post-link ul li a img 		{float:left; width:auto;display: inline; }
-		.post-link ul li 			{float:left; display:inline ; font-size: 12pt; margin: 0px 20px 10px 0; font-weight: 100; }
-		.post-link ul li a 			{float:left; opacity: 1; color:#999; display: block; text-decoration:none; padding: 2px 0px 2px 0px;}
+		.post-link ul li 			{float:left; display:inline ; font-size: 12pt; margin: 0px 20px 10px 0; font-weight: 100;}
+		.post-link ul li a 			{float:left; opacity: 1;display: block; text-decoration:none; padding: 0px 0px 0px 20px;  background:url(../images/go_arrow.png) 0 50% no-repeat;}
 		.post-link ul li a:hover 	{opacity:.8; display:block; text-decoration:none;}
 		.post-link ul li:first-child{padding-left: 0pt;}
 	/* HOME POST foot button links style set */
-		.post-link2 				{float:left; width:100%; margin: 0px 0px 10px 0px;}
+		.post-link2 				{float:left; width:100%; margin: 0px 0px 0px 0px;}
 		.post-link2 ul 				{float:left; list-style:none; width: auto;}
 		.post-link2 ul span 		{width:100%; max-width: 600px;float: left; color: #ccc; font-size: 14pt; font-weight: 100;  padding:10px 0 10px 0;}
 		.post-link2 ul li 			{float:left; display:inline ; font-size: 12pt; margin: 0px 5px 10px 0; font-weight: 100; }
@@ -386,28 +392,28 @@
 	a {text-decoration: underline;}
 
 /* PROJECTS FILTER style set */
-	.filter 				{width:100%; float: left; font-family: 'Expletus Sans', Lucida Sans Unicode, sans-serif; border-top: #e2e2e2 1px solid;box-shadow:0px 0px 0px 0px #e2e2e2;}
+	.filter 				{width:100%; float: left; border-top: #e2e2e2 1px solid;box-shadow:0px 0px 0px 0px #e2e2e2; font-family: 'Alice', Lucida Sans Unicode, sans-serif; }
 	.filter ul 				{list-style:none; float:left; width: auto;}
 	.filter ul li 			{display:inline; float:left; font-size: 10pt; font-weight: 100; padding-right: 10px;}
 	
-	.filter ul li a 		{float:left; color:#888; text-decoration:none; padding: 20px 10px 20px 0px; font-weight: 100;}
-	.filter ul li a:hover 	{text-decoration:none; color:#999; border-top: #e2e2e2 1px solid; padding-top:19px; box-shadow:0px 0px 0px 0px #e2e2e2;}
+	.filter ul li a 		{float:left; color:#666; text-decoration:none; padding: 20px 10px 20px 0px; font-weight: 100;}
+	.filter ul li a:hover 	{text-decoration:none; color:#111; border-top: #e2e2e2 1px solid; padding-top:19px; box-shadow:0px 0px 0px 0px #e2e2e2;}
 	.filter ul li a.active 	{text-decoration:none; color:#09c; border-top: #e2e2e2 1px solid; padding-top:19px;}
 	.filter ul li:last-child {padding-right: 0px;}
 
 /* paragraph style set */
 	
 	/* headers */
-	h1 {font-weight:800; color:#333; font-size: 22pt; line-height:1.1; font-family: 'Expletus Sans', Lucida Sans Unicode, sans-serif;}
-	h2 {font-weight:100; color:#333; font-size: 20pt; line-height:1.5;}
-	h3 {font-weight:100; color:#333; font-size: 18pt; line-height:1.4;}
-	h4 {font-weight:100; color:#333; font-size: 14pt; line-height:1.5;}
-	h5 {font-weight:100; color:#666; font-size: 10pt; line-height:1.5;}
+	h1 {font-weight:800; color:#333; font-size: 22pt; line-height:1.1; font-family: 'Alice', Lucida Sans Unicode, sans-serif;}
+	h2 {font-weight:100; color:#333; font-size: 20pt; line-height:1.5; font-family: 'Alice', Lucida Sans Unicode, sans-serif;}
+	h3 {font-weight:100; color:#333; font-size: 18pt; line-height:1.4; font-family: 'Alice', Lucida Sans Unicode, sans-serif;}
+	h4 {font-weight:100; color:#333; font-size: 14pt; line-height:1.5; font-family: 'Alice', Lucida Sans Unicode, sans-serif;}
+	h5 {font-weight:100; color:#666; font-size: 10pt; line-height:1.5; font-family: 'Alice', Lucida Sans Unicode, sans-serif;}
 	h5 li {list-style: none;text-decoration: none;}
-	h6 {font-weight:100; color:#999; font-size: 8pt; line-height:1.8; margin-top: 1.2em; }
+	h6 {font-weight:100; color:#999; font-size: 8pt; line-height:1.8; margin-top: 1.2em; font-family: 'Alice', Lucida Sans Unicode, sans-serif;}
 
 	.sub {font-size: 90%;font-weight: 100; opacity: 1; margin-bottom: 1em; line-height:1.4;}
-	.tag {font-size: 70%; font-weight: 100; opacity: .5; margin-bottom: .5em; }
+	.tag {font-size: 10pt; font-weight: 100; opacity: .5; margin-bottom: .5em; }
 
 	/* body text */
 	p  			{font-weight:100; color:#666; font-size: 14pt; line-height:1.5; margin-top: .5em; margin-bottom: .5em;}
@@ -417,17 +423,17 @@
 
 	.small 		{font-size: 10pt;}
 	.medium 	{font-size: 18pt;}
-	.large 		{font-size: 24pt;}
-	.xlarge 	{font-size: 30pt; line-height: 1.3; color:#333;}
-	.xxlarge 	{font-size: 48pt; line-height: 1; color:#333;}
-	.xxxlarge 	{font-size: 72pt; line-height: 1; color:#333;}
+	.large 		{font-size: 24pt; font-family: 'Alice', Lucida Sans Unicode, sans-serif;}
+	.xlarge 	{font-size: 30pt; line-height: 1.3; color:#333; font-family: 'Alice', Lucida Sans Unicode, sans-serif;}
+	.xxlarge 	{font-size: 48pt; line-height: 1; color:#333; font-family: 'Alice', Lucida Sans Unicode, sans-serif;}
+	.xxxlarge 	{font-size: 72pt; line-height: 1; color:#333; font-family: 'Alice', Lucida Sans Unicode, sans-serif;}
 
 	.pull 		{color:#999; font-size: 30pt; line-height: 1.3;font-weight:100;}
 	.head 		{color:#333;}
 	.statistics {color:#999; font-size: 60pt; line-height:1; padding-top: 50px;}
 
 	.quote		{color:#888; font-weight:100;font-size: 14pt; padding-left: 30px; border-left: #ccc 1px solid; margin:30px 0 30px 0;}
-	.reference	{color:#999; font-size: 12pt;}
+	.reference	{color:#999; font-size: 10pt;}
 
 	.white 		{color:#999;}
 	.blue 		{color:#09c;}
