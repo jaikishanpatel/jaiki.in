@@ -16,7 +16,7 @@
 /* line devider */
 	.devider 		{clear: both; width:auto; height: 80px; margin: 60px 0 60px 0;border-bottom: rgba(50,50,50,0.2) 2px solid;}
 	.devider_light 	{clear: both; width:auto; height: 10px; margin: 10px 0 30px 0;border-bottom: rgba(50,50,50,0.1) 2px solid;  }
-	.devider_black 	{clear: both; width:auto; height: 00px; margin: 30px 0 30px 0;border-top: rgba(50,50,50,0.9) 5px solid;background-color: rgba(50,50,50,0.0); border-bottom: rgba(50,50,50,0.0) 5px solid;  }
+	.devider_black 	{clear: both; width:auto; height: 00px; padding: 30px 0 30px 0;border-top: rgba(50,50,50,0.9) 5px solid;background-color: rgba(50,50,50,0.0); border-bottom: rgba(50,50,50,0.0) 5px solid;  }
 	@media (max-width: 960px) 
 	{
       .devider 		{height: 40px; margin: 30px 0 30px 0;}
@@ -143,7 +143,7 @@
 	.j-top960{width:100%; max-width: 960px; position:relative;overflow: hidden; text-align: left;}
 		.j-top960 img 	{float:left; width:100%; position:relative; overflow: hidden;}
 		.j-top960 span 	{float:left; width:100%; height: auto; position:relative; font-family: 'Alice', Lucida Sans Unicode, sans-serif; letter-spacing: -.02em;  
-						color: #ccc; font-size: 24pt; line-height:1.4; text-align: left; padding: 0 10px 0px 0;margin-bottom: .5em;}
+						color: #ccc; font-size: 18pt; line-height:1.4; text-align: left; padding: 0 10px 0px 0;margin-bottom: .5em;}
 	
 	.j-wrapper{clear:both; width:960px;text-align: left;}
 		.j-title-top 		{width:220px;position:relative; float: left; margin: 20px 40px 00px 00px; text-align: left; clear:both;}
@@ -198,15 +198,15 @@
 /* content column wrap*/
 	.clearcolumn { clear: both;}
 
-/* all projects links list style set */
-		.link 				{float:left; width:100%;text-align: left; padding: 60px 0px 20px 0px;}
+/* all projects links list style set for home page */
+		.link 				{float:left; width:100%;text-align: left; padding: 30px 0px 30px 0px;}
 		.link ul 			{float:left; display:block; list-style:none; margin: 0px 20px 20px 0;}
 		.link ul img		{float:left; display:inline;}
 		.link ul span		{ font-family: 'Alice', Lucida Sans Unicode, sans-serif;float:left; display:block; font-size: 18pt; min-width: 180px; font-weight: 100; color: #111; padding-bottom: 10px; margin: 20px 0px 10px 0; }
 
 		.link ul li 		{display:block; padding: 0px 20px 0px 0px; }
 		.link ul li a 		{display:inline; text-decoration:none; position: relative; font-size: 14pt; font-weight:100; line-height: 1.6; color:#666; padding: 5px 5px 5px 0px;}
-		.link ul li a:hover {text-decoration:none; color:#111;}
+		.link ul li a:hover {text-decoration:none; color:#09c;}
 		@media screen and (max-width: 960px) 
 		{
 		  .link {max-width:700px; position:relative; margin-left: 0px;}
@@ -221,16 +221,16 @@
 		.j-album					{float:left; width:960px; text-align: left;margin: 30px 0px 30px 0px;}
 		.j-album ul					{list-style: none;}
 		/* album title */
-		.j-album span				{width:100%; position:relative; float: left; color: #333; font-size: 14pt; font-weight: 100; padding:10px 0 20px 0;}
+		.j-album span				{width:100%; position:relative; float: left; color: #333; text-align: center; font-size: 24pt; font-weight: 100; padding:10px 0 20px 0;}
 		.j-album li 				{float: left; list-style:none; width:314px; position: relative; margin: 5px 5px 0px 0px;}
 		.j-album li:last-child 		{margin: 5px 0px 0px 0px;}
 		/* overlay*/
-		.j-album li a 				{display:block; height:auto; border-radius: 5px;  background-color: #f2f2f2; position:relative; overflow:hidden;}
-		.j-album li a:hover 		{opacity:.95; box-shadow:0px 0px 0px 0px #e2e2e2;}
-		.j-album li a img 			{max-width:100%; display: block; overflow:hidden;}
+		.j-album li a 				{opacity:.95;display:block; height:auto; border-radius: 5px; position:relative; overflow:hidden;}
+		.j-album li a:hover 		{opacity:1; box-shadow:0px 0px 0px 0px #e2e2e2;}
+		.j-album li a img 			{max-width:100%; display: block; overflow:hidden; border-radius: 5px; }
 		/* thumb hover overlay text */
-		.j-album li a span 			{float:left; opacity:1; position: relative; width: 80%; height: auto; padding: 15px 20px 15px 20px;color: #111; font-weight:300; font-size: 18px;}
-		.j-album li a:hover span 	{color: #666;}
+		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: center; font-weight:300; font-size: 14px; font-family: 'Alice', Lucida Sans Unicode, sans-serif; }
+		.j-album li a:hover span 	{color: #111;}
 			@media screen and (max-width: 960px) 
 			{
 			  .j-album					{width:100%;}
@@ -345,7 +345,7 @@
 			  .post-thumb li a span 	{width:100%;}
 			}
 	/* HOME POST foot text links style set */
-		.post-link 					{float:left; width:100%; padding: 20px 0px 0px 0px; margin: 20px 0px 0px 0px; border-top: #333 1px solid;}
+		.post-link 					{float:left; width:100%; padding: 20px 0px 0px 0px; margin: 0px 0px 0px 0px; border-top: #333 0px solid;}
 		.post-link ul 				{float:left; list-style:none; width: auto;}
 		.post-link ul li a img 		{float:left; width:auto;display: inline; }
 		.post-link ul li 			{float:left; display:inline ; font-size: 12pt; margin: 0px 20px 10px 0; font-weight: 100;}
@@ -396,8 +396,8 @@
 	.filter ul 				{list-style:none; float:left; width: auto;}
 	.filter ul li 			{display:inline; float:left; font-size: 10pt; font-weight: 100; padding-right: 10px;}
 	
-	.filter ul li a 		{float:left; color:#333; text-decoration:none; padding: 20px 10px 20px 0px; font-weight: 100;}
-	.filter ul li a:hover 	{text-decoration:none; color:#09c; border-top: #e2e2e2 1px solid; padding-top:19px; box-shadow:0px 0px 0px 0px #e2e2e2;}
+	.filter ul li a 		{float:left; color:#666; text-decoration:none; padding: 20px 10px 20px 0px; font-weight: 100;}
+	.filter ul li a:hover 	{text-decoration:none; color:#666; border-top: #e2e2e2 1px solid; padding-top:19px; box-shadow:0px 0px 0px 0px #e2e2e2;}
 	.filter ul li a.active 	{text-decoration:none; color:#09c; border-top: #e2e2e2 1px solid; padding-top:19px;}
 	.filter ul li:last-child {padding-right: 0px;}
 
@@ -413,7 +413,7 @@
 	h6 {font-weight:100; color:#999; font-size: 8pt; line-height:1.8; margin-top: 1.2em; font-family: 'Alice', Lucida Sans Unicode, sans-serif;}
 
 	.sub {font-size: 90%;font-weight: 100; opacity: 1; margin-bottom: 1em; line-height:1.4;}
-	.tag {font-size: 10pt; font-weight: 100; opacity: .5; margin-bottom: .5em; }
+	.tag {font-size: 9pt; font-weight: 100; opacity: .5; margin-bottom: .5em; }
 
 	/* body text */
 	p  			{font-weight:100; color:#666; font-size: 14pt; line-height:1.5; margin-top: .5em; margin-bottom: .5em;}
