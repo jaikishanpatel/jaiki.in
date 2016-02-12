@@ -32,7 +32,7 @@
 	#fixbar{position:fixed; width:100%;height:auto; z-index:9999; background-color: #f2f2f2;}
 	#fixhead{max-width:960px; height:40px; padding: 10px 0 10px 0;}
 	#fixhead leftbox{width:auto; float:left;}
-	#fixhead rightbox{width:auto; float:left;display: block;background-color: #f2f2f2;}
+	#fixhead rightbox{width:auto; float:left;display: block;}
 	@media (max-width: 960px) 
 	{
       #fixbar{position:relative;}
@@ -48,6 +48,15 @@
 		@media (max-width: 960px) 
 		{
 	      .logo a {}
+	    }
+
+	    .logo-magictype{float:left;} 
+		.logo-magictype a {background:url(../images/mm-magictype-logo.png) 0 0 no-repeat; width: 200px; height: 72px;outline: none; text-indent: -5000px; display: block; }
+		.logo-magictype a:hover{background-position: 0 -36px;}
+		.logo-magictype a.active{background-position: 0 -72px;}
+		@media (max-width: 960px) 
+		{
+	      .logo-magictype a {}
 	    }
 
 
@@ -132,6 +141,8 @@
 		}
 
 /* wrapper */
+	.section-wrapper{background-color: #fafafa; }
+
 	.page-wrapper{background-color: #fafafa; }
 	.page-wrapper-gray{background-color: #f2f2f2; padding-bottom: 80px;margin-bottom: 0px;}
 	.page-wrapper-black{background-color: #000;}
@@ -139,7 +150,7 @@
 	.page-wrapper-grayf2f2f2{background-color: #f2f2f2;}
 	.page-wrapper-grayfafafa{background-color: #fafafa;}
 	/* background for 2nd menu header */
-	.j-top2{width:100%; padding: 0px 0px 40px 0px; margin-bottom:0px; height:auto; position:relative; float:left; background-color: #f2f2f2;z-index:1000;}
+	.j-top2{width:100%; padding: 0px 0px 40px 0px;height:auto; position:relative; float:left; background-color: #f2f2f2;z-index:1000;}
 
 	.j-top 	{width:100%; padding: 0px 0px 0px 0px; height:auto; position:relative;overflow: hidden;z-index:1000;}
 		.j-top img{float:left; width:100%; position:relative;overflow: hidden;}
