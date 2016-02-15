@@ -157,7 +157,7 @@
 
 	.j-top960{width:100%; max-width: 960px; position:relative;overflow: hidden; text-align: left;}
 		.j-top960 img 	{float:left; width:100%; position:relative; overflow: hidden;}
-		.j-top960 span 	{float:left; height: auto; position:relative; font-family: 'Alice', Lucida Sans Unicode, sans-serif; color: #333; font-size: 18pt; padding-top: 20px;}
+		.j-top960 span 	{float:left; height: auto; position:relative; font-family: 'Alice', Lucida Sans Unicode, sans-serif; color: #333; font-size: 16pt; padding-top: 20px;}
 	
 	.j-wrapper{clear:both; width:960px;text-align: left;}
 		.j-title-top 		{width:220px;position:relative; float: left; margin: 20px 40px 00px 00px; text-align: left; clear:both;}
@@ -239,8 +239,8 @@
 		.j-album li 				{float: left; list-style:none; width:314px; position: relative; margin: 5px 5px 0px 0px;}
 		.j-album li:last-child 		{margin: 5px 0px 0px 0px;}
 		/* overlay*/
-		.j-album li a 				{opacity:.95;display:block; height:auto; border-radius: 5px; position:relative; overflow:hidden;}
-		.j-album li a:hover 		{opacity:1; box-shadow:0px 0px 0px 0px #e2e2e2;}
+		.j-album li a 				{opacity:1;display:block; height:auto; border-radius: 5px; position:relative; overflow:hidden;}
+		.j-album li a:hover 		{opacity:.80;}
 		.j-album li a img 			{max-width:100%; display: block; overflow:hidden; border-radius: 5px; }
 		/* thumb hover overlay text */
 		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: center; font-weight:300; font-size: 14px; font-family: 'Alice', Lucida Sans Unicode, sans-serif; }
@@ -265,7 +265,7 @@
 			}
 
 	/* SHARE style set */
-		.share 		{float:left; width:100%; font-size: 14pt; font-weight: 100; line-height:1.4; text-align: left;}
+		.share 		{float:left; width:100%; font-size: 10pt; font-weight: 100; line-height:1.4; text-align: left; padding:20px 0 10px 0;f}
 		.share span {float:left; color:#ccc; width: 100%; text-decoration:none; position: relative;}
 		.share ul 	{float:left; list-style: none; margin: 10px 0px 20px 0;}
 		.share li 	{float:left; border:none; text-decoration: none;}
@@ -281,7 +281,7 @@
 			.magictype a:active {background-position: 0 -144px;}
 	
 	/* SOCIAL icons style set */
-		#footmenu2	{clear: both; float:left; width:100%; padding:20px 0 20px 0;font-size: 8pt; font-weight: 100; line-height:1.4; text-align: left; }
+		#footmenu2	{clear: both; float:left; width:100%; padding:20px 0 20px 0;font-size: 10pt; font-weight: 100; line-height:1.4; text-align: left; }
 		#footmenu span:before 	{content:"";}
 		#footmenu2 span 	{color:#ccc; width: 100%; text-decoration:none; padding:0em 0em 0 0em; position: relative;}
 		#footmenu2 ul 			{float:left; width:auto;list-style:none; }
@@ -314,7 +314,7 @@
 			.blog a:active 	{background-position: 0 -72px;}
 	
 	/* last foot menu items style set */
-		#footmenu {clear: both; float: left; width:auto; padding:30px 0 30px 0; font-size: 8pt; font-weight: 100; line-height:1.8; text-align: left; }
+		#footmenu {clear: both; float: left; width:auto; padding:30px 0 30px 0; font-size: 10pt; font-weight: 100; line-height:1.8; text-align: left; }
 		#footmenu span 			{float:left; color:#ccc; text-decoration:none; padding:0 .2em 0 .2em;}
 		#footmenu ul 			{float:left; width:100%;list-style:none; }
 		#footmenu ul li 		{float:left; padding:0 .2em 0 .2em;}
@@ -326,14 +326,17 @@
 			}
 
 /* HOME POST projects album */
-	.homepost					{float:left; width:100%; padding: 20px 0 80px 0;}
+	.homepost					{width:100%; float:left; position: relative; width:960px; padding: 20px 0 80px 0; overflow: hidden; display: inline-block;}
+
 	.homepost ul				{list-style: none;}
 	.homepost li 				{float:left; list-style: none; position: relative;}
 	.homepost li span 			{float:left; width:100%; max-width: 600px; padding: 0px 40px 0px 0;font-weight:100; color: #666; font-size: 14pt; line-height: 1.5;}
 	/* overlay*/
-	.homepost li a 				{opacity:1; width:100%; max-width: 960px; position:relative; overflow:hidden;}
+	.homepost li a 				{opacity:1; display:block; overflow: hidden; position:relative; }
 	.homepost li a:hover 		{opacity:.80;}
-	.homepost li a img 			{max-width:100%; display:block; overflow:hidden; margin-bottom: 20px; border-radius: 5px;  }	
+	.homepost li a img 			{width:100%; display: block; overflow:hidden; border-radius: 5px; margin-bottom: 20px;}	
+
+
 		@media screen and (max-width: 960px) 
 		{
 		  .homepost					{width:100%; padding: 0px 0 50px 0;}
@@ -359,7 +362,7 @@
 			  .post-thumb li a span 	{width:100%;}
 			}
 	/* HOME POST foot text links style set */
-		.post-link 					{float:left; width:100%; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px; border-top: #333 0px solid;}
+		.post-link 					{float:left; width:100%; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
 		.post-link ul 				{float:left; list-style:none; width: auto;}
 		.post-link ul li a img 		{float:left; width:auto;display: inline; }
 		.post-link ul li 			{float:left; display:inline ; font-size: 12pt; margin: 0px 20px 10px 0; font-weight: 100;}
@@ -369,7 +372,7 @@
 	/* HOME POST foot button links style set */
 		.post-link2 				{float:left; width:100%; margin: 0px 0px 0px 0px;}
 		.post-link2 ul 				{float:left; list-style:none; width: auto;}
-		.post-link2 ul span 		{width:100%; max-width: 600px;float: left; color: #ccc; font-size: 14pt; font-weight: 100;  padding:10px 0 10px 0;}
+		.post-link2 ul span 		{width:100%; max-width: 600px;float: left; color: #ccc; font-size: 16pt; font-weight: 100;  padding:10px 0 10px 0;}
 		.post-link2 ul li 			{float:left; display:inline ; font-size: 12pt; margin: 0px 5px 10px 0; font-weight: 100; }
 		.post-link2 ul li img 		{ }
 		.post-link2 ul li a 		{float:left; opacity: 1; color:#666; display: block; text-decoration:none; padding: 2px 0px 2px 0px;}
