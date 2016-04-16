@@ -51,15 +51,15 @@
       #fixhead rightbox	{padding: 35px 0 20px 0; width: auto;}
     }
     	/* M M JAIKI Logo style set */
-    	.mm-jaiki 			{float:left; display: inline; outline: none; font-family:SignatureJAIKI-Regular; font-size: 12pt; line-height: 1.5;}
-	    .mm-jaiki a 		{color: #666; padding: 0px 10px 0px 0px;}
+    	.mm-jaiki 			{float:left; display: inline; outline: none; font-family:SignatureJAIKI-Regular; font-size: 12pt;}
+	    .mm-jaiki a 		{color: #666; padding:  0 .5em 0 0;}
 	    .mm-jaiki a:hover 	{color: #666; opacity: .9;}
 	    .mm-jaiki a:visited {color: #666; text-decoration: none;}
 	    .mm-jaiki a.active 	{color: #09c;}
 
 	    /* M M Main Menu MM style set */
-	    .mm-about, .mm-notes, .mm-projects, .mm-contact{display: inline; outline: none; font-size: 12pt; font-weight: 100; line-height: 1;}
-	    .mm-about a, .mm-notes a, .mm-projects a, .mm-contact a{color: #666; padding: 0px .3em 0px .3em;}
+	    .mm-about, .mm-notes, .mm-projects, .mm-contact{display: inline; outline: none; font-size: 12pt; font-weight: 100;}
+	    .mm-about a, .mm-notes a, .mm-projects a, .mm-contact a{color: #666; padding: 0 .3em 0 .3em;}
 
 	    .mm-about				{float:left;} 
 		.mm-about a 			{}
@@ -336,16 +336,16 @@
 		  	  .foot-wrapper{ width:90%;}
 			}
 		
-	/* last foot menu items style set */
-		.footmenu 					{float:left; clear:both; width:auto; padding:50px 0 50px 0; font-size: 9pt; font-weight: 100; line-height:2; text-align: left; }
-		.footmenu span 				{float:left; width:100%;color:#666; font-size: 9pt; position: relative;}
-		.footmenu ul 				{float:left; width:auto; list-style:none; }
-		.footmenu ul li 			{float:left; display:inline;}
-		.footmenu a 				{color:#09c; font-weight: 300; text-decoration:none; padding:0 .2em 0 0;}
+	/* all foot menu items style set */
+		.footmenu 					{float:left; width:auto; clear:both; padding:50px 0 50px 0; font-size: 9pt; line-height:1.6;}
+		.footmenu span 				{float:left; width:100%; color:#666; font-size: 9pt; font-weight: 100; text-align: left; position: relative; padding-bottom: 10px;  }
+		.footmenu ul 				{width:auto; list-style:none; }
+		.footmenu ul li 			{display:inline;}
+		.footmenu a 				{color:#09c; text-decoration:none; padding:0 .2em 0 0;}
 		.footmenu a:hover 			{}
 		.footmenu a:visited 		{color:#666;}
 			
-	/* icons all */
+	/* Social media icons all */
 		.jaiki, .be120, .be, .fb, .tw, .in, .insta, .blog {float:left; font-size: 24pt; text-align: center; display: block; outline: none; font-family:SignatureJAIKI-Regular;}
 		.jaiki a 			{color: #111;}
 		.jaiki a:hover 		{color: #222;}
@@ -440,7 +440,7 @@
 
 	h1 {font-weight:800; color:#111; font-size: 24pt; line-height:1.2;}
 	h2 {font-weight:100; color:#111; font-size: 22pt; line-height:1.4; margin-bottom: .5em;}
-	h3 {font-weight:100; color:#111; font-size: 18pt; line-height:1.5;}
+	h3 {font-weight:100; color:#111; font-size: 18pt; line-height:1.4;}
 	h4 {font-weight:100; color:#111; font-size: 14pt; line-height:1.5;}
 	h5 {font-weight:800; color:#111; font-size: 10pt; line-height:1.5;}
 	h5 li {list-style: none;text-decoration: none;}
