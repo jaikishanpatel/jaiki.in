@@ -23,7 +23,7 @@
 /* link */
 	a:link {text-decoration: none; opacity: 1; color: #09c;}
 	a:hover {text-decoration: none; opacity: .8; }
-	a:visited {text-decoration: none; color: #a88c50;}
+	a:visited {text-decoration: none; color: #69c;}
 	a.active {text-decoration: }
 
 
@@ -87,6 +87,18 @@
 	      .mm-projects a 	{}
 	      .mm-contact a 	{}
 	    }
+
+.jaiki-profile-image 	{height: 280px; background:url(../images/jaikishan_l.png) no-repeat center bottom; background-size:contain; overflow:hidden;}
+	@media (max-width: 960px) 
+	{
+      .jaiki-profile-image {background:url(../images/jaikishan.png) no-repeat center bottom; background-size:contain;}
+    }
+
+    @media (max-width: 480px) 
+	{
+      .jaiki-profile-image {background:url(../images/jaikishan_sq.png) no-repeat center bottom; background-size:contain;}
+    }
+
 
 /* M M BAR style set */
 	#bar{position:relative; width:100%;height:auto; z-index:999; background-color: #f2f2f2;padding-top: 50px;}
@@ -264,7 +276,7 @@
 			}
 
 /* Magictype AD style set */
-		.magictype-ad				{float:left; width:100%; max-width: 920px; padding:10px 20px 20px 20px; text-align: right; background-image: url(../images/magic_ad_back.jpg); border-radius: 5px;  box-shadow: 0px 0px 1px rgba(0,0,0,0.5); }
+		.magictype-ad				{float:left; width:100%; max-width: 920px; padding:10px 20px 20px 20px; text-align: right; background-image: url(../images/magic_ad_back.jpg);background-size:cover; border-radius: 5px;  box-shadow: 0px 0px 1px rgba(0,0,0,0.5); }
 		.magictype-ad span:before 	{content:"";}
 		.magictype-ad span 			{color:#fff; width: 100%; font-size: 10pt; position: relative; font-weight: 100;}
 		.magictype-ad ul 			{float:left; width:auto;list-style:none; padding-left: 40px;}
@@ -274,7 +286,7 @@
 		.magictype-ad ul li a:visited {color:#fff;}
 			@media screen and (max-width: 960px) 
 			{
-				.magictype-ad{ width: 90%;}
+				.magictype-ad{width:90%; }
 			}
 
 			.magictype			{float:left; display: block; outline: none; font-family:SignatureJAIKI-Regular;}
@@ -282,7 +294,7 @@
 			.magictype a:hover 	{color: #fff;}
 
 /* Projects AD style set */
-		.projects-ad				{float:left; width:100%; max-width: 920px; padding:20px 20px 20px 20px; margin: 30px 0 60px 0; background-image: url(../images/projects_ad_back.jpg); border-radius: 5px;}
+		.projects-ad				{float:left; width:100%; max-width: 920px; padding:20px 20px 20px 20px; margin: 30px 0 60px 0; background-image: url(../images/projects_ad_back.jpg);background-size:cover; border-radius: 5px;}
 		.projects-ad span:before 	{content:"";}
 		.projects-ad span 			{color:#666; width: 100%; font-size: 10pt; padding-left: 10px; position: relative; float: left; font-weight: 100;}
 		.projects-ad ul 			{float:left; width:auto;list-style:none; padding-left: 10px;}
@@ -317,47 +329,39 @@
 	.share ul li a:visited 	{color:#999;}
 
 /* FOOT style set */
-	.foot{width:100%; float:left; height:auto; padding: 60px 0 80px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat;}
+	.foot{width:100%; float:left; height:auto; padding: 60px 0 40px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat;}
 	.foot-wrapper{clear:both; width:960px;}
-
-
-	/* SOCIAL icons style set */
-		.footmenu2				{float:left; width:auto; padding:20px 0 10px 0; font-weight: 100; text-align: left; line-height: 2;}
-		.footmenu2 span 		{color:#666; width: 100%; font-size: 9pt; position: relative;}
-		.footmenu2 ul 			{float:left; width:auto;list-style:none;}
-		.footmenu2 ul li 		{float:left; display:inline; padding:0 .5em 0 0;}
-		.footmenu2 ul li a 		{text-decoration:none;}
-		.footmenu2 ul li a:hover {color:#222; text-decoration:none;}
-		.footmenu2 ul li a:visited {color:#111;}
-		/* icons all */
-			.jaiki, .be120, .be, .fb, .tw, .in, .insta, .blog {float:left; text-align: center; margin: 0px 10px 0px 0px; display: block; outline: none; font-family:SignatureJAIKI-Regular;}
-			.jaiki a 			{color: #111; font-size: 16pt;}
-			.jaiki a:hover 		{color: #222;}
-			.be a 				{color: #111; font-size: 16pt;}
-			.be a:hover 		{color: #222;}
-			.fb a 				{color: #111; font-size: 16pt;}
-			.fb a:hover 		{color: #222;}
-			.tw a 				{color: #111; font-size: 16pt;}
-			.tw a:hover 		{color: #222;}
-			.in a 				{color: #111; font-size: 16pt;}
-			.in a:hover 		{color: #222;}
-			.insta a 			{color: #111; font-size: 16pt;}
-			.insta a:hover 		{color: #222;}
-			.blog a 			{color: #111; font-size: 16pt;}
-			.blog a:hover 		{color: #222;}
-	
-	/* last foot menu items style set */
-		.footmenu 				{float:left; clear: both; width:auto; padding:10px 0 20px 0; font-size: 9pt; font-weight: 100; line-height:1.8; text-align: left; }
-		.footmenu span 			{float:left; color:#666; text-decoration:none; padding:0 .5em 0 0;}
-		.footmenu ul 			{float:left; width:100%;list-style:none; }
-		.footmenu ul li 		{float:left; padding:0 .5em 0 0;}
-		.footmenu a 			{color:#666; text-decoration:none;}
-		.footmenu a:hover 		{color:#111; text-decoration:none;}
-		.footmenu a:visited 	{color:#666; text-decoration:none;}
-			@media screen and (max-width: 960px) 
+		@media screen and (max-width: 960px) 
 			{
 		  	  .foot-wrapper{ width:90%;}
 			}
+		
+	/* last foot menu items style set */
+		.footmenu 					{float:left; clear:both; width:auto; padding:50px 0 50px 0; font-size: 9pt; font-weight: 100; line-height:2; text-align: left; }
+		.footmenu span 				{float:left; width:100%;color:#666; font-size: 9pt; position: relative;}
+		.footmenu ul 				{float:left; width:auto; list-style:none; }
+		.footmenu ul li 			{float:left; display:inline;}
+		.footmenu a 				{color:#09c; font-weight: 300; text-decoration:none; padding:0 .2em 0 0;}
+		.footmenu a:hover 			{}
+		.footmenu a:visited 		{color:#666;}
+			
+	/* icons all */
+		.jaiki, .be120, .be, .fb, .tw, .in, .insta, .blog {float:left; font-size: 24pt; text-align: center; display: block; outline: none; font-family:SignatureJAIKI-Regular;}
+		.jaiki a 			{color: #111;}
+		.jaiki a:hover 		{color: #222;}
+		.be a 				{color: #111;}
+		.be a:hover 		{color: #222;}
+		.fb a 				{color: #111;}
+		.fb a:hover 		{color: #222;}
+		.tw a 				{color: #111;}
+		.tw a:hover 		{color: #222;}
+		.in a 				{color: #111;}
+		.in a:hover 		{color: #222;}
+		.insta a 			{color: #111;}
+		.insta a:hover 		{color: #222;}
+		.blog a 			{color: #111;}
+		.blog a:hover 		{color: #222;}
+	
 
 /* FEATURED HOME OR LANDING POST projects album */
 	.featured-post					{width:100%; float:left; position: relative; width:960px; padding: 20px 0 60px 0; overflow: hidden; display: inline-block;}
