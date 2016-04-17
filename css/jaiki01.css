@@ -19,13 +19,11 @@
     src: url(../fonts/SignatureJAIKI-Regular.otf); /*URL to font*/
 	}
 
-
 /* link */
 	a:link {text-decoration: none; opacity: 1; color: #09c;}
 	a:hover {text-decoration: none; opacity: .8; }
 	a:visited {text-decoration: none; color: #69c;}
 	a.active {text-decoration: }
-
 
 /* line devider */
 	.devider 		{clear: both; width:auto; height: 80px; margin: 60px 0 60px 0;border-bottom: rgba(50,50,50,0.2) 2px solid;}
@@ -39,8 +37,8 @@
 /* M M FIXBAR style set */
 	#fixbar				{position:fixed; width:100%;height:auto; z-index:9999; background-color: #f2f2f2; opacity: 1;}
 	#fixhead			{max-width:960px; height:20px; padding: 15px 0 15px 0;}
-	#fixhead leftbox	{width:auto; height: 20px; float:left; display: block; }
-	#fixhead rightbox	{width:auto; height: 20px; float:right; display: block; }
+	#fixhead leftbox	{float:left; width:auto; height: 20px; display: block; }
+	#fixhead rightbox	{float:right; width:auto; height: 20px; display: block; }
 	
 	@media (max-width: 960px) {
       #fixbar	{position:relative;}
@@ -48,7 +46,7 @@
       #fixhead rightbox	{}
     }
 	@media (max-width: 480px) {
-      #fixhead rightbox	{padding: 35px 0 20px 0; width: auto;}
+      #fixhead rightbox	{float: left; padding: 35px 0 20px 0; width: auto;}
     }
     	/* M M JAIKI Logo style set */
     	.mm-jaiki 			{float:left; display: inline; outline: none; font-family:SignatureJAIKI-Regular; font-size: 12pt;}
@@ -276,12 +274,12 @@
 			}
 
 /* Magictype AD style set */
-		.magictype-ad				{float:left; width:100%; max-width: 920px; padding:10px 20px 20px 20px; text-align: right; background-image: url(../images/magic_ad_back.jpg);background-size:cover; border-radius: 5px;  box-shadow: 0px 0px 1px rgba(0,0,0,0.5); }
+		.magictype-ad				{float:left; width:100%; max-width: 920px; padding:10px 20px 20px 20px; margin: 0px 0 40px 0;  text-align: right; background-image: url(../images/magic_ad_back.jpg);background-size:cover; border-radius: 5px;  box-shadow: 0px 0px 1px rgba(0,0,0,0.5); }
 		.magictype-ad span:before 	{content:"";}
 		.magictype-ad span 			{color:#fff; width: 100%; font-size: 10pt; position: relative; font-weight: 100;}
 		.magictype-ad ul 			{float:left; width:auto;list-style:none; padding-left: 40px;}
 		.magictype-ad ul li 		{float:left; display:inline; padding:0 .5em 0 0;}
-		.magictype-ad ul li a 		{text-decoration:none; text-shadow: 0px 0px 1px rgba(0,0,0,0.5);}
+		.magictype-ad ul li a 		{text-decoration:none; text-shadow: 0px 0px 1px rgba(0,0,0,0.5); line-height: 2;}
 		.magictype-ad ul li a:hover {text-decoration:none;}
 		.magictype-ad ul li a:visited {color:#fff;}
 			@media screen and (max-width: 960px) 
@@ -294,7 +292,7 @@
 			.magictype a:hover 	{color: #fff;}
 
 /* Projects AD style set */
-		.projects-ad				{float:left; width:100%; max-width: 920px; padding:20px 20px 20px 20px; margin: 30px 0 60px 0; background-image: url(../images/projects_ad_back.jpg);background-size:cover; border-radius: 5px;}
+		.projects-ad				{float:left; width:100%; max-width: 920px; padding:20px 20px 20px 20px; margin: 20px 0 40px 0; background-image: url(../images/projects_ad_back.jpg);background-size:cover; border-radius: 5px;}
 		.projects-ad span:before 	{content:"";}
 		.projects-ad span 			{color:#666; width: 100%; font-size: 10pt; padding-left: 10px; position: relative; float: left; font-weight: 100;}
 		.projects-ad ul 			{float:left; width:auto;list-style:none; padding-left: 10px;}
@@ -309,14 +307,13 @@
 			}
 
 /* Special button style set */
-		.special-button 				{float:left; width:100%; padding:0px 0px 0px 0; font-weight: 100; text-align: left; font-size: 10pt;}
-		.special-button span:before 	{content:"";}
-		.special-button span 			{float:left; color:#666; position: relative; padding-right: 0px; font-size: 10pt;}
+		.special-button 				{float:left; width:100%; font-weight: 100; text-align: left; font-size: 9pt;}
+		.special-button span 			{float:left; color:#666; position: relative; background-color: #f2f2f2;}
 		.special-button ul 				{float:left; list-style: none;}
-		.special-button ul li 			{float:left; border:none; text-decoration: none; padding: 0 10px 0 5px;}
-		.special-button ul li a 		{color:#fff; padding: 0 .7em 0 .7em; background-color: #09c; border-radius: 2px; font-size: 9.2pt; font-weight: 500; text-shadow: 0px 0px 1px rgba(0,0,0,0.5);} 
-		.special-button ul li a:hover 	{color:#fff; text-decoration:none;} 
-		.special-button ul li a:visited {color:#fff;}
+		.special-button ul li 			{float:left; display: inline; padding: 2px 10px 0 0;}
+		.special-button a 				{color:#fff; text-decoration:none; padding: 0 .7em 0 .7em; background-color: #09c; border-radius: 2px; font-weight: 500; text-shadow: 0px 0px 1px rgba(0,0,0,0.5);} 
+		.special-button a:hover 		{color:#fff;} 
+		.special-button a:visited 		{color:#fff;}
 
 /* SHARE style set */
 	.share 					{float:left; width:100%;font-weight: 100; text-align: left; font-size: 9pt;}
@@ -324,12 +321,12 @@
 	.share span 			{float:left; color:#666; position: relative; padding-right: 10px; font-size: 9pt;}
 	.share ul 				{float:left; list-style: none;}
 	.share ul li 			{float:left; border:none; text-decoration: none;}
-	.share ul li a 			{color:#666; padding: 0 .5em 0 .5em; background-color: #e9e9e9; border-radius: 5px; font-size: 9pt; font-weight: 500;} 
-	.share ul li a:hover 	{text-decoration:none;} 
-	.share ul li a:visited 	{color:#999;}
+	.share a 			{color:#666; padding: 0 .5em 0 .5em; background-color: #e9e9e9; border-radius: 5px; font-size: 9pt; font-weight: 500;} 
+	.share a:hover 	{text-decoration:none;} 
+	.share a:visited 	{color:#999;}
 
 /* FOOT style set */
-	.foot{width:100%; float:left; height:auto; padding: 60px 0 40px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat;}
+	.foot{width:100%; float:left; height:auto; padding: 40px 0 40px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat;}
 	.foot-wrapper{clear:both; width:960px;}
 		@media screen and (max-width: 960px) 
 			{
@@ -337,9 +334,9 @@
 			}
 		
 	/* all foot menu items style set */
-		.footmenu 					{float:left; width:auto; clear:both; padding:50px 0 50px 0; font-size: 9pt; line-height:1.6;}
+		.footmenu 					{float:left; width:auto; padding:20px 0 20px 0; font-size: 9pt; line-height:1.6;}
 		.footmenu span 				{float:left; width:100%; color:#666; font-size: 9pt; font-weight: 100; text-align: left; position: relative; padding-bottom: 10px;  }
-		.footmenu ul 				{width:auto; list-style:none; }
+		.footmenu ul 				{width:auto; list-style:none;}
 		.footmenu ul li 			{display:inline;}
 		.footmenu a 				{color:#09c; text-decoration:none; padding:0 .2em 0 0;}
 		.footmenu a:hover 			{}
