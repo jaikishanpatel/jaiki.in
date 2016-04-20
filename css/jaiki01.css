@@ -191,8 +191,8 @@
 
 /* PROJECTS FILTER style set */
 	.filter 			{width:100%; float: left;}
-	.filter ul 			{list-style:none; float:left; width: auto; padding: .5em 0 .5em 0;}
-	.filter ul li 		{display:inline; float:left; padding: .2em .8em 0 0;}
+	.filter ul 			{list-style:none; float:left; width: auto; padding: .2em 0 .6em 0;}
+	.filter ul li 		{display:inline-block; float:left; padding: .4em .6em 0 0;}
 	.filter a 			{float:left; color:#333; text-decoration:none; font-size: 10pt; font-weight: 100;}
 	.filter a:hover 	{text-decoration:none; color:#222;}
 	.filter a.active 	{text-decoration:none; color:#09c;}
@@ -222,17 +222,18 @@
 		.j-title-top 		{width:100%;position:relative; float: left; margin: 20px 00px 00px 00px; text-align: left; clear:both;}
 		.j-title-top span 	{width:100%; position:relative; float: left; margin: 20px 00px 00px 00px; font-size: 10pt; font-weight: 100; color: #666;}	
 
-		.j-title 		{width:70%;position:relative; float: left; margin: 20px 40px 00px 00px; text-align: left; clear:both;padding: 0 15% 0 15%;}
+		.j-title 		{width:70%; position:relative; float: left; margin: 20px 40px 00px 00px; text-align: left; clear:both;padding: 0 15% 0 15%;}
 		.j-title span 	{width:auto; position:relative; float: left; margin: 00px 00px 00px 00px; margin-top: 20px; }	
 		.j-title img 	{width:100%; position:relative; float: left; margin: 10px 00px 20px 00px;}
 
-		.j-post 		{width:700px;position:relative; float: left; margin: 20px 00px 00px 00px; text-align: left;}
+		.j-post 		{width:700px; position:relative; float: left; margin: 20px 00px 00px 00px; text-align: left;}
 		.j-post span 	{width:100%; position:relative; float: left; margin: 00px 00px 20px 00px;}
 		.j-post img 	{width:100%; position:relative; float: left; margin: 02px 00px 00px 00px;}
 
-		.j-post960 		{width:100%;position:relative; float: left; margin: 20px 00px 00px 00px; text-align: center;}
+		.j-post960 		{width:100%; position:relative; float: left; margin: 20px 00px 00px 00px; text-align: center;}
 		.j-post960 span {width:100%; position:relative; float: left; margin: 20px 00px 20px 00px; padding: 0 0 0 0;}
 		.j-post960 img 	{width:100%; position:relative; float: left; margin: 02px 00px 00px 00px;}
+		.j-post960 a 	{text-decoration:none; color:#111;}
 
 		.j-post700 		{width:70%;position:relative; float: left; margin: 20px 00px 00px 00px; text-align: left; padding: 0 15% 0 15%;}
 		.j-post700 span {width:100%; position:relative; float: left; margin: 20px 00px 20px 00px;}
@@ -342,24 +343,48 @@
 			.magictype a 		{color: #fff; font-size: 18pt;}
 			.magictype a:hover 	{color: #fff;}
 
-/* Projects AD style set */
-		.projects-ad				{float:left; width:100%; margin: 40px 0 40px 0; background-image: url(../images/projects_ad_back.jpg);background-size:cover; border-radius: 5px;}
-		.projects-ad span:before 	{content:"";}
-		.projects-ad span 			{float:left; color:#666; width: 90%; font-size: 10pt; padding:1.5em 5%; position: relative; font-weight: 100;}
-		.projects-ad ul 			{float:left; width:auto;list-style:none; padding-left: 10px;}
-		.projects-ad ul li 			{float:left; display:inline; padding:0 .5em 0 0;}
-		.projects-ad ul li a 		{text-decoration:none; color:#7f6f4e; font-size: 18pt; font-weight: 300; text-shadow: 0px 0px 1px rgba(0,0,0,0.0);}
-		.projects-ad ul li a:hover 	{text-decoration:none; color: #111;}
-		.projects-ad ul li a:visited {}
+/* Projects AD A BLUE style set */
+		.j-ad-a					{float:left; width:100%; text-align: center; margin: 20px 0 20px 0; background-image: url(../images/projects_ad_back.jpg);background-size:cover; border-radius: 5px;}
+		.j-ad-a ul 				{float:left; list-style:none; width: 90%; padding:1.2em 5%;}
+		.j-ad-a ul li 			{float:center; display:inline; padding:0 .5em 0 0;}
+		.j-ad-a ul li a 		{text-decoration:none; color:#fff; font-size: 24pt; text-shadow: 0px 0px 1px rgba(0,0,0,0.3);}
+		.j-ad-a ul li a:hover 	{color: #fafafa;}
+
 			@media screen and (max-width: 960px) 
 			{
-				.projects-ad 		{margin: 10px 0 20px 0;}
-				.projects-ad ul li a {font-size: 12pt;}
+				.j-ad-a 		{}
+				.j-ad-a ul 		{padding:1em 5%;}
+				.j-ad-a ul li a {font-size: 16pt;}
+			}
+			@media screen and (max-width: 480px) 
+			{
+				.j-ad 			{}
+				.j-ad-a ul 		{padding:.6em 5%;}
+				.j-ad ul li a 	{font-size: 12pt;}
+			}
+/* Projects AD B BEIGE style set */
+		.j-ad-b					{float:left; width:100%; text-align: center; margin: 20px 0 20px 0; background-image: url(../images/projects_ad_back2.jpg);background-size:cover; border-radius: 5px; border:rgba(100,100,100,0.1) 1px solid;}
+		.j-ad-b ul 				{float:left; list-style:none; width: 90%; padding:1.2em 5%;}
+		.j-ad-b ul li 			{float:center; display:inline; padding:0 .5em 0 0;}
+		.j-ad-b ul li a 		{text-decoration:none; color:#7f6f4e; font-size: 24pt; text-shadow: 0px 0px 1px rgba(0,0,0,0.0);}
+		.j-ad-b ul li a:hover 	{color: #111;}
+		
+			@media screen and (max-width: 960px) 
+			{
+				.j-ad-b 		{}
+				.j-ad-b ul 		{padding:1em 5%;}
+				.j-ad-b ul li a {font-size: 16pt;}
+			}
+			@media screen and (max-width: 480px) 
+			{
+				.j-ad-b 		{}
+				.j-ad-b ul 		{padding:.6em 5%;}
+				.j-ad-b ul li a {font-size: 12pt;}
 			}
 
 
 /* FOOT style set */
-	.foot{width:100%; float:left; height:auto; padding: 60px 0 60px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat;}
+	.foot{width:100%; float:left; height:auto; padding: 40px 0 40px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat;}
 	.foot-wrapper{clear:both; width:960px;}
 		@media screen and (max-width: 960px) 
 			{
@@ -368,19 +393,28 @@
 			}
 		
 	/* all foot menu items style set */
+		.footmenu 					{float:left; width:auto; padding:20px 0 20px 0; font-size: 9pt; line-height:2;}
+		.footmenu span 				{float:left; width:100%; color:#666; font-size: 9pt; font-weight: 300; text-align: left; position: relative; }
+		.footmenu ul 				{width:auto; list-style:none;}
+		.footmenu ul li 			{display:inline;}
+		.footmenu a 				{color:#666; text-decoration:none; padding:0 .2em 0 0;}
+		.footmenu a:hover 			{}
+		.footmenu a:visited 		{color:#666;}
+
+	/* all foot menu items style set 
 		.footmenu 					{float:left; width:auto; padding:20px 0 20px 0; font-size: 9pt; line-height:1.5;}
 		.footmenu span 				{float:left; width:100%; color:#666; font-size: 9pt; font-weight: 300; text-align: left; position: relative; padding-bottom: 10px;  }
 		.footmenu ul 				{width:auto; list-style:none;}
 		.footmenu ul li 			{display:inline;}
 		.footmenu a 				{color:#666; text-decoration:none; padding:0 .2em 0 0;}
 		.footmenu a:hover 			{}
-		.footmenu a:visited 		{color:#666;}
+		.footmenu a:visited 		{color:#666;}*/
 			
 	/* Social media icons all */
-		.jaiki, .be120, .be, .fb, .tw, .in, .insta, .blog {float:left; font-size: 24pt; text-align: center; display: block; outline: none; font-family:SignatureJAIKI-Regular;}
+		.jaiki, .be120, .be, .fb, .tw, .in, .insta, .blog {float:left; font-size: 20pt; text-align: center; display: block; outline: none; font-family:SignatureJAIKI-Regular;}
 		.jaiki a 			{color: #111; padding-right: 10px;}
 		.jaiki a:hover 		{}
-		.be a 				{color: #111;}
+		.be a 				{color: #111; padding-right: 10px;}
 		.be a:hover 		{}
 		.fb a 				{color: #111; padding-right: 10px;}
 		.fb a:hover 		{}
@@ -428,6 +462,10 @@
 		{
 		  .post-link rightbox	{float:left;}
 		}
+		@media screen and (max-width: 480px) 
+		{
+		  .post-link ul li	{width: 100%;}
+		}
 	/* featured-post foot button links style set */
 	.post-link2 				{float:left; width:100%; margin: 0px 0px 0px 0px;}
 	.post-link2 ul 				{float:left; list-style:none; width: auto;}
@@ -469,7 +507,7 @@
 
 /* paragraph style set */
 	/* fonts */
-	h1, h2, h3, h4, h5, h6, .j-top960 span, .projects-ad, .link-list ul span, .pull {font-family: 'Sorts Mill Goudy', serif;}
+	h1, h2, h3, h4, h5, h6, .j-top960 span, .j-ad-a, .j-ad-b, .link-list ul span, .pull {font-family: 'Sorts Mill Goudy', serif;}
 
 	h1 {font-weight:800; color:#111; font-size: 24pt; line-height:1.2;}
 	h2 {font-weight:100; color:#111; font-size: 22pt; line-height:1.4; margin-bottom: .5em;}
@@ -517,7 +555,7 @@
 	.reference	{color:#999; font-size: 10pt;}
 
 	.light 		{opacity: .3;}
-	.white 		{color:#999;}
+	.white 		{color:#f2f2f2;}
 	.blue 		{color:#09c;}
 	.white		{color:#666;}
 	.red		{color:#ff0000;}
