@@ -15,6 +15,11 @@
     font-family: 'SignatureJAIKI-Regular'; /*a name to be used later*/
     src: url(../fonts/SignatureJAIKI-Regular.otf); /*URL to font*/
 	}
+	
+	feature liga { # I'm just a comment
+		sub f f i by f_f_i;
+		sub f i by f_i;
+	} liga;
 
 /* link */
 	a:link {text-decoration: none; opacity: 1; color: #09c;}
