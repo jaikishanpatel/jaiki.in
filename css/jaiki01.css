@@ -15,7 +15,7 @@
     font-family: 'SignatureJAIKI-Regular'; /*a name to be used later*/
     src: url(../fonts/SignatureJAIKI-Regular.otf); /*URL to font*/
 	}
-	
+
 	feature liga { # I'm just a comment
 		sub f f i by f_f_i;
 		sub f i by f_i;
@@ -25,7 +25,7 @@
 	a:link {text-decoration: none; opacity: 1; color: #09c;}
 	a:hover {text-decoration: none; opacity: .8; }
 	a:visited {text-decoration: none; color: #69c;}
-	a.active {text-decoration: }
+	a.active {text-decoration: none; }
 
 /* line devider */
 	.devider 		{clear: both; width:auto; height: 80px; margin: 60px 0 60px 0;border-bottom: rgba(50,50,50,0.2) 2px solid;}
@@ -243,6 +243,7 @@
 		.j-post700 		{width:70%;position:relative; float: left; margin: 20px 00px 00px 00px; text-align: left; padding: 0 15% 0 15%;}
 		.j-post700 span {width:100%; position:relative; float: left; margin: 20px 00px 20px 00px;}
 		.j-post700 img 	{width:100%; position:relative; float: left; margin: 02px 00px 00px 00px;}
+		.j-post960 a 	{text-decoration:none; color:#111;}
 
 		.j-video		{position: relative;}
 		.j-video iframe	{position: absolute; float:left;width: 100%;height: 100%;}
@@ -363,9 +364,9 @@
 			}
 			@media screen and (max-width: 480px) 
 			{
-				.j-ad 			{}
+				.j-ad-a			{}
 				.j-ad-a ul 		{padding:.6em 5%;}
-				.j-ad ul li a 	{font-size: 12pt;}
+				.j-ad-a ul li a {font-size: 12pt;}
 			}
 /* Projects AD B BEIGE style set */
 		.j-ad-b					{float:left; width:100%; text-align: center; margin: 20px 0 20px 0; background-image: url(../images/projects_ad_back2.jpg);background-size:cover; border-radius: 5px; border:rgba(100,100,100,0.1) 1px solid;}
@@ -398,8 +399,8 @@
 			}
 		
 	/* all foot menu items style set */
-		.footmenu 					{float:left; width:auto; padding:20px 0 20px 0; font-size: 9pt; line-height:2;}
-		.footmenu span 				{float:left; width:100%; color:#666; font-size: 9pt; font-weight: 300; text-align: left; position: relative; }
+		.footmenu 					{float:left; width:auto; padding:20px 0 20px 0; font-size: 8pt; line-height:2;}
+		.footmenu span 				{float:left; width:100%; color:#666; font-size: 8pt; font-weight: 300; text-align: left; position: relative; }
 		.footmenu ul 				{width:auto; list-style:none;}
 		.footmenu ul li 			{display:inline;}
 		.footmenu a 				{color:#666; text-decoration:none; padding:0 .2em 0 0;}
@@ -442,8 +443,8 @@
 	.featured-post li 				{float:left; list-style: none; position: relative;}
 	.featured-post li span 			{float:left; width:100%; max-width: 600px; padding: 0px 40px 0px 0;font-weight:100; color: #666; font-size: 14pt; line-height: 1.5;}
 	/* overlay*/
-	.featured-post li a 			{opacity:1; display:block; overflow: hidden; position:relative; }
-	.featured-post li a:hover 		{opacity:.95;}
+	.featured-post li a 			{opacity:1; text-decoration:none; display:block; overflow: hidden; position:relative; }
+	.featured-post li a:hover 		{opacity:.9;}
 	.featured-post li a img 		{width:100%; display: block; overflow:hidden; border-radius: 5px; margin-bottom: 20px;}	
 		@media screen and (max-width: 960px) 
 		{
@@ -496,7 +497,6 @@
 			.go-down{display: none;}
 		}
 	.bounce {animation-name: bounce;}
-	a {text-decoration: underline;}
 
 /* go down2 text button */
 	.go-down2 {height: 20px; width:200px; padding-left: 0px; position: absolute; border-radius: 50px;}
@@ -508,7 +508,6 @@
 			.go-down{display: none;}
 		}
 	.bounce2 {animation-name: bounce;}
-	a {text-decoration: underline;}
 
 /* paragraph style set */
 	/* fonts */
