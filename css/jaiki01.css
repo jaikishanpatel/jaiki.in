@@ -6,7 +6,8 @@
 
 	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{ margin:0;padding:0;}
 	ol, {list-style:none;}
-	html,body { margin:0;padding:0; font-family: 'Ek Mukta', sans-serif; background-color: #f2f2f2; font-size: 14pt;}
+	html,body { margin:0;padding:0; font-family: 'Ek Mukta', sans-serif; background-color: #f2f2f2; font-size: 14pt;
+}
 	hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; border-width: 1px; width: 100%; margin-top: 50px;}
 
 
@@ -438,7 +439,7 @@
 	
 
 /* FEATURED HOME OR LANDING POST projects album */
-	.featured-post					{width:100%; float:left; position: relative; width:960px; padding: 20px 0 60px 0; overflow: hidden; display: inline-block;}
+	.featured-post					{width:100%; float:left; position: relative; width:960px; padding: 20px 0 60px 0; overflow: hidden; display: inline-block; border-bottom:rgba(100,100,100,0.5) px dashed;}
 	.featured-post ul				{list-style: none;}
 	.featured-post li 				{float:left; list-style: none; position: relative;}
 	.featured-post li span 			{float:left; width:100%; max-width: 600px; padding: 0px 40px 0px 0;font-weight:100; color: #666; font-size: 14pt; line-height: 1.5;}
