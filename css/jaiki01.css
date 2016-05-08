@@ -105,7 +105,7 @@
       #fixhead rightbox	{}
     }
     	/* M M JAIKI Logo style set */
-    	.mm-jaiki 			{float:left; display: inline; outline: none; font-family:SignatureJAIKI-Regular; font-size: 12pt;}
+    	.mm-jaiki 			{float:left; display: inline; outline: none; font-family:'SignatureJAIKI-Regular', sans-serif; font-size: 12pt;}
 	    .mm-jaiki a 		{color: #666; padding:  0 .5em 0 0;}
 	    .mm-jaiki a:hover 	{color: #666; opacity: .9;}
 	    .mm-jaiki a:visited {color: #666; text-decoration: none;}
@@ -524,7 +524,7 @@
 
 	.sub 				{font-size: 90%;font-weight: 100; opacity: 1; margin-bottom: 1em; line-height:1.4;}
 	.tag 				{font-size: 10pt; font-weight: 100; opacity: .5; margin-bottom: .5em; }
-	.jaikisignature 	{font-family:SignatureJAIKI-Regular;}
+	.jaikisignature 	{font-family:'SignatureJAIKI-Regular', sans-serif;}
 
 	p  					{font-weight:100; color:#333; font-size: 12pt; line-height:1.6; margin-top: .5em; margin-bottom: .5em;}
 	.italic 			{font-style: italic;}
