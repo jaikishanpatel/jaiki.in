@@ -196,22 +196,12 @@
 		}
 
 /* PROJECTS FILTER style set */
-<<<<<<< HEAD
 	.filter 			{width:100%; float: left;}
 	.filter ul 			{list-style:none; float:left; width: auto; padding: .2em 0 .6em 0;}
 	.filter ul li 		{display:inline-block; float:left; padding: .4em .6em 0 0;}
 	.filter a 			{float:left; color:#333; text-decoration:none; font-size: 10pt; font-weight: 100;}
 	.filter a:hover 	{text-decoration:none; color:#222;}
 	.filter a.active 	{text-decoration:none; color:#09c;}
-=======
-	.filter 			{width:100%; float: left; padding-bottom: 10px;}
-	.filter ul 			{list-style:none; float:left; width: auto; padding: .2em 0 .6em 0;}
-	.filter ul li 		{display:inline-block; float:left; padding: .4em .6em 0 0;}
-	.filter ul li a 		{float:left; color:#666; text-decoration:none; font-size: 10pt; font-weight: 100;}
-	.filter ul li a:hover 	{text-decoration:none;}
-	.filter ul li a:visited {color:#666;}
-	.filter ul li a.active 	{text-decoration:none; color:#09c;}
->>>>>>> master
 
 /* wrapper */
 	.section-wrapper{background-color: #fafafa; }
@@ -224,22 +214,14 @@
 	.page-wrapper-blue{background-color: #4db5d8;}
 
 	/* background for 2nd menu header */
-<<<<<<< HEAD
 	.j-top2{width:100%; padding: 0px 0px 30px 0px;height:auto; position:relative; float:left; background-color: #f2f2f2;z-index:1000;}
-=======
-	.j-top2{width:100%; padding: 0px 0px 0px 0px;height:auto; position:relative; float:left; background-color: #fafafa;z-index:1000;}
->>>>>>> master
 
 	.j-top 	{width:100%; padding: 0px 0px 0px 0px; height:auto; position:relative;overflow: hidden;z-index:1000;}
 		.j-top img{float:left; width:100%; position:relative;overflow: hidden;}
 
 	.j-top960{width:100%; max-width: 960px; position:relative;overflow: hidden; text-align: left;}
 		.j-top960 img 	{float:left; width:100%; position:relative; overflow: hidden;}
-<<<<<<< HEAD
 		.j-top960 span 	{float:left; height: auto; position:relative; color: #333; font-size: 14pt; padding-top: 20px;}
-=======
-		.j-top960 span 	{float:left; height: auto; position:relative; color: #666; font-size: 12pt; padding-top: 20px;}
->>>>>>> master
 	
 	.j-wrapper{clear:both; width:960px;text-align: left;}
 		/* Project Title on the top */
@@ -329,11 +311,7 @@
 		.j-album li a:hover 		{opacity:.80;}
 		.j-album li a img 			{max-width:100%; display: block; overflow:hidden; border-radius: 5px; }
 		/* thumb hover overlay text */
-<<<<<<< HEAD
 		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: center; font-size: 18px;  font-weight: 500;}
-=======
-		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: center; font-size: 18px;  font-weight: 100;}
->>>>>>> master
 		.j-album li a:hover span 	{color: #111;}
 			@media screen and (max-width: 960px) 
 			{
