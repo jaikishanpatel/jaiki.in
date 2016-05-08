@@ -1,276 +1,308 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<!-- **************************************************************************************************************************** -->
-<!--HEAD starts -->
-  <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Jaiki: The Magic</title>
-  <!--LINKS starts -->
-    <!-- FAVICON -->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <!-- FONT -->
-      <link href='http://fonts.googleapis.com/css?family=Signika:700,300,400,600' rel='stylesheet' type='text/css'>
-    <!-- styles -->
-      <link rel="stylesheet" type="text/css" href="css/jaiki01.css"/>  
-    <!--hamburger menu script -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-      <script>
-       // DOM ready
-       $(function() {
-         
-          // Create the dropdown base
-          $("<select />").appendTo("nav");
-          
-          // Create default option "Go to..."
-          $("<option />", {
-             "selected": "selected",
-             "value"   : "",
-             "text"    : "Go to..."
-          }).appendTo("nav select");
-          
-          // Populate dropdown with menu items
-          $("nav a").each(function() {
-           var el = $(this);
-           $("<option />", {
-               "value"   : el.attr("href"),
-               "text"    : el.text()
-           }).appendTo("nav select");
-          });
-          
-         // To make dropdown actually work
-         // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
-          $("nav select").change(function() {
-            window.location = $(this).find("option:selected").val();
-          });
-       
-       });</script>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Jaiki:: Projects: The Magic</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FAVICON for all pages -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- styles for all pages -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" type="text/css" href="css/jaiki01.css"/>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <!--go to top -->
-      
-      <script>
-          $(document).ready(function () {
-
-          $(window).scroll(function () {
-              if ($(this).scrollTop() > 100) {
-                  $('.scrollup').fadeIn();
-              } else {
-                  $('.scrollup').fadeOut();
-              }
-          });
-
-          $('.scrollup').click(function () {
-              $("html, body").animate({
-                  scrollTop: 0
-              }, 600);
-              return false;
-          });
-        });
-      </script>
-    <!--sticker title -->
-      <script>
-      $(document).ready(function() {
-      var s = $("#sticker");
-      var img = $(".j-top960");
-      var pos = s.position();                    
-      $(window).scroll(function() {
-          var windowpos = $(window).scrollTop();
-          s.html("<h1>The Magic</h1><h1sub>Fiction Short Film</h1sub>" );
-          if (windowpos >= pos.top + img.height()) {
-              s.addClass("stick");
-          } else {
-              s.removeClass("stick"); 
-          }
-        });
-      });
-      </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script>
+              $(document).ready(function () {
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 100) {
+                      $('.scrollup').fadeIn();
+                  } else {
+                      $('.scrollup').fadeOut();
+                  }
+              });
+              $('.scrollup').click(function () {
+                  $("html, body").animate({
+                      scrollTop: 0
+                  }, 600);
+                  return false;
+              });
+            });
+        </script>
     <!--go down -->
-      <script>
-          $(document).ready(function () {
-            var img = $(".j-top960");
-          $(window).scroll(function () {
-              if ($(this).scrollTop() > 200) {
-                  $('.bounce').fadeOut();
-              } else {
-                  $('.bounce').fadeIn();
-              }
-          });
+        <script>
+              $(document).ready(function () {
+                var img = $(".page-wrapper-black");
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 100) {
+                      $('.bounce').fadeOut();
+                  } else {
+                      $('.bounce').fadeIn();
+                  }
+              });
+              $('.bounce').click(function () {
+                  $("html, body").animate({
+                      scrollTop: -50 + img.height()
+                  }, 600);
+                  return false;
+              });
+            });
+        </script>   
+    </head>
 
-          $('.bounce').click(function () {
-              $("html, body").animate({
-                  scrollTop: 100 + img.height()
-              }, 600);
-              return false;
-          });
-        });
-      </script>
-  </head>
-<!-- **************************************************************************************************************************** -->
-<!--BODY starts-->
-  <body>
-  <div class="page-wrapper" style="background-color:#000"><!--page background-->
-  <center>
-  <!--fixbar starts-->
-    <div id="fixbar" style="background-color:#111">
-      <div id="fixhead">
-          <leftbox>
-              <div class="logo"><a href="index.html"></a></div>
-          </leftbox>
-          <rightbox>
-          <!--main menu menu-->
-              <div class="mm-about"><a href="about.html"></a>About</div>
-              <div class="mm-notes"><a href="notes.html"></a>Notes</div>
-              <div class="mm-projects"><a href="projects.html" class="active"></a>Projects</div>
-              <div class="mm-contact"><a href="contact.html"></a>Contact</div>  
-          <!--main menu ends-->  
-          </rightbox>
+<!-- ********************************************************************************** -->
+
+<body>
+<div class="page-wrapper"><!--page background-->
+<center>
+
+<!-- **** T O P  N A V I G A T I O N ****************************************************************************** -->
+
+<!--Top Navigation MM bar starts-->
+    <div class="top-nav-wrapper" style="background-color:#000;">
+      <div class="top-nav">
+
+      <div class="mm-a">
+        <ul>
+          <li>
+              <a href="index.html" class="jaikisignature">JAIKI</a>
+              <!--main menu menu-->
+              <a href="about.html">About</a>
+              <a href="notes.html">Notes</a>
+              <a href="projects.html" class="active">Projects</a>
+              <a href="contact.html">Contact</a> 
+          </li>
+        </ul>
       </div>
-    </div> 
-    <!--fixbar ends-->
+
+      </div><!--Top Nav ends-->  
+    </div><!--Top Nav Wrapper ends-->
+
+<!-- ********************************************************************************** -->
+
+  <!--bar starts-->
+    <div id="bar" style="background-color:#000;">
+      <div id="head">
+        <ul id="crumbs"><!--Bread Crumbs -->
+          <li><a href="index.html" class="first-child">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#" class="active">The Magic</a></li>
+        </ul>
+      </div>
+    </div><!--bar ends-->
   <!--go to top button-->
     <article>
         <a href="#" class="scrollup">Scroll</a>
     </article>
   <!--CENTRAL PART -->
   <!--contents -->
-    <div class="j-top960">
-        <div class="videoWrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sqGYFK6wfz4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div class="page-wrapper-black">
 
-    </div>
-      <div class="go-down"><a class="bounce" href="#">See the full project</a>
-    </div><br><br><br><br><br><br><br><br>
+        <div class="j-top960" style="padding:200px 0 200px 0">
+          <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/sqGYFK6wfz4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+        <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
 
 
     <div class="j-wrapper">
-        <div class="j-title">
-            <span>   
-                <h6>Client</h6>
-                <h4>Industrial Design Centre<br>Indian Institute of Technology Bombay, Mumbai, India</h4>
-                <h6>Year</h6>
-                <h4>2013 - 2015</h4>
-                <div id="sticker" style="background-color: #111"><h1>The Magic</h1><h1sub>Fiction Short Film</h1sub></div>
-            </span>                   
+        <div class="j-title-top">
+            <span> 
+                <h1>The Magic</h1>
+            </span>   
         </div>
-        <div class="j-post"> 
-            <img src="images/projects/themagic/themagic01.jpg" alt="image01">
-        </div>
+      <div class="clearcolumn"></div>
+      </div><!--j-wrapper ends --> 
+  </div><!--page wrapper black ends-->
 
-        <div class="j-title">
-            <span>   
-            </span>
-        </div> 
-        <div class="j-post"> 
-            <span><h3>a young boy - having no motivation,<br>
-                just got a moment of confidence which seems like <br>'The Magic' never happened before!</h3>
-                <h6>Cast:</h6>
-                <p1>Mridul Basumotari . Prem Lokesh . Pranit Kerkar . Kavita Brahama . Kangkan Sharma <br> Anupriya Kashyap . Maariful Haque . Kaustubh Limaye & Akhil Kumar</p1>
+<!-- **** B O D Y ****************************************************************************** -->
+
+    <div class="j-wrapper">
+        <div class="j-post960">
+            <span> 
+                <h1>The Magic</h1>
+                <h4>Fiction Short Film . 2014 . Running time: 14 minuts</h4><br>
+                <h2>a young boy - having no motivation,<br>
+                just got a moment of confidence which seems like <br>'The Magic' never happened before!</h2><br>
+                
                 <h6>Edited & Directed by:</h6>
-                <p1>Jaikishan Patel</p1>
-                <h6>© 2014 . Industrial Design Centre, <br>Indian Institute of Technology Bombay</h6>
+                <p>Jaikishan Patel</p>
+                
+                <h6>Cast:</h6>
+                <p>Mridul Basumotari . Prem Lokesh . Pranit Kerkar . <br>Kavita Brahama . Kangkan Sharma, Anupriya Kashyap . Maariful Haque . <br>Kaustubh Limaye & Akhil Kumar</p><br><br>
             </span>
-            <img src="images/projects/themagic/themagic02.jpg" alt="image02">
+            <img src="images/projects/themagic_poster.jpg" alt="poster"/>
+            <span> 
+                <p class="caption">official Poster for the film</p>
+            </span>
         </div>
 
-        <div class="j-title">
+        <div class="devider"></div>
+        <div class="j-post960">
             <span>   
                 <h6>The Magic</h6>
-                <h3>Stills from the film</h3>
+                <h2>Stills from the film</h2>
             </span>
-        </div> 
-        <div class="j-post">
-            <img src="images/projects/themagic/themagic03.jpg" alt="image03">
-            <img src="images/projects/themagic/themagic04.jpg" alt="image04">
-            <img src="images/projects/themagic/themagic05.jpg" alt="image05">
+            
+            <img src="images/projects/themagic02.jpg" alt="image02"/>
+            <img src="images/projects/themagic03.jpg" alt="image03"/>
+            <img src="images/projects/themagic04.jpg" alt="image04"/>
+            <img src="images/projects/themagic05.jpg" alt="image05"/>
         </div>
+            
         <div class="clearcolumn"></div>
+
     </div>
     <!--contents ends -->
-<!-- ****************************************************************************************** -->
-<!--foot starts -->
-  <div class="foot">
-    <div class="foot-wrapper">
+
+<!-- **** B C ****************************************************************************** -->
+
+    <div class="section-wrapper" style="background-color:#fafafa;"><!--section background-->
+      <div class="j-wrapper">
+
+      <!--Devider Black -->
+          <div class="devider_black"></div>
+    
+      <!--category-->
+              <div class="category"><span>Categories</span>
+                <ul>
+                  <li><a href="projects_films.html">Moving Images</a></li>
+                </ul>
+              </div>
       <!--Bread Crumbs starts -->
               <ul id="crumbs">
                   <li><a href="index.html" class="first-child">Jaiki Home</a></li>
                   <li><a href="projects.html">Projects</a></li>
                   <li><a href="#" class="active">The Magic - Short Fiction Film</a></li>
               </ul>
+
+        <div class="clearcolumn"></div>
+      </div><!--j-wrapper ends --> 
+    </div><!--section wrapper ends-->
+
+<!-- **** J - A L B U M ****************************************************************************** -->
+
+    <div class="section-wrapper" style="background-color:#fafafa;"><!--section background-->
+      <div class="j-wrapper">
+
       <!--All project list starts -->
-              <div id="footproject">
-                  <ul class="j-album"><span>All Projects</span>
+          <div class="j-album-wrapper">
+              <ul class="j-album"><span>All Design Projects</span>
+                  <!--mindon -->
+                      <li><a href='p_mindon.html'><img src="images/home/p_mindon_thumb.png" alt="Mind On">
+                        <span>Mind On<br/><h2 class="tag">The New Smart</h2></span></a></li>
+                  <!--mumbai rail map -->
+                      <li class='active'><a href='p_mrm.html'><img src="images/home/p_mrm_thumb.png" alt="Mumbai Rail Map">
+                        <span>Mumbai Rail Map<br/><h2 class="tag">Print</h2></span></a></li>
+                  <!--MRM EXT -->
+                      <li class='active'><a href='p_mrmext.html'><img src="images/home/p_mrmext_thumb.png" alt="Meri Mumbai Meri Local">
+                        <span>My Mumbai My Local<br/><h2 class="tag">#LoveMumbai</h2></span></a></li>
+                  <!--eves 24 -->
+                      <li><a href='p_eves24.html'><img src="images/home/p_eves24_thumb.png" alt="Eves 24">
+                        <span>Eves 24<br/><h2 class="tag">Jewells</h2></span></a></li>
+                  <!--karauli diagnostics -->
+                      <li><a href='p_karauli.html'><img src="images/home/p_karauli_thumb.png" alt="Karauli">
+                        <span>Karauli<br/><h2 class="tag">Diagnostics</h2></span></a></li>
+                  <!--MRM App -->
+                      <li class='active'><a href='p_mrmapp.html'><img src="images/home/p_mrmapp_thumb.png" alt="MrmApp">
+                        <span>MrmApp<br/><h2 class="tag">iOS . Android</h2></span></a></li>
+                  <!--bonifate -->
+                      <li><a href='p_bonifate.html'><img src="images/home/p_bonifate_thumb.png" alt="Bonifate">
+                        <span>Bonifate INC.<br/><h2 class="tag">Technologies</h2></span></a></li>
+                  <!--go goa gone -->
+                      <li><a href='p_ggg.html'><img src="images/home/p_ggg_thumb.png" alt="Go Goa Gone">
+                        <span>Go Goa Gone<br/><h2 class="tag">Film Publicity</h2></span></a></li>
+                  <!--bhaag milkha bhaag -->
+                      <li><a href='p_bmb.html'><img src="images/home/p_bmb_thumb.png" alt="Bhaag Milkha Bhaag">
+                        <span>Bhaag Milkha Bhaag<br/><h2 class="tag">Film Publicity</h2></span></a></li>
+                  <!--olive telecom -->
+                      <li><a href='p_olive.html'><img src="images/home/p_olive_thumb.png" alt="Olive">
+                        <span>Olive<br><h2 class="tag">telecom</h2></span></a></li>
+                  <!--white locus -->
+                      <li><a href='p_wlocus.html'><img src="images/home/p_wlocus_thumb.png" alt="White Locus">
+                        <span>White Locus<br/><h2 class="tag">Education</h2></span></a></li>
+                  <!--the magic -->
+                      <li><a href='p_themagic.html'><img src="images/home/p_themagic_thumb.png" alt="The Magic">
+                        <span>The Magic<br/><h2 class="tag">Fiction Short Film</h2></span></a></li>
+                  <!--bmj awards -->
+                      <li><a href='p_bmj.html'><img src="images/home/p_bmj_thumb.png" alt="BMJ">
+                        <span>BMJ Awards<br/><h2 class="tag">Event</h2></span></a></li>
+                  <!--cezar shoes -->
+                      <li><a href='p_cezar.html'><img src="images/home/p_cezar_thumb.png" alt="Cezar">
+                        <span>Cezer<br/><h2 class="tag">Shoes</h2></span></a></li>
+                  <!--spring infradev -->
+                      <li><a href='p_spring.html'><img src="images/home/p_spring_thumb.png" alt="Spring">
+                        <span>Spring Infradev<br/><h2 class="tag">Infrastructure</h2></span></a></li>
+                  <!--culture live -->
+                      <li><a href='p_clive.html'><img src="images/home/p_clive_thumb.png" alt="Culture Live">
+                        <span>Culture Live<br/><h2 class="tag">Event</h2></span></a></li>
+              </ul>
+          </div><!--All project list ends -->
 
-                    <li class='active'>
-                      <a href='p_mrm.html'><img src="images/home/p_mrm_thumb.jpg" alt="Mumbai Rail Map"><span>Mumbai Rail Map<br/><p1album>Information Design</p1album></span></a></li>
-                    
-                    <li>
-                      <a href='p_olive.html'><img src="images/home/p_olive_thumb.jpg" alt="Olive"><span>Olive telecommunications<br><p1album>Visual Brand Language</p1album></span></a></li>
-                    
-                    <li>
-                      <a href='p_bonifate.html'><img src="images/home/p_bonifate_thumb.jpg" alt="Bonifate"><span>Bonifate INC.<br/><p1album>Visual Brand Language</p1album></span></a></li>
-                    
-                    <li>
-                      <a href='p_ggg.html'><img src="images/home/p_ggg_thumb.jpg" alt="Go Goa Gone"><span>Go Goa Gone<br/><p1album>Film Publicity design</p1album></span></a></li>
-                    
-                    <li>
-                      <a href='p_bmb.html'><img src="images/home/p_bmb_thumb.jpg" alt="Bhaag Milkha Bhaag"><span>Bhaag Milkha Bhaag<br/><p1album>Film Publicity design</p1album></span></a></li>
-                    
-                    <li>
-                      <a href='p_karauli.html'><img src="images/home/p_karauli_thumb.jpg" alt="Karauli"><span>Karauli Diagnostics<br/><p1album>Observations</p1album></span></a></li>
-                    
-                    <li>
-                      <a href='p_clive.html'><img src="images/home/p_clive_thumb.jpg" alt="Culture Live"><span>Culture Live<br/><p1album>Visual Brand Language</span></a></li>
-                    
-                    <li>
-                      <a href='p_spring.html'><img src="images/home/p_spring_thumb.jpg" alt="Spring"><span>Spring Infradev<br/><p1album>Visual Brand Language</span></a></li>
-                    
-                    <li>
-                      <a href='p_themagic.html'><img src="images/home/p_themagic_thumb.jpg" alt="The Magic"><span>The Magic<br/><p1album>Fiction Short Film</span></a></li>
-                    
-                    <li>
-                      <a href='p_cezar.html'><img src="images/home/p_cezar_thumb.jpg" alt="Cezar"><span>Cezer . a Shoe with a soul<br/><p1album>Visual Brand Language</p1album></span></a></li>
-                    
-                    <li>
-                      <a href='p_eves24.html'><img src="images/home/p_eves24_thumb.jpg" alt="Eves 24"><span>Eves 24 Jewells<br/><p1album>Visual Brand Language</span></a></li>
-                    
-                    <li>
-                      <a href='p_wlocus.html'><img src="images/home/p_wlocus_thumb.jpg" alt="White Locus"><span>White Locus<br/><p1album>Visual Brand Language</span></a></li>
-                    
-                    <li>
-                      <a href='p_etikoppaka.html'><img src="images/home/p_etikoppaka_thumb.jpg" alt="Etikoppaka"><span>Etikoppaka Toys<br/><p1album>Traditional Knowledge Documentation</span></a></li>
-                    
-                    <li>
-                      <a href='p_bmj.html'><img src="images/home/p_bmj_thumb.jpg" alt="BMJ"><span>BMJ Awards<br/><p1album>Event Branding</span></a></li>
-                    
-                    <li>
-                      <a href='p_semmedu.html'><img src="images/home/p_semmedu_thumb.jpg" alt="Semmedu"><span>Semmedu<br/><p1album>Observations</span></a></li>
+        <div class="clearcolumn"></div>
+      </div><!--j-wrapper ends --> 
+    </div><!--section wrapper ends-->
 
-                  </ul>
-              </div>
-              <!--All project list ends -->
-      <!--Social starts -->
-            <div id="footmenu2">
-                <div class="be120"><a href='https://www.behance.net/jaikishan' target="_blank"></a></div>
-                <div class="fb"><a href='http://facebook.com/jaiki123/' target="_blank"></a></div>
-                <div class="tw"><a href='http://twitter.com/jaikishan_patel/' target="_blank"></a></div>
-                <div class="in"><a href="http://linkedin.com/in/jaiki123/" target="_blank"></a></div>
-                <div class="blog"><a href='http://thisisjaiki.blogspot.com/' target="_blank"></a></div>
-            </div>
-      <!--Social ends -->
-      <!--Last foot menu starts -->
-            <div id="footmenu">
-                <span>Designed and developed by Jaikishan Patel &nbsp; | &nbsp; Copyright © 2015 . All Rights Reserved.</span>
-                <ul>
-                   <li><a href='disclaimer.html'>Disclaimer and privacy policy</a></li><c2>&nbsp; | &nbsp;</c2>
-                   <li><a href='contact.html'>Feedbacks and Suggestion</a></li><c2>&nbsp; | &nbsp;</c2>
-                   <li><a href='contact.html'>Contact</a></li>
-                </ul>
-            </div>
-      <!--Last foot menu ends -->
-    </div>
-  </div>
-  <!--foot ends-->
+<!-- **** F O O T  S H O R T****************************************************************************** -->
+
+  <!--foot starts -->
+      <div class="foot">
+          <div class="foot-wrapper">
+
+            <!--foot menu starts -->
+                <div class="footmenu">
+                    <!--Social starts -->
+                    <span>Stay Connected with Social Media<br>
+                        <ul class="fb"><li><a href='http://facebook.com/jaiki123/' target="_blank">f</a></li></ul>
+                        <ul class="insta"><li><a href="http://instagram.com/j.a.i.k.i/" target="_blank">i</a></li></ul>
+                        <ul class="tw"><li><a href='http://twitter.com/jaikishan_patel/' target="_blank">t</a></li></ul>
+                        <ul class="in"><li><a href="http://linkedin.com/in/jaiki123/" target="_blank">l</a></li></ul>
+                        <ul class="be"><li><a href='https://behance.net/jaikishan' target="_blank">b</a></li></ul>
+                    </span>
+                    <!--copyright menu  -->
+                    <span>
+                        © 2016 . <a class="jaikisignature" href='http://jaiki.in/' target="_blank">j</a>. All Rights Reserved . 
+                        <a href='disclaimer.html'>Disclaimer and Acknowledgement . </a>
+                        <a href='contact.html'>Feedbacks and Suggestion . </a>
+                        <a href='contact.html'>Contact . </a>
+                        <a href='sitemap.html'>Sitemap</a>
+                    </span>
+                    <!--SHARE buttons  -->
+                    <span>
+                        Share the website on : 
+                        <a href="http://www.facebook.com/sharer/sharer.php?u=jaiki.in">Facebook</a>
+                        <a href="https://plus.google.com/share?url=jaiki.in">Google+</a>
+                        <a href="https://twitter.com/intent/tweet?text=Website of Jaikishan Patel&url=jaiki.in&via=jaikishan_patel"> Twitter</a>
+                        <a href="http://pinterest.com/pin/create/button/?url=jaiki.in&description=YOUR-DESCRIPTION&media=images/illustration_home.png"> Pinterest</a>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url=jaiki.in&title=Website&source=jaiki.in"> LinkedIn</a>
+                    </span>
+                </div><!--foot menu ends -->
+                
+          </div><!--foot wrapper ends -->
+      </div><!--foot ends-->
+
+
+<!-- ********************************************************************************** -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-65033586-1','auto');ga('send','pageview');
+        </script>
+        
 </center>
 </div><!--page wrapper ends-->
 </body>
-<!-- ****************************************************************************************** -->
 </html>

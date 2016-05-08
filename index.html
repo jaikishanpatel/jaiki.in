@@ -1,188 +1,227 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<!-- **************************************************************************************************************************** -->
-<!--HEAD starts -->
-  <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Jaiki: Home</title>
-  <!--LINKS starts -->
-    <!-- FAVICON -->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <!-- FONT -->
-      <link href='http://fonts.googleapis.com/css?family=Signika:700,300,400,600' rel='stylesheet' type='text/css'>
-      
-    <!-- styles -->
-      <link rel="stylesheet" type="text/css" href="css/jaiki01.css"/>  
-    <!--hamburger menu script -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-      <script>
-       // DOM ready
-       $(function() {
-         
-          // Create the dropdown base
-          $("<select />").appendTo("nav");
-          
-          // Create default option "Go to..."
-          $("<option />", {
-             "selected": "selected",
-             "value"   : "",
-             "text"    : "Go to..."
-          }).appendTo("nav select");
-          
-          // Populate dropdown with menu items
-          $("nav a").each(function() {
-           var el = $(this);
-           $("<option />", {
-               "value"   : el.attr("href"),
-               "text"    : el.text()
-           }).appendTo("nav select");
-          });
-          
-         // To make dropdown actually work
-         // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
-          $("nav select").change(function() {
-            window.location = $(this).find("option:selected").val();
-          });
-       
-       });</script>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Jaiki</title>
+        <meta name="description" content="Brand, Identity and Communication design">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title"
+              content="Jaiki" />
+        <meta property="og:site_name" content="Personal Website"/>
+        <meta property="og:url"
+              content="http://www.jaiki.in" />
+        <meta property="og:description" content="Latest design projects and case studies" />
+        <meta property="fb:app_id" content="[FB_APP_ID]" />
+        <meta property="og:type" content="article" />
+    <!-- FAVICON for all pages -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- styles for all pages -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" type="text/css" href="css/jaiki01.css"/>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <!--go to top -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-      <script>
-          $(document).ready(function () {
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script>
+              $(document).ready(function () {
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 100) {
+                      $('.scrollup').fadeIn();
+                  } else {
+                      $('.scrollup').fadeOut();
+                  }
+              });
+              $('.scrollup').click(function () {
+                  $("html, body").animate({
+                      scrollTop: 0
+                  }, 600);
+                  return false;
+              });
+            });
+        </script>
+    <!--go down -->
+        <script>
+              $(document).ready(function () {
+                var img = $(".j-top");
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 100) {
+                      $('.bounce').fadeOut();
+                  } else {
+                      $('.bounce').fadeIn();
+                  }
+              });
+              $('.bounce').click(function () {
+                  $("html, body").animate({
+                      scrollTop: 100 + img.height()
+                  }, 600);
+                  return false;
+              });
+            });
+        </script>   
+    </head>
 
-          $(window).scroll(function () {
-              if ($(this).scrollTop() > 100) {
-                  $('.scrollup').fadeIn();
-              } else {
-                  $('.scrollup').fadeOut();
-              }
-          });
+<!-- ********************************************************************************** -->
 
-          $('.scrollup').click(function () {
-              $("html, body").animate({
-                  scrollTop: 0
-              }, 600);
-              return false;
-          });
-        });
-      </script>
-      <!--go down -->
-      <script>
-          $(document).ready(function () {
-            var img = $(".j-black");
-          $(window).scroll(function () {
-              if ($(this).scrollTop() > 100) {
-                  $('.bounce').fadeOut();
-              } else {
-                  $('.bounce').fadeIn();
-              }
-          });
+<body>
+<div class="page-wrapper"><!--page background-->
+<center>
 
-          $('.bounce').click(function () {
-              $("html, body").animate({
-                  scrollTop: 100 + img.height()
-              }, 600);
-              return false;
-          });
-        });
-      </script>
-  <!--LINKS ends -->
-  </head>
-<!-- **************************************************************************************************************************** -->
-<!--BODY starts-->
-  <body>
-  <div class="page-wrapper"><!--page background--> 
-  <center>
-  <!--fixbar starts-->
-    <div id="fixbar" style="background-color:#f2f2f2;opacity:1">
-      <div id="fixhead">
-          <leftbox>
-              <div class="logo"><a href="index.html" class="active"></a></div>
-          </leftbox>
-          <rightbox>
-          <!--main menu menu-->
-              <div class="mm-about"><a href="about.html"></a></div>
-              <div class="mm-notes"><a href="notes.html"></a></div>
-              <div class="mm-projects"><a href="projects.html"></a></div>
-              <div class="mm-contact"><a href="contact.html"></a></div>  
-          <!--main menu ends-->   
-          </rightbox>
+<!-- **** T O P  N A V I G A T I O N ****************************************************************************** -->
+
+<!--Top Navigation MM bar starts-->
+    <div class="top-nav-wrapper" style="background-color:#f2f2f2;">
+      <div class="top-nav" style=" border-bottom:#ccc 1px solid;">
+
+      <div class="mm-a">
+        <ul>
+          <li>
+              <a href="index.html" class="active jaikisignature">JAIKI</a>
+              <!--main menu menu-->
+              <a href="about.html">About</a>
+              <a href="notes.html">Notes</a>
+              <a href="projects.html">Projects</a>
+              <a href="contact.html">Contact</a> 
+          </li>
+        </ul>
       </div>
-    </div> 
-    <!--fixbar ends-->
+
+      <div class="mm-b">
+        <ul>
+          <li>
+              <a class="jaikisignature" href='http://magictype.in/' target="_blank">m</a>
+          </li>
+        </ul>
+      </div>
+
+      </div><!--Top Nav ends-->  
+    </div><!--Top Nav Wrapper ends-->
+
+
+  <!--bar starts-->
+    <div id="bar"></div><!--bar ends-->
+
   <!--go to top button-->
-    <article>
-        <a href="#" class="scrollup">Scroll</a>
-    </article>
-  <!--contents -->
-        <div class="j-black">
-            <div class="j-top960"><span>Love to Observe, Experience & Design. Focused in Communication Design, believing if there is honest communication, Life can be understood very easily.</span>
-            </div>
-            <div class="go-down"><a class="bounce" href="#">See the full project</a></div>
-        </div>
-        <div class="j-wrapper">
-      <!--PROPJECT ALBUMS starts -->
-            <div id="crumbs">
-                  <li><a href="index.html" class="first-child">Home</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="#" class="active">Mumbai Rail Map</a></li>
-            </div>
-            <ul class="jf-album"><span>Ongoing Design Project</span>
-                <li><a href='p_mrm.html'><img src="images/home/p_mrm.jpg" alt="featured project"><span>Mumbai Rail Map<br><p1album>Information Design</p1album></span></a></li>
-            </ul>
-            
-            <ul class="jh-album"><span>Other Projects</span>
-                <li><a href='p_olive.html'><img src="images/home/p_olive.jpg" alt="image01"><span>Olive telecommunications<br><p1album>Visual Brand Language</p1album></span></a></li>
-                <li><a href='p_ggg.html'><img src="images/home/p_ggg.jpg" alt="image01"><span>Go Goa Gone<br/><p1album>Film Publicity design</p1album></span></a></li>
-                <li  class="last-child"><a href='p_bmb.html'><img src="images/home/p_bmb.jpg" alt="image01"><span>Bhaag Milkha Bhaag<br/><p1album>Film Publicity design</p1album></span></a></li>
-            </ul>
-            <!--Additional links starts -->
-              <div id= "link">
+    <article><a href="#" class="scrollup">Scroll</a></article>
+
+<!-- **** F E A T U R E D - P O S T ****************************************************************************** -->
+
+<!--section wrapper starts-->
+  <div class="section-wrapper" style="background-color:#f2f2f2;"><!--section background-->
+    <div class="j-wrapper">
+
+    <!--POST featured mrmapp starts -->
+        <div class="featured-post" style="padding-bottom:0px; border-bottom:#ccc 0px solid;">
+          <ul>
+              <li>
+                  <a href='projects_mrm.html'><img src="images/illustration_home.png" alt="mrm"></a>
+                  <!--<a href='projects_mrm.html'><img src="images/illustration_projects_mrm.png" alt="mrm"></a>-->             
+              </li>
+              <div class="post-link" style="padding-top:0px;">
+                <leftbox>
                   <ul>
-                      <li><a href="projects.html">View All Projects</a></li>
+                    <li><a href="p_mrm.html" class="first-child">Mumbai Rail Map Project</a></li>
+                    <li><a href="p_mrmapp.html">MrmApp Project</a></li>
+                    <li><a href="p_mrmext.html">My Mumbai My Local Project</a></li>
+                    <li><a href="http://www.mrmapp.in" target="_blank">Go to mrmapp.in</a></li>
                   </ul>
-              </div> 
-      <!--PROJECT ALBUMS ends -->
+                </leftbox>
+                <rightbox>
+                  <ul>
+                    <li class="last-child"><a href='http://facebook.com/localsofmumbai/' target="_blank">#Locals of Mumbai </a>
+                    <!--facebook - LOCALS of MUMBAI Share without faces starts-->
+                    <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Flocalsofmumbai%2F&layout=button_count&mobile_iframe=true&width=87&height=20&appId" width="87" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    <!--facebook - LOCALS of MUMBAI Like ends-->
+                    </li>
+                  </ul>
+                </rightbox>
+              </div>
+          </ul>
+        </div><!--HOME POST ends -->
       <div class="clearcolumn"></div>
-      
-      </div>
-      <!--contents ends --> 
-  <!-- ****************************************************************************************** -->
+    </div><!--j-wrapper ends --> 
+  </div><!--section wrapper ends-->
+
+<!-- **** J - A L B U M ****************************************************************************** -->
+
+  <div class="section-wrapper" style="background-color:#f2f2f2;"><!--page background-->
+      <div class="j-wrapper">
+
+        <!--AD starts -->
+            <div class="j-ad-a">
+                <ul><li><a href="projects.html" target="_blank">All Design Projects & Case Studies</a></li></ul>
+            </div><!--AD ends -->
+
+        <!--Magic Type starts 
+            <div class="magictype-ad">
+                <span>magictype.in<br></span>
+                <ul class="magictype"><a href='http://magictype.in/' target="_blank">m</a></ul>
+            </div><!--magictype ends -->
+
+      <div class="clearcolumn"></div>
+    </div><!--j-wrapper ends --> 
+  </div><!--section wrapper ends-->
+
+
+<!-- **** F O O T ****************************************************************************** -->
+
   <!--foot starts -->
-    <div class="foot">
-      <div class="foot-wrapper">
-        
-        <!--Social starts -->
-              <div id="footmenu2">
-                  <span>Stay Connected<br>with Social Media</span>
-                  <div class="fb"><a href='http://facebook.com/jaiki123/' target="_blank"></a></div>
-                  <div class="tw"><a href='http://twitter.com/jaikishan_patel/' target="_blank"></a></div>
-                  <div class="in"><a href="http://linkedin.com/in/jaiki123/" target="_blank"></a></div>
-                  <div class="blog"><a href='http://thisisjaiki.blogspot.com/' target="_blank"></a></div>
-                  <div class="be120"><a href='https://www.behance.net/jaikishan' target="_blank"></a></div>
-              </div>
-              <!--Social ends -->
-        <!--Last foot menu starts -->
-              <div id="footmenu">
-                  <span>Website Designed and developed by Jaikishan Patel . © 2015 . All Rights Reserved.
-                    <br>Typeface used for the website content - Display Type: Expletus Sans by Jasper de Waard, Body Type: Ek Mukta by Ek Type 
-                  </span>
+      <div class="foot" style="background-color:#f2f2f2;">
+          <div class="foot-wrapper">
+            <!--foot menu starts -->
+                <div class="footmenu">
+                    <!--Social starts -->
+                    <span>
+                        <ul class="fb"><li><a href='http://facebook.com/jaiki123/' target="_blank">f</a></li></ul>
+                        <ul class="insta"><li><a href="http://instagram.com/j.a.i.k.i/" target="_blank">i</a></li></ul>
+                        <ul class="tw"><li><a href='http://twitter.com/jaikishan_patel/' target="_blank">t</a></li></ul>
+                        <ul class="in"><li><a href="http://linkedin.com/in/jaiki123/" target="_blank">l</a></li></ul>
+                        <ul class="be"><li><a href='https://behance.net/jaikishan' target="_blank">b</a></li></ul>
+                    </span>
+                    <!--copyright menu  -->
+                    <span>
+                        © 2016 . <a class="jaikisignature" href='http://jaiki.in/' target="_blank">j</a>. All Rights Reserved . 
+                        <a href='disclaimer.html'>Disclaimer and Acknowledgement . </a>
+                        <a href='contact.html'>Feedbacks and Suggestion . </a>
+                        <a href='contact.html'>Contact . </a>
+                        <a href='sitemap.html'>Sitemap</a>
+                    </span>
+                    <!--SHARE buttons  -->
+                    <span>
+                        Share the website on : 
+                        <a href="http://www.facebook.com/sharer/sharer.php?u=jaiki.in">Facebook</a>
+                        <a href="https://plus.google.com/share?url=jaiki.in">Google+</a>
+                        <a href="https://twitter.com/intent/tweet?text=Website of Jaikishan Patel&url=jaiki.in&via=jaikishan_patel"> Twitter</a>
+                        <a href="http://pinterest.com/pin/create/button/?url=jaiki.in&description=YOUR-DESCRIPTION&media=images/illustration_home.png"> Pinterest</a>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url=jaiki.in&title=Website&source=jaiki.in"> LinkedIn</a>
+                    </span>
 
-                  <ul>
-                     <li><a href='disclaimer.html'>Disclaimer and privacy policy</a></li><span>.</span>
-                     <li><a href='contact.html'>Feedbacks and Suggestion</a></li><span>.</span>
-                     <li><a href='contact.html'>Contact</a></li>
-                  </ul>
-              </div>
-              <!--Last foot menu ends -->
-      </div>
-    </div>
-    <!--foot ends-->
-  </center>
-  </div><!--page wrapper ends-->
-  </body>
-<!-- **************************************************************************************************************************** -->
+                </div><!--foot menu ends -->
+
+          </div><!--foot wrapper ends -->
+      </div><!--foot ends-->
+
+
+<!-- ********************************************************************************** -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-65033586-1','auto');ga('send','pageview');
+        </script>
+
+</center>
+</div><!--page wrapper ends-->
+</body>
 </html>
-
-
-
