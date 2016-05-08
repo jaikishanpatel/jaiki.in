@@ -105,7 +105,7 @@
       #fixhead rightbox	{}
     }
     	/* M M JAIKI Logo style set */
-    	.mm-jaiki 			{float:left; display: inline; outline: none; font-family:SignatureJAIKI-Regular; font-size: 12pt;}
+    	.mm-jaiki 			{float:left; display: inline; outline: none; font-family:'SignatureJAIKI-Regular', sans-serif; font-size: 12pt;}
 	    .mm-jaiki a 		{color: #666; padding:  0 .5em 0 0;}
 	    .mm-jaiki a:hover 	{color: #666; opacity: .9;}
 	    .mm-jaiki a:visited {color: #666; text-decoration: none;}
@@ -196,12 +196,13 @@
 		}
 
 /* PROJECTS FILTER style set */
-	.filter 			{width:100%; float: left;}
+	.filter 			{width:100%; float: left; padding-bottom: 10px;}
 	.filter ul 			{list-style:none; float:left; width: auto; padding: .2em 0 .6em 0;}
 	.filter ul li 		{display:inline-block; float:left; padding: .4em .6em 0 0;}
-	.filter a 			{float:left; color:#333; text-decoration:none; font-size: 10pt; font-weight: 100;}
-	.filter a:hover 	{text-decoration:none; color:#222;}
-	.filter a.active 	{text-decoration:none; color:#09c;}
+	.filter ul li a 		{float:left; color:#666; text-decoration:none; font-size: 10pt; font-weight: 100;}
+	.filter ul li a:hover 	{text-decoration:none;}
+	.filter ul li a:visited {color:#666;}
+	.filter ul li a.active 	{text-decoration:none; color:#09c;}
 
 /* wrapper */
 	.section-wrapper{background-color: #fafafa; }
@@ -214,14 +215,14 @@
 	.page-wrapper-blue{background-color: #4db5d8;}
 
 	/* background for 2nd menu header */
-	.j-top2{width:100%; padding: 0px 0px 30px 0px;height:auto; position:relative; float:left; background-color: #f2f2f2;z-index:1000;}
+	.j-top2{width:100%; padding: 0px 0px 0px 0px;height:auto; position:relative; float:left; background-color: #fafafa;z-index:1000;}
 
 	.j-top 	{width:100%; padding: 0px 0px 0px 0px; height:auto; position:relative;overflow: hidden;z-index:1000;}
 		.j-top img{float:left; width:100%; position:relative;overflow: hidden;}
 
 	.j-top960{width:100%; max-width: 960px; position:relative;overflow: hidden; text-align: left;}
 		.j-top960 img 	{float:left; width:100%; position:relative; overflow: hidden;}
-		.j-top960 span 	{float:left; height: auto; position:relative; color: #333; font-size: 14pt; padding-top: 20px;}
+		.j-top960 span 	{float:left; height: auto; position:relative; color: #666; font-size: 12pt; padding-top: 20px;}
 	
 	.j-wrapper{clear:both; width:960px;text-align: left;}
 		/* Project Title on the top */
@@ -311,7 +312,7 @@
 		.j-album li a:hover 		{opacity:.80;}
 		.j-album li a img 			{max-width:100%; display: block; overflow:hidden; border-radius: 5px; }
 		/* thumb hover overlay text */
-		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: center; font-size: 18px;  font-weight: 500;}
+		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: center; font-size: 18px;  font-weight: 100;}
 		.j-album li a:hover span 	{color: #111;}
 			@media screen and (max-width: 960px) 
 			{
@@ -524,7 +525,7 @@
 
 	.sub 				{font-size: 90%;font-weight: 100; opacity: 1; margin-bottom: 1em; line-height:1.4;}
 	.tag 				{font-size: 10pt; font-weight: 100; opacity: .5; margin-bottom: .5em; }
-	.jaikisignature 	{font-family:SignatureJAIKI-Regular;}
+	.jaikisignature 	{font-family:'SignatureJAIKI-Regular', sans-serif;}
 
 	p  					{font-weight:100; color:#333; font-size: 12pt; line-height:1.6; margin-top: .5em; margin-bottom: .5em;}
 	.italic 			{font-style: italic;}
