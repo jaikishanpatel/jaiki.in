@@ -394,7 +394,7 @@
 
 
 /* FOOT style set */
-	.foot{width:100%; float:left; height:auto; padding: 40px 0 40px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat;}
+	.foot{ clear: both; width:100%; float:left; height:auto; padding: 40px 0 40px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat; background-color: #f2f2f2F;}
 	.foot-wrapper{clear:both; width:960px;}
 		@media screen and (max-width: 960px) 
 			{
@@ -492,7 +492,7 @@
 	.scrollup a:hover{opacity: 1;}
 
 /* go down button */
-	.go-down {bottom: 5px;height: 60px; width:60px;right: 0px; margin:0 10px 10px 0; padding: 10px; position: absolute; border-radius: 50px;}
+	.go-down {bottom: 5px;height: 60px; width:60px;right: 0px; margin:0 10px 10px 0; padding: 10px; position: absolute; border-radius: 50px; z-index: 5001;}
 	.go-down a {float:right;background: url("../images/go_down.png") no-repeat right;display: block;height: auto;width: 60px;
 	text-indent: -160000px;text-decoration: none;font-weight:500; color: #666; font-size: 14px; line-height:4; opacity: .5;}
 	.go-down a:hover {opacity: 1}
