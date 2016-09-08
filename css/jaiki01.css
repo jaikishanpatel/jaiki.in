@@ -222,7 +222,7 @@
 
 	.j-top960{width:100%; max-width: 960px; position:relative;overflow: hidden; text-align: left;}
 		.j-top960 img 	{float:left; width:100%; position:relative; overflow: hidden;}
-		.j-top960 span 	{float:left; height: auto; position:relative; color: #666; font-size: 12pt; padding-top: 20px;}
+		.j-top960 span 	{float:left; height: auto; position:relative; color: #999; font-size: 11pt; padding-top: 30px;}
 	
 	.j-wrapper{clear:both; width:960px;text-align: left;}
 		/* Project Title on the top */
