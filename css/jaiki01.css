@@ -27,6 +27,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	feature liga { # I'm just a comment
 		sub f f i by f_f_i;
 		sub f i by f_i;
+		sub f l by f_l;
 	} liga;
 
 
@@ -69,9 +70,9 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	    }
 
 /* Special button style set */
-	.special-button 				{float:left; width:100%; font-weight: 100; text-align: left; font-size: 9pt;}
+	.special-button 				{float:left; width:100%; font-weight: 100; text-align: left; font-size: 10pt;}
 		.special-button ul 			{float:left; list-style: none;}
-		.special-button ul li 		{float:left; padding: 0px 1em; margin-right: 10px; overflow: hidden; background-color: #09c; }
+		.special-button ul li 		{float:left; padding: 0px 1em; margin-right: 0px; overflow: hidden; background-color: #09c; }
 		.special-button ul li a 	{color:#fff; text-decoration:none;display: inline-block; border-radius: 0px; font-weight: 500; text-shadow: 0px 0px 1px rgba(0,0,0,0.5);} 
 		.special-button ul li a:hover 	{color:#fff;} 
 		.special-button ul li a:visited 	{color:#fff;}
@@ -390,7 +391,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 
 
 /* FOOT style set */
-	.foot{ clear: both; width:100%; float:left; height:auto; padding: 40px 0 40px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat; background-color: #f2f2f2F;}
+	.foot{ clear: both; width:100%; float:left; height:auto; padding: 40px 0 40px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat; background-color: #f2f2f2;}
 	.foot-wrapper{clear:both; width:960px;}
 		@media screen and (max-width: 960px) 
 			{
