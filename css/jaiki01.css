@@ -34,7 +34,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 /* line devider */
 	.devider 		{clear: both; width:auto; height: 80px; margin: 60px 0 60px 0;border-bottom: rgba(50,50,50,0.2) 2px solid;}
 	.devider_light 	{clear: both; width:auto; height: 10px; margin: 10px 0 30px 0;border-bottom: rgba(50,50,50,0.1) 2px solid;  }
-	.devider_black 	{clear: both; width:auto; height: 00px; padding: 0px 0 40px 0;border-top: rgba(50,50,50,0.8) 5px solid;background-color: rgba(50,50,50,0.0); border-bottom: rgba(50,50,50,0.0) 5px solid;  }
+	.devider_black 	{clear: both; width:auto; height: 00px; padding: 0px 0 40px 0;border-top: rgba(30,30,30,0.9) 3px solid;background-color: rgba(50,50,50,0.0); border-bottom: rgba(50,50,50,0.0) 5px solid;  }
 	@media (max-width: 960px) 
 	{
       .devider 		{height: 40px; margin: 30px 0 30px 0;}
@@ -303,7 +303,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.j-album					{float:left; width:960px; text-align: left;margin: 30px 0px 30px 0px;}
 		.j-album ul					{list-style: none;}
 		/* album title */
-		.j-album span				{width:100%; position:relative; float: left; color: #333; text-align: center; font-size: 24pt; font-weight: 100; padding:10px 0 20px 0;}
+		.j-album span				{width:100%; position:relative; float: left; color: #666; text-align: center; font-size: 30pt; font-weight: 100; padding:10px 0 20px 0;}
 		.j-album li 				{float: left; list-style:none; width:314px; position: relative; margin: 5px 5px 0px 0px;}
 		.j-album li:last-child 		{margin: 5px 0px 0px 0px;}
 		/* overlay*/
@@ -311,12 +311,12 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.j-album li a:hover 		{opacity:.80;}
 		.j-album li a img 			{max-width:100%; display: block; overflow:hidden; border-radius: 5px; }
 		/* thumb hover overlay text */
-		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: center; font-size: 18px;  font-weight: 100;}
-		.j-album li a:hover span 	{color: #111;}
+		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #333; text-align: center; font-size: 24px;  font-weight: 100;}
+		.j-album li a:hover span 	{color: #555;}
 			@media screen and (max-width: 960px) 
 			{
 			  .j-album				{width:100%;}
-			  .j-album span			{width:100%;}
+			  .j-album span			{width:100%; font-size: 18pt;}
 			  .j-album li 	 		{width:32%; height: auto;}
 			  .j-album li a 		{width: 100%; height: auto;}
 			  .lb-album li a img 	{}
@@ -370,7 +370,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 				.j-ad-a ul li a {font-size: 12pt;}
 			}
 /* Projects AD B BEIGE style set */
-		.j-ad-b					{float:left; width:100%; text-align: center; margin: 20px 0 20px 0; background-image: url(../images/projects_ad_back2.jpg);background-size:cover; border-radius: 5px; border:rgba(100,100,100,0.1) 1px solid;}
+		.j-ad-b					{float:left; width:100%; text-align: center; margin: 20px 0 60px 0; background-image: url(../images/projects_ad_back2.jpg);background-size:cover; border-radius: 5px; border:rgba(100,100,100,0.1) 1px solid;}
 		.j-ad-b ul 				{float:left; list-style:none; width: 90%; padding:1.2em 5%;}
 		.j-ad-b ul li 			{float:center; display:inline; padding:0 .5em 0 0;}
 		.j-ad-b ul li a 		{text-decoration:none; color:#7f6f4e; font-size: 18pt; text-shadow: 0px 0px 1px rgba(0,0,0,0.0);}
