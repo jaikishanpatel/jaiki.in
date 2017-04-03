@@ -177,7 +177,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		}
 
 /* category */
-	.category 		{width:100%;float:left;margin: 0px 0 10px 0; padding-top: 60px; border-top: #e2e2e2 0px solid; font-size: 10pt; font-weight: 100;}
+	.category 		{width:100%;float:left;margin: 0px 0 10px 0; padding-top: 10px; border-top: #e2e2e2 0px solid; font-size: 10pt; font-weight: 100;}
 	.category ul 	{float:left; list-style-type:none;}
 	.category span 	{float:left; color:#999; width:50px; text-align: left; padding:10px 0px 10px 20px; background:url(../images/category.png) no-repeat left center;}
 	.category li 	{float:left; list-style-type:none; width: auto;}
