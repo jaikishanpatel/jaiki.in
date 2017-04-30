@@ -313,7 +313,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.j-album li a:hover 		{opacity:.80;}
 		.j-album li a img 			{max-width:100%; display: block; overflow:hidden; border-radius: 5px; }
 		/* thumb hover overlay text */
-		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: center; font-size: 24px;  font-weight: 500;}
+		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #999; text-align: center; font-size: 24px;  font-weight: 500;}
 		.j-album li a:hover span 	{color: #111;}
 			@media screen and (max-width: 960px) 
 			{
@@ -462,10 +462,10 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	.post-link span 			{float:left; padding: 0px 12px 0px 0;font-weight:700; color: #111; font-size: 12pt; line-height: 1.5;}
 	.post-link ul 				{float:left; list-style:none; width: auto;}
 	.post-link ul li a img 		{float:left; width:auto;display: inline; }
-	.post-link ul li 			{float:left; display:inline; font-size: 12pt; margin: 0px 10px 0px 0; font-weight: 100;}
-	.post-link ul li a 			{float:left; opacity: 1;display: block; text-decoration:none; padding: 2px 2px 2px 10px; color: #333;font-weight:100; background:url(../images/go_arrow.png) 0 50% no-repeat;border-radius: 5px;}
+	.post-link ul li 			{float:left; display:inline; font-size: 12pt; margin: 0px 10px 0px 0; font-weight: 100; background:url(../images/go_arrow.png) 0 50% no-repeat;}
+	.post-link ul li a 			{float:left; opacity: 1;display: block; text-decoration:none; padding: 2px 2px 2px 10px; color: #666;font-weight:100;}
 	.post-link ul li a:hover 	{color: #09c; display:block; text-decoration:none;}
-	.post-link ul li:last-child{margin: 0px 0px 0px 0;}
+	.post-link ul li:last-child {margin: 0px 0px 0px 0;}
 	.post-link leftbox			{float:left;}
 	.post-link rightbox			{float:right;}	
 		@media screen and (max-width: 960px) 
@@ -476,15 +476,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		{
 		  .post-link ul li	{width: 100%;}
 		}
-	/* featured-post foot button links style set */
-	.post-link2 				{float:left; width:100%; margin: 0px 0px 0px 0px;}
-	.post-link2 ul 				{float:left; list-style:none; width: auto;}
-	.post-link2 ul span 		{width:100%; max-width: 600px; float: left; color: #666; font-weight: 100; padding:10px 0 10px 0;}
-	.post-link2 ul li 			{float:left; display:inline ; font-size: 12pt; margin: 0px 5px 10px 0; font-weight: 100; }
-	.post-link2 ul li img 		{ }
-	.post-link2 ul li a 		{float:left; opacity: 1; color:#666; display: block; text-decoration:none; padding: 2px 0px 2px 0px;}
-	.post-link2 ul li a:hover 	{opacity: .8; display:block; text-decoration:none;}
-	.post-link2 ul li:first-child{padding-left: 0pt;}			
+	
 
 /* go top button */
 	.scrollup {width: 60px; height: 60px; position: fixed; bottom: 20px; right: 20px; z-index: 50000; display: none; text-indent: -9999px; background:url(../images/go_top.png) 0 0 no-repeat;}
