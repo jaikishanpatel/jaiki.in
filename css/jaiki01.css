@@ -46,7 +46,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 
 	.mm-a 						{float: left; padding-right: 10px; overflow: hidden;}
 	    .mm-a ul		 		{width: 100%; list-style: none;}
-	    .mm-a ul li 		 	{float: left; height: 50px; line-height: 50px;}
+	    .mm-a ul li 		 	{float: left; height: 50px;}
 	    .mm-a ul li a			{float: left; text-decoration:none; display: inline-block; padding-right: 1.2em; color: #333; line-height: 50px; vertical-align: center;}
 	    .mm-a ul li a:hover		{}
 	    .mm-a ul li a.active	{color: #09c;}
