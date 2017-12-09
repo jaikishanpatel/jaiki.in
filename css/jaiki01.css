@@ -305,16 +305,16 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.j-album					{float:left; width:960px; text-align: left; margin: 30px 0px 30px 0px;}
 		.j-album ul					{list-style: none;}
 		/* album title */
-		.j-album span				{width:100%; position:relative; float: left; color: #666; text-align: center; font-size: 30pt; font-weight: 100; padding:10px 0 20px 0;}
+		.j-album span				{width:100%; position:relative; float: left; color: #333; text-align: center; font-size: 30pt; font-weight: 100; padding:10px 0 20px 0;}
 		.j-album li 				{float: left; list-style:none; width:314px; position: relative; margin: 5px 5px 0px 0px;}
 		.j-album li:last-child 		{margin: 5px 0px 0px 0px;}
 		/* overlay*/
 		.j-album li a 				{opacity:1;display:block; height:auto; border-radius: 5px; position:relative; overflow:hidden;}
-		.j-album li a:hover 		{opacity:.80;}
+		.j-album li a:hover 		{opacity:.9;}
 		.j-album li a img 			{max-width:100%; display: block; overflow:hidden; border-radius: 5px; }
 		/* thumb hover overlay text */
-		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #999; text-align: center; font-size: 24px;  font-weight: 500;}
-		.j-album li a:hover span 	{color: #111;}
+		.j-album li a span 			{float:left; opacity:.5; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #000; text-align: center; font-size: 24px;  font-weight: 800;}
+		.j-album li a:hover span 	{opacity:1; color: #000;}
 			@media screen and (max-width: 960px) 
 			{
 			  .j-album				{width:100%;}
@@ -474,6 +474,26 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		@media screen and (max-width: 480px) 
 		{
 		  .post-link ul li	{width: 100%;}
+		}
+
+		/* featured-post POST foot text links style set */
+	.post-link2 				{float:left; width:100%; padding: 10px 0px 0px 0px;}
+	.post-link2 span 			{float:left; padding: 0px 12px 0px 0;font-weight:700; color: #111; font-size: 12pt; line-height: 1.5;}
+	.post-link2 ul 				{float:left; list-style:none; width: auto;}
+	.post-link2 ul li a img 	{float:left; width:auto;display: inline; }
+	.post-link2 ul li 			{float:left; display:inline; font-size: 12pt; margin: 0px 10px 0px 0; font-weight: 100; }
+	.post-link2 ul li a 		{float:left; opacity: 1;display: block; text-decoration:none; padding: 2px 2px 2px 0px; color: #666;font-weight:100;}
+	.post-link2 ul li a:hover 	{color: #09c; display:block; text-decoration:none;}
+	.post-link2 ul li:last-child {margin: 0px 0px 0px 0;}
+	.post-link2 leftbox			{float:left;}
+	.post-link2 rightbox		{float:right;}	
+		@media screen and (max-width: 960px) 
+		{
+		  .post-link2 rightbox	{float:left;}
+		}
+		@media screen and (max-width: 480px) 
+		{
+		  .post-link2 ul li	{width: 100%;}
 		}
 	
 /* go top button */
