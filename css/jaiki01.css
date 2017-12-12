@@ -487,7 +487,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 
 	/* featured-post POST foot text links style set */
 		.post-link 					{float:left; width:100%; padding: 10px 0px 0px 0px;}
-		.post-link span 			{float:left; padding: 0px 12px 0px 0;font-weight:700; color: #111; font-size: 12pt; line-height: 1.5;}
+		.post-link span 			{float:left; padding: 0px 12px 0px 0;font-weight:600;font-size: 12pt; line-height: 1.5;}
 		.post-link ul 				{float:left; list-style:none; width: auto;}
 		.post-link ul li a img 		{float:left; width:auto;display: inline; }
 		.post-link ul li 			{float:left; display:inline; font-size: 12pt; margin: 0px 10px 0px 0; font-weight: 100; background:url(../images/go_arrow.png) 0 50% no-repeat;}
