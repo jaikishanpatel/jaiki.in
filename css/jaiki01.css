@@ -494,7 +494,8 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.post-link ul li:last-child {margin: 0px 0px 0px 0;}
 		.post-link leftbox			{float:left;}
 		.post-link rightbox			{float:right;}	
-		.post-link a:visited 		{color: #111;}
+		.post-link a 				{color: #111;}
+		.post-link a:visited 		{color: #333;}
 			@media screen and (max-width: 960px) 
 			{
 			  .post-link rightbox	{float:left;}
