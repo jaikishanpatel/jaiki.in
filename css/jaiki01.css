@@ -534,6 +534,8 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	.featured-post50 li a 			{opacity:1; text-decoration:none; display:block; overflow: hidden; position:relative; }
 	.featured-post50 li a:hover 	{opacity:.9;}
 	.featured-post50 li a img 		{width:400px; display: block; overflow:hidden; border-radius: 5px; margin-bottom: 20px;}
+	.featured-post50 a 		 		{color: #111;}
+	.featured-post50 a:visited 		{color: #333;}
 		@media screen and (max-width: 960px) 
 		{
 		  .featured-post50			{width:100%; padding: 0px 0 30px 0;}
@@ -543,8 +545,8 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		}
 
 	/* featured-post POST foot text links style set */
-		.post-link50 				{float:left; width:480px; padding: 10px 0px 20px 20px; display: inline-block;}
-		.post-link50 span 			{float:left; width:100%;padding: 10px 0px 0px 0px;font-weight:600; color: #111; font-size: 22pt; line-height: 1.4;}
+		.post-link50 				{float:left; width:480px; padding: 0px 0px 20px 20px; display: inline-block;}
+		.post-link50 span 			{float:left; width:100%;padding: 6px 0px 0px 0px;font-weight:600; color: #111; font-size: 22pt; line-height: 1.3;}
 		.post-link50 ul 			{float:left; list-style:none; width: auto;}
 		.post-link50 ul li a img 	{float:left; width:auto;display: inline; }
 		.post-link50 ul li 			{float:left; display:inline; font-size: 12pt; margin: 0px 10px 0px 0; font-weight: 100;}
@@ -553,7 +555,8 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.post-link50 ul li:last-child {margin: 0px 0px 0px 0;}
 		.post-link50 leftbox		{float:left;}
 		.post-link50 rightbox		{float:right;}	
-		.post-link50 a:visited 		{color: #111;}
+		.post-link50 a 		 		{color: #111;}
+		.post-link50 a:visited 		{color: #333;}
 			@media screen and (max-width: 960px) 
 			{
 			  .post-link50			{width:100%;}
@@ -563,7 +566,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 			@media screen and (max-width: 480px) 
 			{
 			  .post-link50			{width:100%;}
-			  .post-link50 span		{width:95%; font-size: 12pt;}
+			  .post-link50 span		{width:95%; font-size: 14pt;}
 			  .post-link50 ul li	{width: 100%;}
 			}
 
@@ -599,7 +602,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	/* fonts */
 	h1, h2, h3, h4, h5, h6, .j-top960 span,  .j-ad-a, .j-ad-b, .j-ad-c, .link-list ul span, .pull {font-family: 'Sorts Mill Goudy', serif;}
 
-	.j-title-top, .j-title-top h1, .j-album, .featured-post, .featured-post50 span {font-family: 'Vollkorn', serif;}
+	.j-title-top, .j-title-top h1, .j-album, .featured-post, .featured-post50 {font-family: 'Vollkorn', serif;}
 	
 
 	h1 {font-weight:300; color:#003366; font-size: 24pt; line-height:1.4;}
