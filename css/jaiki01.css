@@ -63,7 +63,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	      .top-nav-special		{width:90%;}
 	    }
     @media (max-width: 480px) {
-	      .mm-a ul li a			{padding-right: .5em;}
+	      .mm-a ul li a			{padding-right: .8em;}
 	      .mm-b 				{float: left;}
 	    }
 
