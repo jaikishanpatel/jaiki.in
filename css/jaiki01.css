@@ -321,7 +321,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.j-album li a:hover 		{opacity:.9; background-color: #fff;}
 		.j-album li a img 			{max-width:100%; display: block; overflow:hidden; border-radius: 5px; }
 		/* thumb hover overlay text */
-		.j-album li a span 			{float:left; opacity:.5; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #000; text-align: center; font-size: 24px;  font-weight: 800;}
+		.j-album li a span 			{float:left; opacity:.5; position: relative; width: 95%; height: auto; padding: 15px 0px 15px 0px;color: #000; text-align: center; font-size: 24px;  font-weight: 800;}
 		.j-album li a:hover span 	{opacity:1; color: #000;}
 			@media screen and (max-width: 960px) 
 			{
