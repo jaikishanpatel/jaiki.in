@@ -666,7 +666,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	.xlarge 			{font-size: 2.0em; line-height: 1.3;hyphens: auto;}
 	.xxlarge 			{font-size: 2.4em; line-height: 1.3;hyphens: auto;}
 	.xxxlarge 			{font-size: 3.0em; line-height: 1.3;hyphens: auto;}	
-	.xxxxlarge 			{font-size: 4.0em; line-height: 1.2;hyphens: auto;}
+	.xxxxlarge 			{font-size: 4.0em; line-height: 1.0;hyphens: auto;}
 	.xxxxxlarge 		{font-size: 5.0em; line-height: 1.0;hyphens: auto;}
 
 	.pull 				{font-size: 2.4em; line-height: 1.4; color: #dbc086; font-weight:100; font-style: italic;}	
