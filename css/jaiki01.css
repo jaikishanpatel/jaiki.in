@@ -3,6 +3,8 @@
 	@import url('http://fonts.googleapis.com/css?family=Cardo:400italic,700,400|Old+Standard+TT:400,400italic,700|Sorts+Mill+Goudy:400,400italic');
 	@import url('http://fonts.googleapis.com/css?family=Ek+Mukta:200,300,400,500,600,700,800');
 	@import url('http://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,600i,700,700i,900,900i');
+	@import url('https://fonts.googleapis.com/css?family=Neuton:200,300,400,400i,700,800');
+	@import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i,700,700i,800,800i,900,900i');
 
 	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{ margin:0;padding:0;}
 	ol, {list-style:none;}
@@ -21,6 +23,10 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	@font-face {
     font-family: 'SignatureJAIKI-Regular'; /*a name to be used later*/
     src: url(../fonts/SignatureJAIKI-Regular.otf); /*URL to font*/
+	}
+	@font-face {
+    font-family: 'Raas'; /*a name to be used later*/
+    src: url(../fonts/Raas-bold.otf); /*URL to font*/
 	}
 
 	feature liga { # I'm just a comment
@@ -201,7 +207,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 
 /* wrapper */
 	.section-wrapper{background-color: #fafafa; }
-	.section-wrapper-s1{background-color: #f2f2f2; background:url(../images/s1.png) center no-repeat; width:100%; position: relative; overflow: hidden;}
+	.section-wrapper-s1{background-color: #f2f2f2; background:url(../images/illustration_0.png) 50% 0% no-repeat; width:100%; position: relative; overflow: hidden;}
 	.section-wrapper-wc{background-color: #f2f2f2; background:url(../images/home/p_wc_bg3.png) 100% 100% no-repeat; width:100%; position: relative; overflow: hidden;}
 
 	.page-wrapper{background-color: #fafafa; }
@@ -640,6 +646,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	
 	.f1 				{font-weight:100; font-family: 'Sorts Mill Goudy', serif;}
 	.f2 				{font-weight:600; font-family: 'Vollkorn', serif;}
+	.f3 				{font-weight:600; font-family:'Neuton', serif;}
 	.jaikisignature 	{font-family:'SignatureJAIKI-Regular', sans-serif;}
 
 
@@ -647,7 +654,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	h2 					{font-size: 22pt; font-weight:100; color:#111111; line-height:1.4; margin-bottom: .5em;}
 	h3 					{font-size: 18pt; font-weight:100; color:#003366; line-height:1.4;}
 	h4 					{font-size: 14pt; font-weight:100; color:#111111; line-height:1.5;}
-	h5 					{font-size: 10pt; font-weight:800; color:#111111; line-height:1.5;}
+	h5 					{font-size: 10pt; font-weight:100; color:#111111; line-height:1.5;}
 	h5 li 				{list-style: none;text-decoration: none;}
 	h6 					{font-size: 10pt; font-weight:100; color:#666; line-height:1.8; margin-top: 1.2em; }
 
