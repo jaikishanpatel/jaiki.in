@@ -74,12 +74,12 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	    }
 
 /* Special button style set */
-	.special-button 				{float:left; width:100%; font-weight: 100; text-align: left; font-size: 10pt;}
+	.special-button 				{float:left; width:100%; font-weight: 100; text-align: left; font-size: 12pt;}
 		.special-button ul 			{float:left; list-style: none;}
-		.special-button ul li 		{float:left; padding: 0px 1em; margin-right: 0px; overflow: hidden; background-color: #09c; }
-		.special-button ul li a 	{color:#fff; text-decoration:none;display: inline-block; border-radius: 0px; font-weight: 500; text-shadow: 0px 0px 1px rgba(0,0,0,0.5);} 
-		.special-button ul li a:hover 	{color:#fff;} 
-		.special-button ul li a:visited 	{color:#fff;}
+		.special-button ul li 		{float:left; padding: 0px 1em; margin-right: 0px; overflow: hidden;}
+		.special-button ul li a 	{color:#09c; text-decoration:none;display: inline-block; border-radius: 0px; font-weight: 500;} 
+		.special-button ul li a:hover 	{} 
+		.special-button ul li a:visited 	{}
 
 /* SHARE style set */
 	.share 						{float:left; width:100%;font-weight: 100; text-align: left; font-size: 9pt;}
@@ -590,12 +590,12 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.post-link50 ul 			{float:left; list-style:none; width: auto;}
 		.post-link50 ul li a img 	{float:left; width:auto;display: inline; }
 		.post-link50 ul li 			{float:left; display:inline; margin: 0px 10px 0px 0; font-weight: 100; background:url(../images/go_arrow2.png) 0 50% no-repeat;}
-		.post-link50 ul li a 		{float:left; opacity: 1;display: block; text-decoration:none; padding: 2px 2px 2px 24px; color: #666;font-weight:100; font-size: 12pt;}
+		.post-link50 ul li a 		{float:left; opacity: 1;display: block; text-decoration:none; padding: 2px 2px 2px 24px; color: #666;font-weight:100; font-size: 12pt; font-style: italic;}
 		.post-link50 ul li a:hover 	{display:block; text-decoration:none;}
 		.post-link50 ul li:last-child {margin: 0px 0px 0px 0;}
 		.post-link50 leftbox		{float:left;}
 		.post-link50 rightbox		{float:right;}	
-		.post-link50 a 		 		{color: #666;}
+		.post-link50 a 		 		{color: #333;}
 		.post-link50 a:visited 		{opacity: .8;}
 			@media screen and (max-width: 960px) 
 			{
@@ -640,9 +640,9 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 
 /* paragraph style set */
 	/* fonts */
-	h1, h2, h3, h4, h5, h6, .j-top960 span,  .j-ad-a, .j-ad-b, .j-ad-c, .link-list ul span, .logo-link span, .pull {font-family: 'Sorts Mill Goudy', serif;}
+	h1, h2, h3, h4, h5, h6, .j-top960 span,  .j-ad-a, .j-ad-b, .j-ad-c, .link-list ul span, .logo-link span, .pull, .featured-post50 ul li a{font-family: 'Sorts Mill Goudy', serif;}
 
-	.j-title-top, .j-title-top h1, .j-album, .featured-post, .featured-post50 {font-family: 'Vollkorn', serif;}
+	.j-title-top, .j-title-top h1, .j-album, .featured-post, .featured-post50 span  {font-family: 'Vollkorn', serif;}
 	
 	.f1 				{font-weight:100; font-family: 'Sorts Mill Goudy', serif;}
 	.f2 				{font-weight:600; font-family: 'Vollkorn', serif;}
