@@ -5,12 +5,12 @@ table of contents](TOC.md)
 
 By default, HTML5 Boilerplate provides two `html` pages:
 
-* [`index.html`](#indexhtml) - a default HTML skeleton that should form the
+* [`index`](#indexhtml) - a default HTML skeleton that should form the
   basis of all pages on your website
-* [`404.html`](#404html) - a placeholder 404 error page
+* [`404`](#404html) - a placeholder 404 error page
 
 
-## `index.html`
+## `index`
 
 
 ### The `no-js` class
@@ -38,7 +38,7 @@ important because:
 1) the charset declaration (`<meta charset="utf-8">`):
 
    * must be included completely within the [first 1024 bytes of the
-     document](https://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset)
+     document](https://www.whatwg.org/specs/web-apps/current-work/multipage/semantics#charset)
 
    * should be specified as early as possible (before any content that could
      be controlled by an attacker, such as a `<title>` element) in order to
@@ -103,7 +103,7 @@ enabling [Enterprise Mode](http://blogs.msdn.com/b/ie/archive/2014/04/02/stay-up
 There are a few different options that you can use with the [`viewport` meta
 tag](https://docs.google.com/present/view?id=dkx3qtm_22dxsrgcf4 "Viewport and
 Media Queries - The Complete Idiot's Guide"). You can find out more in [the
-Apple developer docs](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html).
+Apple developer docs](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport).
 HTML5 Boilerplate comes with a simple setup that strikes a good balance for general use cases.
 
 ```html

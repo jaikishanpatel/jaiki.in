@@ -89,7 +89,7 @@ In the repo the `.htaccess` is used for:
 
 * Allowing cross-origin access to web fonts
 * CORS header for images when browsers request it
-* Enable `404.html` as 404 error document
+* Enable `404` as 404 error document
 * Making the website experience better for IE users better
 * Media UTF-8 as character encoding for `text/html` and `text/plain`
 * Enabling the rewrite URLs engine
@@ -105,7 +105,7 @@ When using `.htaccess` we recommend reading all inline comments (the rules after
 a `#`) in the file once. There is a bunch of optional stuff in it.
 
 If you want to know more about the `.htaccess` file check out
-https://httpd.apache.org/docs/current/howto/htaccess.html.
+https://httpd.apache.org/docs/current/howto/htaccess.
 
 Notice that the original repo for the `.htaccess` file is [this
 one](https://github.com/h5bp/server-configs-apache).
@@ -127,7 +127,7 @@ domain would need to host a cross-domain policy file in order to grant access
 to the source domain and allow the client to continue with the transaction.
 
 For more in-depth information, please see Adobe's [cross-domain policy file
-specification](https://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html).
+specification](https://www.adobe.com/devnet/articles/crossdomain_policy_file_spec).
 
 
 ## robots.txt

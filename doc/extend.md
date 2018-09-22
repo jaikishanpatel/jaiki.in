@@ -36,7 +36,7 @@ docs](https://developer.chrome.com/webstore/inline_installation).
 ### Smart App Banners in iOS 6+ Safari
 
 Stop bothering everyone with gross modals advertising your entry in the
-App Store. Include the following [meta tag](https://developer.apple.com/library/IOS/documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html#//apple_ref/doc/uid/TP40002051-CH6-SW2)
+App Store. Include the following [meta tag](https://developer.apple.com/library/IOS/documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners#//apple_ref/doc/uid/TP40002051-CH6-SW2)
 will unintrusively allow the user the option to download your iOS app,
 or open it with some data about the user's current state on the website.
 
@@ -280,10 +280,10 @@ mouse over your Pinned Site's icon.
 If the site should go to a specific URL when it is pinned (such as the
 homepage), enter it here. One idea is to send it to a special URL so you can
 track the number of pinned users, like so:
-`http://www.example.com/index.html?pinned=true`
+`http://www.example.com/index?pinned=true`
 
 ```html
-<meta name="msapplication-starturl" content="http://www.example.com/index.html?pinned=true">
+<meta name="msapplication-starturl" content="http://www.example.com/index?pinned=true">
 ```
 
 ### Recolor IE's controls manually for a Pinned Site
@@ -314,8 +314,8 @@ right-click. Each Task goes to the specified URL, and gets its own mini icon
 need.
 
 ```html
-<meta name="msapplication-task" content="name=Task 1;action-uri=http://host/Page1.html;icon-uri=http://host/icon1.ico">
-<meta name="msapplication-task" content="name=Task 2;action-uri=http://microsoft.com/Page2.html;icon-uri=http://host/icon2.ico">
+<meta name="msapplication-task" content="name=Task 1;action-uri=http://host/Page1;icon-uri=http://host/icon1.ico">
+<meta name="msapplication-task" content="name=Task 2;action-uri=http://microsoft.com/Page2;icon-uri=http://host/icon2.ico">
 ```
 
 ### (Windows 8) High quality visuals for Pinned Sites
@@ -362,7 +362,7 @@ You can read about this useful element and more techniques in
 
 ### Direct search spiders to your sitemap
 
-[Learn how to make a sitemap](http://www.sitemaps.org/protocol.html)
+[Learn how to make a sitemap](http://www.sitemaps.org/protocol)
 
 ```html
 <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
@@ -399,7 +399,7 @@ plugin](https://www.google.com/search?ie=UTF-8&q=how+to+make+browser+search+plug
 * Use [Microformats](http://microformats.org/wiki/Main_Page) (via
   [microdata](http://microformats.org/wiki/microdata)) for optimum search
   results
-  [visibility](http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html).
+  [visibility](http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets).
 
 * If you're building a web app you may want [native style momentum scrolling in
   iOS 5+](http://www.johanbrook.com/articles/native-style-momentum-scrolling-to-arrive-in-ios-5/)
@@ -413,7 +413,7 @@ plugin](https://www.google.com/search?ie=UTF-8&q=how+to+make+browser+search+plug
 
 * If you want to disable the automatic detection and formatting of possible
   phone numbers in Safari on iOS, use [`<meta name="format-detection"
-  content="telephone=no">`](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html/#//apple_ref/doc/uid/TP40008193-SW5).
+  content="telephone=no">`](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags/#//apple_ref/doc/uid/TP40008193-SW5).
 
 * Avoid development/stage websites "leaking" into SERPs (search engine results
   page) by [implementing X-Robots-tag
@@ -492,7 +492,7 @@ documentation](https://dev.twitter.com/docs/cards).
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@site_account">
 <meta name="twitter:creator" content="@individual_account">
-<meta name="twitter:url" content="http://www.example.com/path/to/page.html">
+<meta name="twitter:url" content="http://www.example.com/path/to/page">
 <meta name="twitter:title" content="">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="http://www.example.com/path/to/image.jpg">
@@ -505,8 +505,8 @@ documentation](https://dev.twitter.com/docs/cards).
 
 Signal to search engines and others "Use this URL for this page!" Useful when
 parameters after a `#` or `?` is used to control the display state of a page.
-`http://www.example.com/cart.html?shopping-cart-open=true` can be indexed as
-the cleaner, more accurate `http://www.example.com/cart.html`.
+`http://www.example.com/cart?shopping-cart-open=true` can be indexed as
+the cleaner, more accurate `http://www.example.com/cart`.
 
 ```html
 <link rel="canonical" href="">
@@ -533,12 +533,12 @@ This can be done by adding the following annotations in your HTML pages:
 * on the desktop page, add the `link rel="alternate"` tag pointing to the
   corresponding mobile URL, e.g.:
 
-  `<link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.example.com/page.html" >`
+  `<link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.example.com/page" >`
 
 * on the mobile page, add the `link rel="canonical"` tag pointing to the
   corresponding desktop URL, e.g.:
 
-  `<link rel="canonical" href="http://www.example.com/page.html">`
+  `<link rel="canonical" href="http://www.example.com/page">`
 
 For more information please see:
 
@@ -568,7 +568,7 @@ Home Screen icon. This works since iOS 6.
 ```
 
 For further information please read the [official
-documentation](https://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+documentation](https://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags)
 on Apple's site.
 
 
@@ -659,5 +659,5 @@ their UIs with varying colors.
 The `content` attribute extension can take any valid CSS color.
 
 Currently, the `theme-color` meta extension is supported by [Chrome 39+
-for Android Lollipop](http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)
+for Android Lollipop](http://updates5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)
 and [Firefox OS 2.1+](https://twitter.com/ahmednefzaoui/status/492344698493997057).

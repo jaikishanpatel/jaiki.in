@@ -33,10 +33,10 @@ A basic HTML5 Boilerplate site initially looks something like this:
 │       └── modernizr.min.js
 ├── .editorconfig
 ├── .htaccess
-├── 404.html
+├── 404
 ├── apple-touch-icon.png
 ├── browserconfig.xml
-├── index.html
+├── index
 ├── humans.txt
 ├── robots.txt
 ├── crossdomain.xml
@@ -74,7 +74,7 @@ Host your site on a server other than Apache? You're likely to find the
 corresponding server configs project listed in our [Server Configs
 ](https://github.com/h5bp/server-configs/blob/master/README.md) repository.
 
-### 404.html
+### 404
 
 A helpful custom 404 to get you started.
 
@@ -91,7 +91,7 @@ The `.editorconfig` file is provided in order to encourage and help you and
 your team to maintain consistent coding styles between different
 editors and IDEs. [Read more about the `.editorconfig` file](misc.md#editorconfig).
 
-### index.html
+### index
 
 This is the default HTML skeleton that should form the basis of all pages on
 your site. If you are using a server-side templating framework, then you will
