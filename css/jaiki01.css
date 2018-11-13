@@ -567,14 +567,14 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	
 
 /* FEATURED (small) HOME OR LANDING POST projects album */
-	.featured-post50				{float:left; position: relative; width:960px; padding: 0px 0 40px 0; overflow: hidden; display: inline-block; border-bottom:rgba(100,100,100,0.5) 0px dashed;}
+	.featured-post50				{float:left; position: relative; width:960px; padding: 0px 0 20px 0; overflow: hidden; display: inline-block; border-bottom:rgba(100,100,100,0.5) 0px dashed;}
 	.featured-post50 ul				{list-style: none; clear: both;}
 	.featured-post50 li 			{float:left; list-style: none; position: relative;}
 	.featured-post50 li span 		{float:left; width:100%; max-width: 600px; padding: 0px 40px 0px 0;font-weight:100; color: #666; font-size: 14pt; }
 	/* overlay*/
 	.featured-post50 li a 			{opacity:1; text-decoration:none; display:block; overflow: hidden; position:relative; }
 	.featured-post50 li a:hover 	{opacity:.9;}
-	.featured-post50 li a img 		{width:400px;vertical-align: center; display: block; overflow:hidden; border-radius: 5px; margin-bottom: 20px;}
+	.featured-post50 li a img 		{width:300px;vertical-align: center; display: block; overflow:hidden; border-radius: 5px; margin-bottom: 20px;}
 	.featured-post50 a 		 		{color: #666;}
 	.featured-post50 a:visited 		{color: .8;}
 		@media screen and (max-width: 960px) 
