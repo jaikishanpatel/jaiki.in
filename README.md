@@ -1,2 +1,2 @@
 # jaiki.in
-jaiki.in website
+Personal website of Jaikishan Patel
