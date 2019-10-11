@@ -14,7 +14,7 @@ HTML5 Boilerplate's CSS includes:
 This starting CSS does not rely on the presence of
 [conditional class names](https://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/),
 [conditional style sheets](https://css-tricks.com/how-to-create-an-ie-only-stylesheet/),
-or [Modernizr](http://modernizr.com/), and it is ready to use no matter what
+or [Modernizr](https://modernizr.com/), and it is ready to use no matter what
 your development preferences happen to be.
 
 
@@ -36,7 +36,7 @@ As opposed to CSS resets, Normalize.css:
 
 For more information about Normalize.css, please refer to its [project
 page](https://necolas.github.com/normalize.css/), as well as this
-[blog post](http://nicolasgallagher.com/about-normalize-css/).
+[blog post](https://nicolasgallagher.com/about-normalize-css/).
 
 
 ## Useful defaults
@@ -72,9 +72,9 @@ visually, while still have its content accessible to screen readers.
 See also:
 
 * [CSS in Action: Invisible Content Just for Screen Reader
-  Users](http://www.webaim.org/techniques/css/invisiblecontent/)
+  Users](https://www.webaim.org/techniques/css/invisiblecontent/)
 * [Hiding content for
-  accessibility](http://snook.ca/archives/html_and_css/hiding-content-for-accessibility)
+  accessibility](https://snook.ca/archives/html_and_css/hiding-content-for-accessibility)
 * [HTML5 Boilerplate - Issue #194](https://github.com/h5bp/html5-boilerplate/issues/194/).
 
 #### `.invisible`
@@ -97,16 +97,16 @@ The `clearfix` class can be added to any element to ensure that it always fully
 contains its floated children.
 
 Over the years there have been many variants of the clearfix hack, but currently,
-we use the [micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/).
+we use the [micro clearfix](https://nicolasgallagher.com/micro-clearfix-hack/).
 
 
 ## Media Queries
 
 HTML5 Boilerplate makes it easy for you to get started with a
-[_mobile first_](http://www.lukew.com/presos/preso.asp?26) and [_responsive web
-design_](http://www.alistapart.com/articles/responsive-web-design/) approach to
+[_mobile first_](https://www.lukew.com/presos/preso.asp?26) and [_responsive web
+design_](https://www.alistapart.com/articles/responsive-web-design/) approach to
 development. But it's worth remembering that there are [no silver
-bullets](http://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/).
+bullets](https://blog.cloudfour.com/css-media-query-for-mobile-is-fools-gold/).
 
 We include placeholder media queries to help you build up your mobile styles for
 wider viewports and high-resolution displays. It's recommended that you adapt
@@ -131,7 +131,7 @@ At printing time, these styles will:
 
 * strip all background colors, change the font color to black, and remove the
   `text-shadow` — done in order to [help save printer ink and speed up the
-  printing process](http://www.sanbeiji.com/archives/953)
+  printing process](https://www.sanbeiji.com/archives/953)
 * underline and expand links to include the URL — done in order to allow users
   to know where to refer to<br>
   (exceptions to this are: the links that are
@@ -147,7 +147,7 @@ At printing time, these styles will:
   that they should:
 
   * ensure the table header (`<thead>`) is [printed on each page spanned by the
-    table](http://css-discuss.incutio.com/wiki/Printing_Tables)
+    table](https://css-discuss.incutio.com/wiki/Printing_Tables)
   * prevent block quotations, preformatted text, images and table rows from
     being split onto two different pages
   * ensure that headings never appear on a different page than the text they
@@ -157,6 +157,6 @@ At printing time, these styles will:
     [not appear on printed pages](https://css-tricks.com/almanac/properties/o/orphans/)
 
 The print styles are included along with the other `css` to [avoid the
-additional HTTP request](http://www.phpied.com/delay-loading-your-print-css/).
+additional HTTP request](https://www.phpied.com/delay-loading-your-print-css/).
 Also, they should always be included last, so that the other styles can be
 overwritten.

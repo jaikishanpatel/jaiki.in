@@ -42,21 +42,21 @@ your team define and maintain consistent coding styles between different
 editors and IDEs.
 
 By default, `.editorconfig` includes some basic
-[properties](http://editorconfig.org/#supported-properties) that reflect the
+[properties](https://editorconfig.org/#supported-properties) that reflect the
 coding styles from the files provided by default, but you can easily change
 them to better suit your needs.
 
 In order for your editor/IDE to apply the
-[properties](http://editorconfig.org/#supported-properties) from the
+[properties](https://editorconfig.org/#supported-properties) from the
 `.editorconfig` file, you will need to [install a
-plugin]( http://editorconfig.org/#download).
+plugin]( https://editorconfig.org/#download).
 
 __N.B.__ If you aren't using the server configurations provided by HTML5
 Boilerplate, we highly encourage you to configure your server to block
 access to `.editorconfig` files, as they can disclose sensitive information!
 
 For more details, please refer to the [EditorConfig
-project](http://editorconfig.org/).
+project](https://editorconfig.org/).
 
 
 ## Server Configuration
@@ -153,7 +153,7 @@ you want to block access to private content, use proper authentication instead.
 
 For more information about `robots.txt`, please see:
 
-  * [robotstxt.org](http://www.robotstxt.org/)
+  * [robotstxt.org](https://www.robotstxt.org/)
   * [How Google handles the `robots.txt` file](https://developers.google.com/webmasters/control-crawl-index/docs/robots_txt)
 
 

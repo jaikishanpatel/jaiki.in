@@ -121,8 +121,8 @@ Microsoft Ajax Content Delivery Network:
 
 * https://developer.mozilla.org/en-US/docs/Controlling_DNS_prefetching
 * https://dev.chromium.org/developers/design-documents/dns-prefetching
-* http://blogs.msdn.com/b/ie/archive/2011/03/17/internet-explorer-9-network-performance-improvements.aspx
-* http://dayofjs.com/videos/22158462/web-browsers_alex-russel
+* https://blogs.msdn.com/b/ie/archive/2011/03/17/internet-explorer-9-network-performance-improvements.aspx
+* https://dayofjs.com/videos/22158462/web-browsers_alex-russel
 
 
 ## Google Universal Analytics
@@ -161,14 +161,14 @@ ga('send', 'pageview');
 ### Track jQuery AJAX requests in Google Analytics
 
 An article by @JangoSteve explains how to [track jQuery AJAX requests in Google
-Analytics](http://www.alfajango.com/blog/track-jquery-ajax-requests-in-google-analytics/).
+Analytics](https://www.alfajango.com/blog/track-jquery-ajax-requests-in-google-analytics/).
 
 Add this to `plugins.js`:
 
 ```js
 /*
  * Log all jQuery AJAX requests to Google Analytics
- * See: http://www.alfajango.com/blog/track-jquery-ajax-requests-in-google-analytics/
+ * See: https://www.alfajango.com/blog/track-jquery-ajax-requests-in-google-analytics/
  */
 if (typeof ga !== "undefined" && ga !== null) {
     $(document).ajaxSend(function(event, xhr, settings){
@@ -248,7 +248,7 @@ values:
 
 You can find more information in [Microsoft's IEBlog post about prompting for
 plugin use in IE10 Metro
-Mode](http://blogs.msdn.com/b/ie/archive/2012/01/31/web-sites-and-a-plug-in-free-web.aspx).
+Mode](https://blogs.msdn.com/b/ie/archive/2012/01/31/web-sites-and-a-plug-in-free-web.aspx).
 
 ### IE Pinned Sites (IE9+)
 
@@ -280,10 +280,10 @@ mouse over your Pinned Site's icon.
 If the site should go to a specific URL when it is pinned (such as the
 homepage), enter it here. One idea is to send it to a special URL so you can
 track the number of pinned users, like so:
-`http://www.example.com/index?pinned=true`
+`https://www.example.com/index?pinned=true`
 
 ```html
-<meta name="msapplication-starturl" content="http://www.example.com/index?pinned=true">
+<meta name="msapplication-starturl" content="https://www.example.com/index?pinned=true">
 ```
 
 ### Recolor IE's controls manually for a Pinned Site
@@ -314,15 +314,15 @@ right-click. Each Task goes to the specified URL, and gets its own mini icon
 need.
 
 ```html
-<meta name="msapplication-task" content="name=Task 1;action-uri=http://host/Page1;icon-uri=http://host/icon1.ico">
-<meta name="msapplication-task" content="name=Task 2;action-uri=http://microsoft.com/Page2;icon-uri=http://host/icon2.ico">
+<meta name="msapplication-task" content="name=Task 1;action-uri=https://host/Page1;icon-uri=https://host/icon1.ico">
+<meta name="msapplication-task" content="name=Task 2;action-uri=https://microsoft.com/Page2;icon-uri=https://host/icon2.ico">
 ```
 
 ### (Windows 8) High quality visuals for Pinned Sites
 
 Windows 8 adds the ability for you to provide a PNG tile image and specify the
 tile's background color. [Full details on the IE
-blog](http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pinned-sites-in-windows-8.aspx).
+blog](https://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pinned-sites-in-windows-8.aspx).
 
 * Create a 144x144 image of your site icon, filling all of the canvas, and
   using a transparent background.
@@ -338,16 +338,16 @@ tile in the Start screen. The user will be able to receive these badge updates
 even when your app isn't actively running. The badge's value can be a number,
 or one of a predefined list of glyphs.
 
-* [Tutorial on IEBlog with link to badge XML schema](http://blogs.msdn.com/b/ie/archive/2012/04/03/pinned-sites-in-windows-8.aspx)
+* [Tutorial on IEBlog with link to badge XML schema](https://blogs.msdn.com/b/ie/archive/2012/04/03/pinned-sites-in-windows-8.aspx)
 * [Available badge values](https://msdn.microsoft.com/en-us/library/ie/br212849.aspx)
 
 ```html
-<meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://www.example.com/path/to/file.xml">
+<meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=https://www.example.com/path/to/file.xml">
 ```
 
 ### Disable link highlighting upon tap in IE10
 
-Similar to [-webkit-tap-highlight-color](http://davidwalsh.name/mobile-highlight-color)
+Similar to [-webkit-tap-highlight-color](https://davidwalsh.name/mobile-highlight-color)
 in iOS Safari. Unlike that CSS property, this is an HTML meta element, and its
 value is boolean rather than a color. It's all or nothing.
 
@@ -362,7 +362,7 @@ You can read about this useful element and more techniques in
 
 ### Direct search spiders to your sitemap
 
-[Learn how to make a sitemap](http://www.sitemaps.org/protocol)
+[Learn how to make a sitemap](https://www.sitemaps.org/protocol)
 
 ```html
 <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
@@ -396,13 +396,13 @@ plugin](https://www.google.com/search?ie=UTF-8&q=how+to+make+browser+search+plug
 
 * Use [polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills).
 
-* Use [Microformats](http://microformats.org/wiki/Main_Page) (via
-  [microdata](http://microformats.org/wiki/microdata)) for optimum search
+* Use [Microformats](https://microformats.org/wiki/Main_Page) (via
+  [microdata](https://microformats.org/wiki/microdata)) for optimum search
   results
-  [visibility](http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets).
+  [visibility](https://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets).
 
 * If you're building a web app you may want [native style momentum scrolling in
-  iOS 5+](http://www.johanbrook.com/articles/native-style-momentum-scrolling-to-arrive-in-ios-5/)
+  iOS 5+](https://www.johanbrook.com/articles/native-style-momentum-scrolling-to-arrive-in-ios-5/)
   using `-webkit-overflow-scrolling: touch`.
 
 * If you want to disable the translation prompt in Chrome or block Google
@@ -429,7 +429,7 @@ plugin](https://www.google.com/search?ie=UTF-8&q=how+to+make+browser+search+plug
 ### RSS
 
 Have an RSS feed? Link to it here. Want to [learn how to write an RSS feed from
-scratch](http://www.rssboard.org/rss-specification)?
+scratch](https://www.rssboard.org/rss-specification)?
 
 ```html
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
@@ -439,7 +439,7 @@ scratch](http://www.rssboard.org/rss-specification)?
 
 Atom is similar to RSS, and you might prefer to use it instead of or in
 addition to it. [See what Atom's all
-about](http://www.atomenabled.org/developers/syndication/).
+about](https://www.atomenabled.org/developers/syndication/).
 
 ```html
 <link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
@@ -455,8 +455,8 @@ attribute should contain the location of your pingback service.
 ```
 
 * High-level explanation: https://codex.wordpress.org/Introduction_to_Blogging#Pingbacks
-* Step-by-step example case: http://www.hixie.ch/specs/pingback/pingback-1.0#TOC5
-* PHP pingback service: https://web.archive.org/web/20131211032834/http://blog.perplexedlabs.com/2009/07/15/xmlrpc-pingbacks-using-php/
+* Step-by-step example case: https://www.hixie.ch/specs/pingback/pingback-1.0#TOC5
+* PHP pingback service: https://web.archive.org/web/20131211032834/https://blog.perplexedlabs.com/2009/07/15/xmlrpc-pingbacks-using-php/
 
 
 
@@ -492,10 +492,10 @@ documentation](https://dev.twitter.com/docs/cards).
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@site_account">
 <meta name="twitter:creator" content="@individual_account">
-<meta name="twitter:url" content="http://www.example.com/path/to/page">
+<meta name="twitter:url" content="https://www.example.com/path/to/page">
 <meta name="twitter:title" content="">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="http://www.example.com/path/to/image.jpg">
+<meta name="twitter:image" content="https://www.example.com/path/to/image.jpg">
 ```
 
 
@@ -505,8 +505,8 @@ documentation](https://dev.twitter.com/docs/cards).
 
 Signal to search engines and others "Use this URL for this page!" Useful when
 parameters after a `#` or `?` is used to control the display state of a page.
-`http://www.example.com/cart?shopping-cart-open=true` can be indexed as
-the cleaner, more accurate `http://www.example.com/cart`.
+`https://www.example.com/cart?shopping-cart-open=true` can be indexed as
+the cleaner, more accurate `https://www.example.com/cart`.
 
 ```html
 <link rel="canonical" href="">
@@ -516,7 +516,7 @@ the cleaner, more accurate `http://www.example.com/cart`.
 
 Signal to the world "This is the shortened URL to use this page!" Poorly
 supported at this time. Learn more by reading the [article about shortlinks on
-the Microformats wiki](http://microformats.org/wiki/rel-shortlink).
+the Microformats wiki](https://microformats.org/wiki/rel-shortlink).
 
 ```html
 <link rel="shortlink" href="h5bp.com">
@@ -533,12 +533,12 @@ This can be done by adding the following annotations in your HTML pages:
 * on the desktop page, add the `link rel="alternate"` tag pointing to the
   corresponding mobile URL, e.g.:
 
-  `<link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.example.com/page" >`
+  `<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.example.com/page" >`
 
 * on the mobile page, add the `link rel="canonical"` tag pointing to the
   corresponding desktop URL, e.g.:
 
-  `<link rel="canonical" href="http://www.example.com/page">`
+  `<link rel="canonical" href="https://www.example.com/page">`
 
 For more information please see:
 
@@ -659,5 +659,5 @@ their UIs with varying colors.
 The `content` attribute extension can take any valid CSS color.
 
 Currently, the `theme-color` meta extension is supported by [Chrome 39+
-for Android Lollipop](http://updates5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)
+for Android Lollipop](https://updates5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)
 and [Firefox OS 2.1+](https://twitter.com/ahmednefzaoui/status/492344698493997057).
