@@ -27,10 +27,6 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
     font-family: 'gold1-Regular'; /*a name to be used later*/
     src: url(../fonts/gold1-Regular.ttf); /*URL to font*/
 	}
-	@font-face {
-    font-family: 'Raas'; /*a name to be used later*/
-    src: url(../fonts/Raas-bold.otf); /*URL to font*/
-	}
 
 	feature liga { # I'm just a comment
 		sub f f i by f_f_i;
