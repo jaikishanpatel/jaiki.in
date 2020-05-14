@@ -8,7 +8,7 @@
 
 	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{ margin:0;padding:0;}
 	ol, {list-style:none;}
-	html,body { margin:0;padding:0; font-family: 'Ek Mukta', sans-serif; background-color: #f2f2f2; font-size: 14pt;}
+	html,body { margin:0;padding:0; font-family: 'Sorts Mill Goudy', sans-serif; background-color: #f2f2f2; font-size: 14pt;}
 
 /* link */
 	a:link {text-decoration: none; opacity: 1; color: #09c;}
@@ -22,6 +22,18 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	@font-face {
     font-family: 'SignatureJAIKI-Regular'; /*a name to be used later*/
     src: url(../fonts/SignatureJAIKI-Regular.otf); /*URL to font*/
+	}
+	@font-face {
+    font-family: 'gold1-Regular'; /*a name to be used later*/
+    src: url(../fonts/gold1-Regular.ttf); /*URL to font*/
+	}
+	@font-face {
+    font-family: 'Raigarh-Regular'; /*a name to be used later*/
+    src: url(../fonts/raigarh-Regular.ttf); /*URL to font*/
+	}
+	@font-face {
+    font-family: 'Raigarh-Bold'; /*a name to be used later*/
+    src: url(../fonts/raigarh-Bold.ttf); /*URL to font*/
 	}
 	@font-face {
     font-family: 'Raas'; /*a name to be used later*/
@@ -45,20 +57,20 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 
 /* TOP NAVIGATION style set */
     .top-nav-wrapper 			{position:fixed; width:100%; height:auto; z-index:9999; background-color: #f2f2f2;}
-    .top-nav 		 			{max-width:960px; height:50px; text-align: left; font-size: 12pt; font-weight: 500;}
+    .top-nav 		 			{max-width:960px; height:50px; text-align: left; font-size: 12pt; font-weight: 500; font-family: raigarh-regular;}
 
-	.mm-a 						{float: left; padding: 0 10px 0 0px; overflow: hidden; line-height: 50px; vertical-align: center;}
+	.mm-a 						{float: left; padding: 0 10px 0 0px; overflow: hidden; line-height: 50px; vertical-align: center; text-transform: none; }
 	    .mm-a ul		 		{width: 100%; list-style: none;}
 	    .mm-a ul li 		 	{float: left; height: 50px;}
-	    .mm-a ul li a			{float: left; text-decoration:none; display: inline-block; padding-right: 1.2em; color: #333;}
+	    .mm-a ul li a			{float: left; text-decoration:none; display: inline-block; padding-right: 1.2em; color: #666;}
 	    .mm-a ul li a:hover		{}
 	    .mm-a ul li a.active	{color: #09c;}
 
-	.mm-b 						{float: right; overflow: hidden;line-height: 50px; vertical-align: center;}
+	.mm-b 						{float: right; overflow: hidden; line-height: 50px; vertical-align: center; font-size: 12pt; }
 	    .mm-b ul		 		{width: auto; list-style: none;}
 	    .mm-b ul li 		 	{float: left; height: 50px;}
-	    .mm-b ul li a			{text-decoration:none; display: inline-block; padding: 0 .5em; color: #666;  line-height: 50px; vertical-align: center;}
-	    .mm-b ul li a:hover		{color: #09c;}
+	    .mm-b ul li a			{text-decoration:none; display: inline-block; padding: 0 .5em; color: #666; vertical-align: center;}
+	    .mm-b ul li a:hover		{opacity: .8;}
 	    .mm-b ul li a.active	{color: #09c;}
 	    .mm-b ul li a:visited	{}
 
@@ -73,10 +85,10 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	    }
 
 /* Special button style set */
-	.special-button 				{float:left; width:100%; font-weight: 100; text-align: left; font-size: 12pt;}
+	.special-button 				{float:left; width:100%; font-weight: 100; text-align: left;}
 		.special-button ul 			{float:left; list-style: none;}
 		.special-button ul li 		{float:left; padding: 0px 1em; margin-right: 0px; overflow: hidden;}
-		.special-button ul li a 	{color:#09c; text-decoration:none;display: inline-block; border-radius: 0px; font-weight: 500;} 
+		.special-button ul li a 	{color:#fff; text-decoration:none;display: inline-block; border-radius: 0px; font-weight: 500;} 
 		.special-button ul li a:hover 	{} 
 		.special-button ul li a:visited 	{}
 
@@ -427,7 +439,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 			}
 
 /* FOOT style set */
-	.foot{ clear: both; width:100%; float:left; height:auto; padding: 40px 0 80px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat; background-color: #f2f2f2;}
+	.foot{ clear: both; width:100%; float:left; height:auto; padding: 40px 0 80px 0; z-index:5000;background:url(../images/texture_dots.png) 0 repeat; background-color: #f1f2f3;}
 	.foot-wrapper{clear:both; width:960px;}
 		@media screen and (max-width: 960px) 
 			{
@@ -436,11 +448,11 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 			}
 		
 	/* all foot menu items style set */
-		.footmenu 					{float:left; width:auto; padding:20px 0 20px 0; font-size: 8pt; line-height:2;}
-		.footmenu span 				{float:left; width:100%; color:#666; font-size: 8pt; font-weight: 300; text-align: left; position: relative; }
-		.footmenu ul 				{width:auto; list-style:none;}
-		.footmenu ul li 			{display:inline;}
-		.footmenu a 				{color:#666; text-decoration:none; padding:0 .2em 0 0;}
+		.footmenu 					{float:left; width:auto; padding:20px 0 20px 0; font-size: 10pt; line-height:2; width:100%; color:#666;  font-weight: 300; text-align: left; position: relative;  font-family: raigarh-regular;}
+		.footmenu span 				{float:left; width:100%;}
+		.footmenu ul 				{float:left; list-style:none; width: 100% auto;}
+		.footmenu ul li 			{float:left; display:inline-block; width: 100%;}
+		.footmenu a 				{color:#666; text-decoration:none; padding:0 .3em 0 0;}
 		.footmenu a:hover 			{}
 		.footmenu a:visited 		{color:#666;}
 
@@ -454,9 +466,11 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.footmenu a:visited 		{color:#666;}*/
 			
 	/* Social media icons all */
-		.jaiki, .be120, .be, .fb, .tw, .in, .insta, .blog {float:left; font-size: 20pt; text-align: center; display: block; outline: none; font-family:SignatureJAIKI-Regular;}
+		.jaiki, .social, .be120, .be, .fb, .tw, .in, .insta, .blog {float:left; font-size: 20pt; text-align: center; display: block; outline: none;}
 		.jaiki a 			{color: #666; padding-right: 10px;}
 		.jaiki a:hover 		{}
+		.social a 			{color: #666; padding-right: 15px;}
+		.social a:hover 	{}
 		.be a 				{color: #09c; padding-right: 10px;}
 		.be a:hover 		{}
 		.fb a 				{color: #666; padding-right: 10px;}
@@ -470,15 +484,15 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.blog a 			{color: #666; padding-right: 10px;}
 		.blog a:hover 		{}
 		@-moz-document url-prefix() {
-           .jaiki, .be120, .be, .fb, .tw, .in, .insta, .blog {font-size:22pt;}
+           .jaiki, .social, .be120, .be, .fb, .tw, .in, .insta, .blog {font-size:22pt;}
 		}
 
 	/* featured-post POST foot text links style set */
-		.logo-link 					{float:left; width:100%; padding: 10px 0px 0px 0px;}
-		.logo-link span 			{float:left; padding: 0px 0px 0px 0;font-weight:100;font-size: 10pt; line-height: 1.5; color: #ccc;}
+		.logo-link 					{float:left; width:100%; padding: 10px 0px 0px 0px; font-family:raigarh-Regular;}
+		.logo-link span 			{float:left; padding: 0px 0px 0px 0;font-weight:100;font-size: 10pt; line-height: 1.5; color: #666;}
 		.logo-link ul 				{float:left; list-style:none; width: auto;}
 		.logo-link ul li a img 		{float:left; width:auto;display: inline; }
-		.logo-link ul li 			{float:left; display:inline; font-size: 30pt; margin: 0px 30px 0px 0; font-weight: 100; background:url(../images/go_arrow_large.png) 0 0 no-repeat;}
+		.logo-link ul li 			{float:left; display:inline; font-size: 24pt; margin: 0px 30px 0px 0; font-weight: 100; background:url(../images/go_arrow_large.png) 0 0 no-repeat;}
 		.logo-link ul li a 			{float:left; opacity: 1;display: block; text-decoration:none; padding: 2px 2px 2px 30px; color: #666;font-weight:100;}
 		.logo-link ul li a span 	{float:left; font-weight:100;font-size: 10pt; color: #ccc;}
 		.logo-link ul li a:hover 	{color: #09c; display:block; text-decoration:none;}
@@ -499,7 +513,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 			}
 	
 /* FEATURED HOME OR LANDING POST projects album */
-	.featured-post					{float:left; width:100%; position: relative; width:960px; padding: 0px 0 60px 0; overflow: hidden; display: inline-block; border-bottom:rgba(100,100,100,0.5) px dashed;}
+	.featured-post					{float:left; width:100%; position: relative; width:960px; padding: 0px 0 20px 0; overflow: hidden; display: inline-block; border-bottom:rgba(100,100,100,0.5) px dashed;}
 	.featured-post ul				{list-style: none;}
 	.featured-post li 				{float:left; list-style: none; position: relative;}
 	.featured-post li span 			{float:left; width:100%; max-width: 600px; padding: 0px 40px 0px 0;font-weight:100; color: #666; font-size: 14pt; line-height: 1.5;}
@@ -523,12 +537,13 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.post-link ul 				{float:left; list-style:none; width: auto;}
 		.post-link ul li a img 		{float:left; width:auto;display: inline; }
 		.post-link ul li 			{float:left; display:inline; margin: 0px 10px 0px 0; font-weight: 100; background:url(../images/go_arrow.png) 0 50% no-repeat;}
-		.post-link ul li a 			{float:left; opacity: 1;display: block; text-decoration:none; padding: 0px 2px 2px 10px; color: #666;font-weight:100; font-size: 12pt;}
+		.post-link ul li a 			{float:left; opacity: 1;display: block; text-decoration:none; padding: 0px 2px 2px 10px; color: #09c;font-weight:100; font-size: 12pt;}
 		.post-link ul li a:hover 	{display:block; text-decoration:none;}
 		.post-link ul li:last-child {margin: 0px 0px 0px 0;}
+		.post-link ul li:first-child{background:none;}
 		.post-link leftbox			{float:left;}
 		.post-link rightbox			{float:right;}	
-		.post-link a 				{color: #666;}
+		.post-link a 				{color: #666;}	
 		.post-link a:visited 		{opacity: .8;}
 			@media screen and (max-width: 960px) 
 			{
@@ -589,8 +604,8 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.post-link50 span 			{float:left; width:100%;padding: 12px 0px 6px 0px;font-weight:600;font-size: 20pt; color: #666; line-height: 1.5; }
 		.post-link50 ul 			{float:left; list-style:none; width: auto;}
 		.post-link50 ul li a img 	{float:left; width:auto;display: inline; }
-		.post-link50 ul li 			{float:left; display:inline; margin: 0px 10px 0px 0; font-weight: 100; background:url(../images/go_arrow2.png) 0 50% no-repeat;}
-		.post-link50 ul li a 		{float:left; opacity: 1;display: block; text-decoration:none; padding: 2px 2px 2px 24px; color: #666;font-weight:100; font-size: 12pt; font-style: italic;}
+		.post-link50 ul li 			{float:left; display:inline; margin: 0px 10px 0px 0; font-weight: 100;}
+		.post-link50 ul li a 		{float:left; opacity: 1;display: block; text-decoration:none; padding: 2px 2px 2px 2px; color: #666;font-weight:100; font-size: 12pt; font-style: italic;}
 		.post-link50 ul li a:hover 	{display:block; text-decoration:none;}
 		.post-link50 ul li:last-child {margin: 0px 0px 0px 0;}
 		.post-link50 leftbox		{float:left;}
@@ -640,26 +655,32 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 
 /* paragraph style set */
 	/* fonts */
-	h1, h2, h3, h4, h5, h6, .j-top960 span,  .j-ad-a, .j-ad-b, .j-ad-c, .link-list ul span, .logo-link span, .pull, .featured-post50 ul li a{font-family: 'Sorts Mill Goudy', serif;}
 
-	.j-title-top, .j-title-top h1, .j-album, .featured-post, .featured-post50 span, .link-list  {font-family: 'Vollkorn', serif;}
+	h1, h2, h3 {font-family: 'raigarh-regular', serif;}
+	h4, h5, h6 {font-family: 'Sorts Mill Goudy', serif;}
+	.j-top960 span, .j-ad-a, .j-ad-b, .j-ad-c, .link-list ul span, .pull, .featured-post50 ul li a{font-family: 'Sorts Mill Goudy', serif;}
+
+	.j-title-top, .j-title-top h1, .j-album, .featured-post, .featured-post50 span, .link-list  {font-family: 'Raigarh-Regular', serif;}
 	
-	.f1 				{font-weight:100; font-family: 'Sorts Mill Goudy', serif;}
-	.f2 				{font-weight:600; font-family: 'Vollkorn', serif;}
-	.f3 				{font-weight:600; font-family:'Neuton', serif;}
+	.f1 				{font-family:'Sorts Mill Goudy', serif;}
+	.f2 				{font-family:'Raigarh-regular', serif;}
+	.f2b 				{font-family:'Raigarh-bold', serif;}
+	.f3 				{font-family:'Neuton', serif;}
 	.jaikisignature 	{font-family:'SignatureJAIKI-Regular', sans-serif;}
+	.gold1 			 	{font-family:'gold1-Regular', sans-serif;}
+	.raigarh 			{font-family:'raigarh-Regular', serif;}
 
 
-	h1 					{font-size: 24pt; font-weight:100; color:#003366; line-height:1.4;}
-	h2 					{font-size: 22pt; font-weight:100; color:#111111; line-height:1.4; margin-bottom: .5em;}
-	h3 					{font-size: 18pt; font-weight:100; color:#003366; line-height:1.4;}
-	h4 					{font-size: 14pt; font-weight:100; color:#111111; line-height:1.5;}
-	h5 					{font-size: 10pt; font-weight:100; color:#111111; line-height:1.5;}
+	h1 					{font-size: 24pt; font-weight: 300; color:#003366; line-height:1.4; margin-bottom: .5em;}
+	h2 					{font-size: 22pt; font-weight: 300; color:#111111; line-height:1.4; margin-bottom: .5em;}
+	h3 					{font-size: 18pt; font-weight: 300; color:#003366; line-height:1.4;}
+	h4 					{font-size: 14pt; font-weight: 300; color:#111111; line-height:1.5;}
+	h5 					{font-size: 10pt; font-weight: 300; color:#111111; line-height:1.5;}
 	h5 li 				{list-style: none;text-decoration: none;}
-	h6 					{font-size: 10pt; font-weight:100; color:#666; line-height:1.8; margin-top: 1.2em; }
+	h6 					{font-size: 10pt; color:#666; line-height:1.8; margin-top: 1.2em; }
 
 	.sub 				{font-size: 90%;font-weight: 100; opacity: 1; margin-bottom: 1em; line-height:1.4;}
-	.tag 				{font-size: 10pt; font-weight: 100; opacity: .7; margin-bottom: .5em;  font-style: italic;}
+	.tag 				{font-size: 10pt; font-weight: 100; opacity: .7; margin-bottom: .5em;}
 
 	p  					{font-weight:100; font-size: 12pt; color:#333; line-height:1.5; margin-top: .5em; margin-bottom: .5em;}
 	.italic 			{font-style: italic;}

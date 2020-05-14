@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "gold1";
+  src: url('./gold1-Regular.eot');
+  src: url('./gold1-Regular.eot') format('embedded-opentype'),
+       url('./gold1-Regular.woff2') format('woff2'),
+       url('./gold1-Regular.woff') format('woff'),
+       url('./gold1-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icgold1-"]:before,
+[class*=" icgold1-"]:before {
+  font-family: "gold1";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  margin-right: 0.1em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  /*line-height: 1em;*/
+  /* Animation center compensation - margins should be symmetric */
+  margin-left: 0.0em;
+  /* you can be more comfortable with increased icons size */
+  font-size: 110%;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icgold1-logo-jaiki:before {content: "\e000";}
+.icgold1-logo-magictype:before {content: "\e001";}
+.icgold1-logo-localsofmumbai:before {content: "\e002";}
+.icgold1-icon-facebook:before {content: "\e100";}
+.icgold1-icon-instagram:before {content: "\e101";}
+.icgold1-icon-whatsapp:before {content: "\e102";}
+.icgold1-icon-twitter:before {content: "\e103";}
+.icgold1-icon-linkedin:before {content: "\e104";}
+.icgold1-icon-dribbble:before {content: "\e105";}
+.icgold1-icon-youtube:before {content: "\e106";}
+.icgold1-icon-github:before {content: "\e107";}
+.icgold1-icon-pinterest:before {content: "\e108";}
+.icgold1-icon-behance:before {content: "\e109";}
+.icgold1-icon-dropbox:before {content: "\e110";}
+
+.icgold1-download:before {content: "\e200";}
+.icgold1-link-ext:before {content: "\e201";}
+
+.icgold1-arrow-line-right:before {content: "\e300";}
+.icgold1-arrow-line-left:before {content: "\e301";}
+.icgold1-arrow-line-up:before {content: "\e302";}
+.icgold1-arrow-line-down:before {content: "\e303";}
+
+.icgold1-arrow-basic-right:before {content: "\e304";}
+.icgold1-arrow-basic-left:before {content: "\e305";}
+.icgold1-arrow-basic-up:before {content: "\e306";}
+.icgold1-arrow-basic-down:before {content: "\e307";}
+
+.icgold1-arrow-long-right:before {content: "\e308";}
+.icgold1-arrow-long-left:before {content: "\e309";}
+.icgold1-arrow-long-up:before {content: "\e310";}
+.icgold1-arrow-long-down:before {content: "\e311";}
+
+.icgold1-arrow-long2-right:before {content: "\e312";}
+.icgold1-arrow-long2-left:before {content: "\e313";}
+.icgold1-arrow-long2-up:before {content: "\e314";}
+.icgold1-arrow-long2-down:before {content: "\e315";}
+
+
