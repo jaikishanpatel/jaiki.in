@@ -28,14 +28,6 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
     src: url(../fonts/gold1-Regular.ttf); /*URL to font*/
 	}
 	@font-face {
-    font-family: 'Raigarh-Regular'; /*a name to be used later*/
-    src: url(../fonts/raigarh-Regular.ttf); /*URL to font*/
-	}
-	@font-face {
-    font-family: 'Raigarh-Bold'; /*a name to be used later*/
-    src: url(../fonts/raigarh-Bold.ttf); /*URL to font*/
-	}
-	@font-face {
     font-family: 'Raas'; /*a name to be used later*/
     src: url(../fonts/Raas-bold.otf); /*URL to font*/
 	}
