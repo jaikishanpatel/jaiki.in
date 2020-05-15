@@ -24,8 +24,8 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
     src: url(../fonts/SignatureJAIKI-Regular.otf); /*URL to font*/
 	}
 	@font-face {
-    font-family: 'gold1-Regular'; /*a name to be used later*/
-    src: url(../fonts/gold1-Regular.ttf); /*URL to font*/
+    font-family: 'Gold1-Regular'; /*a name to be used later*/
+    src: url(../fonts/Gold1-Regular.ttf); /*URL to font*/
 	}
 
 	feature liga { # I'm just a comment
@@ -655,7 +655,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	.f2b 				{font-family:'Raigarh-bold', serif;}
 	.f3 				{font-family:'Neuton', serif;}
 	.jaikisignature 	{font-family:'SignatureJAIKI-Regular', sans-serif;}
-	.gold1 			 	{font-family:'gold1-Regular', sans-serif;}
+	.Gold1 			 	{font-family:'Gold1-Regular', sans-serif;}
 	.raigarh 			{font-family:'raigarh-Regular', serif;}
 
 
