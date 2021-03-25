@@ -660,16 +660,16 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 /* paragraph style set */
 	/* fonts */
 
-	h1, h2, h3 {font-family: 'work sans', serif;}
+	h1, h2, h3 {font-family: 'work sans', sans-serif;}
 	h4, h5, h6 {font-family: 'Sorts Mill Goudy', serif;}
 	.j-top960 span, .j-ad-a, .j-ad-b, .j-ad-c, .link-list ul span, .pull, .featured-post50 ul li a{font-family: 'Sorts Mill Goudy', serif;}
 
 	.j-title-top, .j-title-top h1, .j-album, .featured-post, .featured-post50 span, .link-list  {font-family: 'Work Sans', serif;}
 	
 	.f1 				{font-family:'Sorts Mill Goudy', serif;}
-	.f2 				{font-family:'Work Sans', serif;}
-	.f2b 				{font-family:'Work Sans', serif;}
-	.f3 				{font-family:'Work Sans', serif;}
+	.f2 				{font-family:'work sans', sans-serif;}
+	.f2b 				{font-family:'work sans', sans-serif;}
+	.f3 				{font-family:'work sans', sans-serif;}
 	.jaikisignature 	{font-family:'SignatureJAIKI-Regular', sans-serif;}
 	.Gold1 			 	{font-family:'Gold1-Regular', sans-serif;}
 	.raigarh 			{font-family:'raigarh-Regular', serif;}
