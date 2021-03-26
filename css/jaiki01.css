@@ -61,7 +61,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	.mm-b 						{float: right; overflow: hidden; line-height: 50px; vertical-align: center; font-size: 12pt; }
 	    .mm-b ul		 		{width: auto; list-style: none;}
 	    .mm-b ul li 		 	{float: left; height: 50px;}
-	    .mm-b ul li a			{text-decoration:none; display: inline-block; padding: 0 .5em; color: #666; vertical-align: center;}
+	    .mm-b ul li a			{text-decoration:none; display: inline-block; padding: 0 .4em; color: #666; vertical-align: center;}
 	    .mm-b ul li a:hover		{opacity: .8;}
 	    .mm-b ul li a.active	{color: #09c;}
 	    .mm-b ul li a:visited	{}
