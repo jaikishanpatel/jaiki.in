@@ -7,6 +7,8 @@
 	@import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i,700,700i,800,800i,900,900i');
 	@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=Work+Sans:400,700');
+	@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
 
 
 
@@ -49,7 +51,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 
 /* TOP NAVIGATION style set */
     .top-nav-wrapper 			{position:fixed; width:100%; height:auto; z-index:9999; background-color: #f2f2f2;}
-    .top-nav 		 			{max-width:960px; height:50px; text-align: left; font-size: 12pt; font-weight: 500; font-family: work sans; }
+    .top-nav 		 			{max-width:960px; height:50px; text-align: left; font-size: 12pt; font-weight: 500; font-family: 'work sans', sans-serif; }
 
 	.mm-a 						{float: left; padding: 0 10px 0 0px; overflow: hidden; line-height: 50px; vertical-align: center; text-transform: none; }
 	    .mm-a ul		 		{width: 100%; list-style: none;}
@@ -453,7 +455,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 			}
 		
 	/* all foot menu items style set */
-		.footmenu 					{float:left; width:auto; padding:20px 0 20px 0; font-size: 10pt; line-height:2; width:100%; color:#666;  font-weight: 300; text-align: left; position: relative;  font-family: Work Sans;}
+		.footmenu 					{float:left; width:auto; padding:20px 0 20px 0; font-size: 10pt; line-height:2; width:100%; color:#666;  font-weight: 300; text-align: left; position: relative;  font-family: 'work sans', sans-serif;}
 		.footmenu span 				{float:left; width:100%;}
 		.footmenu ul 				{float:left; list-style:none; width: 100% auto;}
 		.footmenu ul li 			{float:left; display:inline-block; width: 100%;}
@@ -493,7 +495,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		}
 
 	/* featured-post POST foot text links style set */
-		.logo-link 					{float:left; width:100%; padding: 10px 0px 0px 0px; font-family:Work Sans;}
+		.logo-link 					{float:left; width:100%; padding: 10px 0px 0px 0px; font-family:'work sans', sans-serif;}
 		.logo-link span 			{float:left; padding: 0px 0px 0px 0;font-weight:100;font-size: 10pt; line-height: 1.5; color: #666;}
 		.logo-link ul 				{float:left; list-style:none; width: auto;}
 		.logo-link ul li a img 		{float:left; width:auto;display: inline; }
@@ -665,7 +667,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	h4, h5, h6 {font-family: 'Sorts Mill Goudy', serif;}
 	.j-top960 span, .j-ad-a, .j-ad-b, .j-ad-c, .link-list ul span, .pull, .featured-post50 ul li a{font-family: 'Sorts Mill Goudy', serif;}
 
-	.j-title-top, .j-title-top h1, .j-album, .featured-post, .featured-post50 span, .link-list  {font-family: 'Work Sans', serif;}
+	.j-title-top, .j-title-top h1, .j-album, .featured-post, .featured-post50 span, .link-list  {font-family: 'Work Sans', sans-serif;}
 	
 	.f1 				{font-family:'Sorts Mill Goudy', serif;}
 	.f2 				{font-family:'work sans', sans-serif;}
