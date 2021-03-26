@@ -80,7 +80,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	.special-button 				{float:left; width:100%; font-weight: 100; text-align: left;}
 		.special-button ul 			{float:left; list-style: none;}
 		.special-button ul li 		{float:left; padding: 0px 1em; margin-right: 0px; overflow: hidden;background:url(../images/go_arrow_large.png) no-repeat left center;}
-		.special-button ul li a 	{text-decoration:none;display: inline-block; border-radius: 0px; font-weight: 500;} 
+		.special-button ul li a 	{text-decoration:none;display: inline-block; border-radius: 0px; font-weight: 500; color: #09c;} 
 		.special-button ul li a:hover 	{} 
 		.special-button ul li a:visited 	{}
 
