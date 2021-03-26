@@ -55,7 +55,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	    .mm-a ul		 		{width: 100%; list-style: none;}
 	    .mm-a ul li 		 	{float: left; height: 50px;}
 	    .mm-a ul li a			{float: left; text-decoration:none; display: inline-block; padding-right: 1.2em; color: #666;}
-	    .mm-a ul li a:hover		{}
+	    .mm-a ul li a:hover		{color: #000;}
 	    .mm-a ul li a.active	{color: #09c;}
 
 	.mm-b 						{float: right; overflow: hidden; line-height: 50px; vertical-align: center; font-size: 12pt; }
@@ -80,6 +80,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	.special-button 				{float:left; width:100%; font-weight: 100; text-align: left;}
 		.special-button ul 			{float:left; list-style: none;}
 		.special-button ul li 		{float:left; padding: 0px 1em; margin-right: 0px; overflow: hidden;background:url(../images/go_arrow_large.png) no-repeat left center;}
+		.special-button ul li.first-child 		{background:none;}
 		.special-button ul li a 	{text-decoration:none;display: inline-block; border-radius: 0px; font-weight: 500; color: #09c;} 
 		.special-button ul li a:hover 	{} 
 		.special-button ul li a:visited 	{}
@@ -457,7 +458,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		.footmenu ul 				{float:left; list-style:none; width: 100% auto;}
 		.footmenu ul li 			{float:left; display:inline-block; width: 100%;}
 		.footmenu a 				{color:#666; text-decoration:none; padding:0 .3em 0 0;}
-		.footmenu a:hover 			{}
+		.footmenu a:hover 			{color:#000;}
 		.footmenu a:visited 		{color:#666;}
 
 	/* all foot menu items style set 
