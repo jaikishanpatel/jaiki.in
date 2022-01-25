@@ -22,11 +22,11 @@
   font-variant: normal;
   text-transform: none;
   /* fix buttons height, for twitter bootstrap */
-  /*line-height: 1em;*/
+  line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   margin-left: 0.0em;
   /* you can be more comfortable with increased icons size */
-  font-size: 110%;
+  font-size: 120%;
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -49,6 +49,7 @@
 
 .icGold1-download:before {content: "\e200";}
 .icGold1-link-ext:before {content: "\e201";}
+.icGold1-download2:before {content: "\e202";}
 
 .icGold1-arrow-line-right:before {content: "\e300";}
 .icGold1-arrow-line-left:before {content: "\e301";}
