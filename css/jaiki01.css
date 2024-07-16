@@ -53,10 +53,31 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;}
 
- .text-gradient-wc {
-    background: linear-gradient(94deg,#e3b570 30%,#dfb872 60%,#ff8383 90%);
+.text-gradient-wc {
+    background: linear-gradient(94deg,#e1ba7e 30%,#df9100 60%,#d84e36 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;}
+
+.text-gradient-bmb {
+	background: linear-gradient(45deg,#c5c5c5 30%,#ffbb00 70%,#ce0000 75%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;}
+
+.text-gradient-e24 {
+	background: linear-gradient(45deg,#ffffff 30%,#d3a75b 60%,#ef5c3b 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;}
+	
+.text-gradient-lom {
+	background: linear-gradient(45deg,#424242 50%,#e02525 60%,#ac0000 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;}
+
+.text-gradient-mo {
+	background: linear-gradient(45deg,#e12222 40%,#ed8a11 50%,#dc9a00 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;}
+
 
 /* TOP NAVIGATION style set */
     .top-nav-wrapper 			{position:fixed; width:100%; height:auto; z-index:9999; background-color: #f2f2f2;}
@@ -361,7 +382,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		/* overlay*/
 		.j-album li a 				{opacity:1;display:block; height:auto; border-radius: 5px; position:relative; overflow:hidden;}
 		.j-album li a:hover 		{opacity:.9;}
-		.j-album li a img 			{object-fit: contain; width:100%; height: 300px; display: block; overflow:hidden; border-radius: 5px; }
+		.j-album li a img 			{object-fit: contain; width:100%; height: auto; display: block; overflow:hidden; border-radius: 5px; }
 		/* thumb hover overlay text */
 		.j-album li a span 			{float:left; opacity:.5; position: relative; width: 95%; height: auto; padding: 15px 0px 15px 0px;color: #000; text-align: center; font-size: 16px;  font-weight: 400;}
 		.j-album li a:hover span 	{opacity:1; color: #000;}
@@ -394,17 +415,17 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 		/* overlay*/
 		.j-album2 li a 				{opacity:1;display:block; height:auto; position:relative; overflow:hidden;}
 		.j-album2 li a:hover 		{opacity:1;}
-		.j-album2 li a img 			{object-fit: cover; width: 100%; height: 240px; display: block; overflow:hidden; border-radius: 16px;}
+		.j-album2 li a img 			{object-fit: cover; width: 100%; height: auto; display: block; overflow:hidden; border-radius: 16px;}
 		/* thumb hover overlay text */
-		.j-album2 li a span 		{float:left; opacity:1; position: relative; width: 95%; height: auto; padding: 15px 0px 15px 0px; color: #333; text-align: left; font-size: 24px; font-weight: 500;}
-		.j-album2 li a:hover span 	{color: #000;}
+		.j-album2 li a span 		{float:left; opacity:.7; position: relative; width: 95%; height: auto; padding: 15px 0px 15px 0px; color: #333; text-align: left; font-size: 16px; font-weight: 500;}
+		.j-album2 li a:hover span 	{color: #000; opacity: 1;}
 			@media screen and (max-width: 960px) 
 			{
 			  .j-album2				{width:100%;}
 			  .j-album2 span		{width:100%; font-size: 18pt;}
 			  .j-album2 li 	 		{width:30%; height: auto;}
 			  .j-album2 li a 		{width: 100%; height: auto;}
-			  .j-album2 li a img 	{width: 100%; height: 160px;}
+			  .j-album2 li a img 	{width: 100%;}
 			}
 			@media screen and (max-width: 640px) 
 			{
@@ -412,7 +433,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 			  .j-album2 span		{width:100%;}
 			  .j-album2 li 	 		{width: 44%; height: auto;}
 			  .j-album2 li a 		{width: 100%; height: auto;}
-			  .j-album2 li a img 	{width: 100%; height: 140px;}
+			  .j-album2 li a img 	{width: 100%;}
 			  .j-album2 li a span 	{font-size: 11pt;}
 			}
 
