@@ -316,7 +316,7 @@ hr{ color:#ccc; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; borde
 	.clearcolumn { clear: both;}
 
 /* all projects links list style set for home page */
-		.link-list 				{float:left; width:100%; text-align: left; padding: 30px 0px 60px 0px; margin-left: 10px; font-size: 16pt;}
+		.link-list 				{float:left; width:100%; text-align: left; padding: 30px 0px 60px 0px; font-size: 16pt;}
 		.link-list ul 			{float:left; display:block; list-style:none; margin: 0px 30px 10px 0;}
 		.link-list ul span		{float:left; display:block; font-size: 14pt; width: auto; width:100%; font-weight:300; color:#ccc; margin: 20px 0px 20px 0;}
 		.link-list ul li 		{display:block; padding: 0px 10px 15px 0px; color: #ccc; font-weight:400;}
