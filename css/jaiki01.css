@@ -369,8 +369,9 @@
 			}
 			@media screen and (max-width: 640px) 
 			{
+				.j-album2-wrapper 	{margin:12px 0;}
 			  .j-album2				{width: 100%;}
-			  .j-album2 span		{width: 100%;}
+			  .j-album2 span		{width: 100%; padding:8px 0;}
 			  .j-album2 li 	 		{width: 42%;}
 			  .j-album2 li a 		{width: 100%;}
 			  .j-album2 li a img 	{width: 100%;}
@@ -462,30 +463,30 @@
 		.footmenu 					{float:left; width:auto; padding:20px 0 20px 0; font-size: 10pt; line-height:2; width:100%; color:#666;text-align: left; position: relative; }
 		.footmenu span 				{float:left; width:100%; color: #999;}
 		.footmenu ul 				{float:left; list-style:none; width: 100%;}
-		.footmenu ul li 			{float:left; display:inline-block; width: 100%;}
-		.footmenu a 				{color:#111; padding:0 .3em 0 0;}
+		.footmenu ul li 			{float:left; display:inline-block; width: 100%;padding: 4px 0;}
+		.footmenu a 				{color:#111; padding: 0 8px 0 0;}
 		.footmenu a:hover 			{}
 		.footmenu a:visited 		{}
 	
-		/* Social media icons all */
-		.social						{font-size: 20pt; outline: none;}
-		.social a 					{}
-		.social a:hover 			{}
+			/* Social media icons all */
+			.social						{font-size: 20pt; outline: none;}
+			.social a 					{}
+			.social a:hover 			{}
 
-		@media screen and (max-width: 960px) 
-			{
-		  	  .foot 				{padding: 20px 0 20px 0;}
-		  	  .foot-wrapper 		{width:90%;}
-			  .social 				{font-size:16pt;}
-			}
+	@media screen and (max-width: 960px) 
+		{
+			.foot 				{padding: 20px 0 20px 0;}
+			.foot-wrapper 		{width:90%;}
+			.social 				{font-size:16pt;}
+		}
 
 
 	/* featured-post POST foot text links style set */
 		.logo-link 					{float:left; width:100%; padding: 10px 0px 0px 0px; font-family:'work sans', sans-serif;}
 		.logo-link span 			{float:left; font-size: 10pt; color: #999;}
 		.logo-link ul 				{float:left; list-style:none; width: auto;}
-		.logo-link ul li 			{float:left; display:inline; font-size: 20pt; padding: 0 24px; background:url(../images/go_arrow_large.png) 0 0 no-repeat;}
-		.logo-link ul li a 			{float:left; color: #111; opacity: 1; display: block; padding: 4px 0px}
+		.logo-link ul li 			{float:left; display:inline; font-size: 20pt; padding: 8px 24px; background:url(../images/go_arrow_large.png) 0 0 no-repeat;}
+		.logo-link ul li a 			{float:left; color: #111; opacity: 1; display: block; padding: 2px 0px}
 		.logo-link ul li a:hover 	{color: #07c; display:block; }
 		.logo-link ul li a img 		{float:left; width:auto; display: inline;}
 		.logo-link ul li span 		{float:left; font-size: 8pt; color: #111; width: auto;}
@@ -501,8 +502,8 @@
 			}
 			@media screen and (max-width: 480px) 
 			{
-			  .logo-link ul li		{width: 100%; background:none;}
-			  .logo-link ul li a 	{}
+			  .logo-link ul li		{width: 100%; background:none; padding-left: 0px;}
+			  .logo-link ul li a 	{width: 100%; }
 			}
 	
 /* FEATURED HOME OR LANDING POST projects album */
@@ -685,6 +686,38 @@
 		.xxxlarge 			{font-size: 3.0em; line-height: 1.2;hyphens: auto;}	
 		.xxxxlarge 			{font-size: 4.0em; line-height: 1.0;hyphens: auto;}
 		.xxxxxlarge 		{font-size: 5.0em; line-height: 1.0;hyphens: auto;}
+
+		@media screen and (max-width: 960px) 
+		{
+		   h1 				{font-size: 20pt;}
+		   h2 				{font-size: 18pt;}
+		   h3	 			{font-size: 16pt;}
+		  .medium 			{font-size: 1.1em;}
+		  .large 			{font-size: 1.2em;}
+		  .xlarge 			{font-size: 1.4em;}
+		  .xxlarge 			{font-size: 1.6em;}
+		  .xxxlarge 		{font-size: 2.0em;}
+		  .xxxxlarge 		{font-size: 2.0em;}
+		  .xxxxxlarge 		{font-size: 3.0em;}
+		  .pull				{font-size: 2.0em;}
+		}
+		@media screen and (max-width: 480px) 
+		{
+		   h1 			{font-size: 18pt; margin-bottom: .2em; }
+		   h2 			{font-size: 16pt; margin-bottom: .2em; }
+		   h3	 		{font-size: 14pt;}
+		   p			{font-size: 12pt;}
+		  .medium 		{font-size: 1.0em;}
+		  .large 		{font-size: 1.1em;}
+		  .xlarge 		{font-size: 1.2em;}
+		  .xxlarge 		{font-size: 1.4em;}
+		  .xxxlarge 	{font-size: 1.6em;}
+		  .xxxxlarge 	{font-size: 1.6em;}
+		  .xxxxxlarge 	{font-size: 2.6em;}
+		  .pull			{font-size: 1.8em;}
+		}
+
+
 	/* Colours */
 		.white 				{color:#fff!important;} 
 		.gray 				{color:#ccc;}
@@ -707,34 +740,6 @@
 		.caption			{font-weight:300; color:#666; font-size: 10pt; line-height:1.4; margin-bottom: 1.5em; }
 		.pull 				{font-size: 2.4em; line-height: 1.4; color: #4E4230; font-weight:400; font-style: italic;}	
 
-	@media screen and (max-width: 960px) 
-		{
-		   h1 				{font-size: 20pt;}
-		   h2 				{font-size: 18pt;}
-		   h3	 			{font-size: 16pt;}
-		  .medium 			{font-size: 1.1em;}
-		  .large 			{font-size: 1.2em;}
-		  .xlarge 			{font-size: 1.4em;}
-		  .xxlarge 			{font-size: 1.6em;}
-		  .xxxlarge 		{font-size: 2.0em;}
-		  .xxxxlarge 		{font-size: 2.0em;}
-		  .xxxxxlarge 		{font-size: 3.0em;}
-		  .pull				{font-size: 2.0em;}
-		}
-	@media screen and (max-width: 480px) 
-		{
-		   h1 			{font-size: 18pt;}
-		   h2 			{font-size: 16pt;}
-		   h3	 		{font-size: 14pt;}
-		  .medium 		{font-size: 1.0em;}
-		  .large 		{font-size: 1.1em;}
-		  .xlarge 		{font-size: 1.2em;}
-		  .xxlarge 		{font-size: 1.4em;}
-		  .xxxlarge 	{font-size: 1.6em;}
-		  .xxxxlarge 	{font-size: 1.6em;}
-		  .xxxxxlarge 	{font-size: 2.6em;}
-		  .pull			{font-size: 1.8em;}
-		}
 
 	.head 		{color:#333;}
 	.quote		{color:#322C1F; font-weight:400; font-size: 12pt; line-height:1.6; border-radius: 5px; padding: 30px; margin:20px 0 20px 0; border: rgba(50,50,50,0.1) 0px solid; background-color: #EFE7DA}
