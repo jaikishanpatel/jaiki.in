@@ -7,7 +7,7 @@
 	@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
 
 	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{ margin:0;padding:0;}
-	ol, {list-style:none;}
+	ol {list-style:none;}
 	html,body { margin:0;padding:0; font-family: 'work sans', sans-serif; background-color: #f2f2f2; font-size: 14pt;}
 
 /* link */
@@ -23,11 +23,6 @@
     src: url(../fonts/Gold1-Regular.ttf); /*URL to font*/
 	}
 
-	feature liga { # I'm just a comment
-		sub f f i by f_f_i;
-		sub f i by f_i;
-		sub f l by f_l;
-	} liga;
 
 /* line devider */
 	.devider 					{clear: both; width:auto; height: 80px; margin: 60px 0 60px 0;border-bottom: rgba(50,50,50,0.2) 2px solid;}
@@ -164,8 +159,8 @@
 	.category span 	{float:left; color:#999; width:50px; text-align: left; padding:10px 0px 10px 20px; background:url(../images/category.png) no-repeat left center;}
 	.category li 	{float:left; list-style-type:none; width: auto;}
 	.category li a 	{float:left;  color:#666; display:block; padding:10px 0px 10px 30px; background:url(../images/category_spacer.png) no-repeat left center;}
-	.category li a:link, #.category li a.first-child{ padding-left: 0px;} li a:visited {color:#666;}
-	.category li a:hover, #.category li a.first-child{ padding-left: 0px;} li a:focus {opacity:.8;}
+	.category li a:link, .category li a.first-child{ padding-left: 0px;} li a:visited {color:#666;}
+	.category li a:hover, .category li a.first-child{ padding-left: 0px;} li a:focus {opacity:.8;}
 	.category li a.first-child{}
 	@media screen and (max-width: 480px) 
 		{
@@ -649,7 +644,7 @@
 	.bounce2 {animation-name: bounce;}
 
 /* paragraph style set */x
-	h1, h2, h3 {font-family: 'work sans', sans-serif;}
+	h1, h2, h3{font-family: 'work sans', sans-serif;}
 	h4, h5, h6 {font-family: 'Sorts Mill Goudy', serif;}
 	.j-top960 span, .j-ad-a, .j-ad-b, .j-ad-c, .link-list ul span, .pull, .featured-post50 ul li a{font-family: 'Sorts Mill Goudy', serif;}
 	.j-title-top, .j-title-top h1, .j-album, .j-album2, .featured-post, .featured-post50 span, .link-list  {font-family: 'Work Sans', sans-serif;}
@@ -662,13 +657,13 @@
 		.Gold1 			 	{font-family:'Gold1-Regular', sans-serif;}
 		.raigarh 			{font-family:'raigarh-Regular', serif;}
 	/* Text styles */
-		h1 					{font-size: 24pt; font-weight: 500; color:#003366; line-height:1.4; margin-bottom: .5em; letter-spacing: -.02em;}
-		h2 					{font-size: 22pt; font-weight: 500; color:#111111; line-height:1.4; margin-bottom: .5em; letter-spacing: -.01em;}
-		h3 					{font-size: 18pt; font-weight: 500; color:#003366; line-height:1.4;}
-		h4 					{font-size: 14pt; font-weight: 500; color:#111111; line-height:1.5;}
-		h5 					{font-size: 12pt; font-weight: 500; color:#111111; line-height:1.5;}
+		h1 					{font-size: 28pt; font-weight: 500; color:#003366; line-height:1.4; margin-bottom: .5em; letter-spacing: -.02em;}
+		h2 					{font-size: 24pt; font-weight: 500; color:#003366; line-height:1.4; margin-bottom: .5em; letter-spacing: -.01em;}
+		h3 					{font-size: 20pt; font-weight: 500; color:#003366; line-height:1.4;}
+		h4 					{font-size: 16pt; font-weight: 500; color:#003366; line-height:1.5;}
+		h5 					{font-size: 14pt; font-weight: 500; color:#111111; line-height:1.5;}
 		h5 li 				{list-style: none;text-decoration: none;}
-		h6 					{font-size: 12pt; color:#666; line-height:1.8; margin-top: 1.2em; }
+		h6 					{font-size: 14pt; color:#666; line-height:1.8; margin-top: 1.2em; }
 		.sub 				{font-size: 90%; font-weight: 400; opacity: 1; margin-bottom: 1em; line-height:1.4;}
 		.tag 				{font-size: 11pt; font-weight: 400; opacity: .7; margin-bottom: .3em;}
 		.tag-uppercase 		{font-size: 11pt; font-weight: 400; opacity: .7; margin-bottom: .3em; text-transform: uppercase; letter-spacing: .08em;}
