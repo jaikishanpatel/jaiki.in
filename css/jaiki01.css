@@ -346,14 +346,14 @@
 		/* album2 title */
 		.j-album2 span				{width:100%; position:relative; float: left; color: #333; text-align: left; font-size: 24pt; padding:16px 0;}
 		.j-album2 span a			{color: #333;}
-		.j-album2 li 				{float: left; list-style:none; width:296px; position: relative; margin: 5px 24px 0px 0px;}
+		.j-album2 li 				{float: left; list-style:none; width:296px; position: relative; margin: 5px 24px 16px 0px;}
 		.j-album2 li:last-child 	{margin: 5px 0px 0px 0px;}
 		/* overlay*/
 		.j-album2 li a 				{opacity:1; display:block; height:auto; position:relative; overflow:hidden;}
 		.j-album2 li a:hover 		{opacity:1;}
 		.j-album2 li a img 			{object-fit: cover; width: 100%; height: auto; display: block; overflow:hidden; border-radius: 24px;}
 		/* thumb hover overlay text */
-		.j-album2 li a span 		{float:left; opacity:.7; position: relative; width: 99%; padding: 16px 0px; color: #000; text-align: left; font-size: 16px; font-weight: 500; }
+		.j-album2 li a span 		{float:left; opacity:.7; position: relative; width: 99%; padding: 18px 0px; color: #000; text-align: left; font-size: 16px; font-weight: 500; }
 		.j-album2 li a:hover span 	{opacity: 1;}
 			@media screen and (max-width: 960px) 
 			{
@@ -368,10 +368,10 @@
 				.j-album2-wrapper 	{margin:12px 0;}
 			  .j-album2				{width: 100%;}
 			  .j-album2 span		{width: 100%; padding:8px 0;}
-			  .j-album2 li 	 		{width: 42%;}
+			  .j-album2 li 	 		{width: 100%;}
 			  .j-album2 li a 		{width: 100%;}
 			  .j-album2 li a img 	{width: 100%;}
-			  .j-album2 li a span 	{font-size: 12pt;}
+			  .j-album2 li a span 	{font-size: 14pt;}
 			}
 
 /* Magictype AD style set */
