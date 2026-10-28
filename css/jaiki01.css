@@ -351,7 +351,7 @@
 		/* overlay*/
 		.j-album2 li a 				{opacity:1; display:block; height:auto; position:relative; overflow:hidden;}
 		.j-album2 li a:hover 		{opacity:1;}
-		.j-album2 li a img 			{object-fit: cover; width: 100%; height: auto; display: block; overflow:hidden; border-radius: 24px;}
+		.j-album2 li a img 			{object-fit: cover; width: 100%; height: auto; display: block; overflow:hidden; border-radius: 8px;}
 		/* thumb hover overlay text */
 		.j-album2 li a span 		{float:left; opacity:.7; position: relative; width: 99%; padding: 18px 0px; color: #000; text-align: left; font-size: 16px; font-weight: 500; }
 		.j-album2 li a:hover span 	{opacity: 1;}
